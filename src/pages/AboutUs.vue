@@ -37,8 +37,11 @@
             </p>
 
             <DentistSection />
-            <TeamSection />
-
+            <!-- <TeamSection />  -->
+            <MoreServices :slides="teams" title="The Dental Roots team"
+                subtitle="Our award-winning dental team are committed to providing exceptional dental care for all patients" />
+            <MoreServices :slides="slides" title="International Business Award 2018"
+                subtitle="Best Dental Hospital for Dental Implants, Root Canal Treatment and Cosmetic Dentistry in India" />
         </div>
     </div>
 </template>
@@ -47,7 +50,8 @@
 import SectionTopBanner from '@/components/SectionTopBanner.vue';
 import CounterSection from '@/components/CounterSection.vue';
 import DentistSection from '@/components/DentistSection.vue';
-import TeamSection from '@/components/TeamSection.vue';
+// import TeamSection from '@/components/TeamSection.vue';
+import MoreServices from '@/components/MoreServices.vue';
 
 export default {
     name: 'AboutUs',
@@ -55,7 +59,46 @@ export default {
         SectionTopBanner,
         CounterSection,
         DentistSection,
-        TeamSection
+        // TeamSection,
+        MoreServices
     },
+    data() {
+        return {
+            slides: [
+                { image: "https://www.thedentalroots.com/assets/images/about/cer8.jpg", },
+                { image: "https://www.thedentalroots.com/assets/images/about/cer9.jpg", },
+                { image: "https://www.thedentalroots.com/assets/images/about/cer10.jpg", },
+                { image: "https://www.thedentalroots.com/assets/images/about/cer11.jpg", },
+                { image: "https://www.thedentalroots.com/assets/images/about/cer12.jpg", },
+            ], 
+            teams: [
+                {
+                    title: "Dr. Prerna Jeloka",
+                    description: "Conservative and Endodontic Dentistry (BDS, MDS)",
+                    image: "https://www.thedentalroots.com/assets/images/about/Dr_Prerna.jpg",
+                },
+                {
+                    title: "Dr. Ritika",
+                    description: "General Dentist (BDS)",
+                    image: "https://www.thedentalroots.com/assets/images/about/dr-Ritika.jpg",
+                },
+                {
+                    title: "Dr. Aditi Chaturvedi",
+                    description: "BDS and MDS in Periodontology and Oral Implantology",
+                    image: "https://www.thedentalroots.com/assets/images/about/dr_Aditi_Chaturvedi.jpg",
+                },
+                {
+                    title: "Dr. Sarveshwari Singh",
+                    description: "Conservative and Endodontic Dentistry (BDS, MDS)",
+                    image: "https://www.thedentalroots.com/assets/images/about/dr-sarveshwari.png",
+                },
+                {
+                    title: "Dr. Anchal Bhat",
+                    description: "Conservative Dentist and Endodontic (MDS)",
+                    image: "https://www.thedentalroots.com/assets/images/about/Anchal.jpg",
+                },
+            ],
+        }
+    }
 }
 </script>

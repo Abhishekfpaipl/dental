@@ -1,18 +1,18 @@
 <template>
-  <DashboardNav />
+  <TopNav />
   <transition name="fade">
     <router-view />
   </transition>
   <FooterBar />
 </template>
 <script>
-// import DashboardNav from "@/components/TopNav.vue";
-// import FooterBar from "@/components/FooterBar.vue";
+import TopNav from "@/components/TopNav.vue";
+import FooterBar from "@/components/FooterBar.vue";
 export default {
   name: "App",
   components: {
-    // DashboardNav,
-    // FooterBar
+    TopNav,
+    FooterBar
   },
 }
 </script>

@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="text-center mt-4">
-            <p>&copy; Thedentalroots. All rights reserved.</p>
+            <p>&copy; Thedentalsolutions. All rights reserved.</p>
             <p>Made by passion</p>
         </div>
     </footer>
@@ -33,10 +33,10 @@ export default {
     data() {
         return {
             contact: {
-                title: "The Dental Roots Doctors",
+                title: "The Dental Soluction Doctors",
                 phoneLabel: "Call us",
-                phone: "+91-9650440004",
-                email: "enquiry@thedentalroots.com"
+                phone: "+91-8860012001",
+                email: "enquiry@thedentalsolutions.com"
             },
             sections: [
                 {

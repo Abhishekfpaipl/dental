@@ -26,6 +26,16 @@ const routes = [
     name: "ProductDetail",
     component: () => import('@/pages/ProductDetail.vue'),
   },
+  {
+    path: "/services",
+    name: "ServicePage",
+    component: () => import('@/pages/ServicePage.vue'),
+  },
+  {
+    path: "/testimonial",
+    name: "TestimonialPage",
+    component: () => import('@/pages/TestimonialPage.vue'),
+  },
 
 ];
 
