@@ -11,8 +11,11 @@
                             <h5 class="mb-2">{{ service.title }}</h5>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item py-1 px-0 bg-transparent text-white border-0 small"
-                                    v-for="(item, i) in service.items" :key="i"><i
-                                        class="bi bi-chevron-right me-2"></i>{{ item }}</li>
+                                    v-for="(item, i) in service.items" :key="i">
+                                    <router-link to="/product-detail" class="text-white text-decoration-none">
+                                        <i class="bi bi-chevron-right me-2"></i>{{ item }}
+                                    </router-link>
+                                </li>
                             </ul>
                         </div>
                     </div>

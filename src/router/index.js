@@ -6,6 +6,26 @@ const routes = [
     name: "home",
     component: () => import('@/pages/HomePage.vue'),
   },
+  {
+    path: "/privacy",
+    name: "PrivacyPolicy",
+    component: () => import('@/pages/PrivacyPolicy.vue'),
+  },
+  {
+    path: "/terms",
+    name: "TermsConditions",
+    component: () => import('@/pages/TermsConditions.vue'),
+  },
+  {
+    path: "/about-us",
+    name: "AboutUs",
+    component: () => import('@/pages/AboutUs.vue'),
+  },
+  {
+    path: "/product-detail",
+    name: "ProductDetail",
+    component: () => import('@/pages/ProductDetail.vue'),
+  },
 
 ];
 
