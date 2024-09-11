@@ -111,19 +111,32 @@
                 </div>
             </div>
         </div>
-        <ImageOverlay imageSrc="/img/banner.jpg" title="Laser Root Canal Treatment" :points="points"
-            bookBtnText="Book an appointment" callBtnText="Call us: +91-965 044 0004" phoneNumber="+919650440004" />
-            <FaqSection/>
+        <ImageTextSection
+            image-src="https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/painless-root-canal-treatment-other_img_2-the-dental-roots.jpg"
+            image-alt="Sample Image" title="Endodontics team" heading="Save your Teeth, Take Back your Life"
+            text="We offer an inclusive, non-judgemental environment where you can seek treatment for dental concerns like advanced decay. At The Dental Roots New Delhi and Gurgaon, our team is focused on delivering an enjoyable experience and successful outcomes. It all starts with our years of experience and commitment to advanced technology and the latest techniques. We’ll help you feel at home here."
+            :imageFirst="true" />
+
+        <ImageTextSection image-src="/img/banner.jpg" image-alt="Sample Image" title="Endodontics team"
+            heading="Laser Root Canal Treatment" :points="points"
+            text="We offer an inclusive, non-judgemental environment where you can seek treatment for dental concerns like advanced decay. At The Dental Roots New Delhi and Gurgaon, our team is focused on delivering an enjoyable experience and successful outcomes. It all starts with our years of experience and commitment to advanced technology and the latest techniques. We’ll help you feel at home here."
+            :imageFirst="false" />
+
+        <!-- <ImageOverlay imageSrc="/img/banner.jpg" title="Laser Root Canal Treatment" :points="points"
+            bookBtnText="Book an appointment" callBtnText="Call us: +91-8860012001" phoneNumber="+918860012001" /> -->
+        <FaqSection />
     </div>
 </template>
 <script>
 import SectionTopBanner from '@/components/SectionTopBanner.vue';
-import ImageOverlay from '@/components/ImageOverlay.vue';
+import ImageTextSection from '@/components/ImageTextSection.vue';
+// import ImageOverlay from '@/components/ImageOverlay.vue';
 import FaqSection from '@/components/FaqSection.vue';
 export default {
     components: {
         SectionTopBanner,
-        ImageOverlay,
+        ImageTextSection,
+        // ImageOverlay,
         FaqSection,
     },
     data() {
@@ -141,7 +154,7 @@ export default {
     },
     methods: {
         submitForm() {
-            const phoneNumber = '919711256073';
+            const phoneNumber = '918860012001';
             const message = `Name: ${this.fullName}%0A 
             number: ${this.number}%0A
             Email: ${this.email}%0A
