@@ -34,9 +34,15 @@
                 routine care or a more complex procedure, we guarantee that you’ll leave with a brighter, healthier
                 smile. Visit us today and discover why Dental Solutions continues to set the standard in modern dental
                 care.
-            </p>
-
-            <DentistSection />
+            </p> 
+            <ImageTextSection image-src="/img/demo.jpeg" heading="Dr. Atul Gupta" subHeading="B.D.S, M.D.S, endodontist"
+                :button="true" image-alt="Dr. Atul Gupta"
+                text="Dr. Atual Gupta is a principal dentist at THE DENTAL Solutions, providing patients with treatment involving all aspects of dentistry including painless root canal treatments, cosmetic dentistry, dental implants, rehabilitative and general dental care.\n\nHis vision is to fulfill the need for specialized dental care and treatment resulted in the establishment of The Dental Solutions, New Delhi and Gurgaon. He completed his graduation from Pune University, 1999 and did his masters in Conservative and endodontic in 2002 from Rajiv Gandhi University, Karnataka and has been providing dental care to his patients since then."
+                mobile="9818149152" :imageFirst="true" />
+            <ImageTextSection image-src="/img/demo.jpeg" heading="Dr. Shweta Gupta"
+                subHeading="B.D.S, M.S, implantology, pgdhhm" :button="true" image-alt="Dr. Shweta Gupta"
+                text="Dr. Shweta Gupta is a principal dentist at THE DENTAL Solutions, providing patients with treatment involving all aspects of dentistry including painless root canal treatments, cosmetic dentistry, dental implants, rehabilitative and general dental care.\n\nHis vision is to fulfill the need for specialized dental care and treatment resulted in the establishment of The Dental Solutions, New Delhi and Gurgaon. He completed his graduation from Pune University, 1999 and did his masters in Conservative and endodontic in 2002 from Rajiv Gandhi University, Karnataka and has been providing dental care to his patients since then."
+                mobile="9899570734" :imageFirst="false" />
             <!-- <TeamSection />  -->
             <MoreServices :slides="teams" title="The Dental Roots team"
                 subtitle="Our award-winning dental team are committed to providing exceptional dental care for all patients" />
@@ -48,8 +54,8 @@
 
 <script>
 import SectionTopBanner from '@/components/SectionTopBanner.vue';
-import CounterSection from '@/components/CounterSection.vue';
-import DentistSection from '@/components/DentistSection.vue';
+import CounterSection from '@/components/CounterSection.vue'; 
+import ImageTextSection from '@/components/ImageTextSection.vue';
 // import TeamSection from '@/components/TeamSection.vue';
 import MoreServices from '@/components/MoreServices.vue';
 
@@ -57,8 +63,8 @@ export default {
     name: 'AboutUs',
     components: {
         SectionTopBanner,
-        CounterSection,
-        DentistSection,
+        CounterSection, 
+        ImageTextSection,
         // TeamSection,
         MoreServices
     },
@@ -70,7 +76,7 @@ export default {
                 { image: "https://www.thedentalroots.com/assets/images/about/cer10.jpg", },
                 { image: "https://www.thedentalroots.com/assets/images/about/cer11.jpg", },
                 { image: "https://www.thedentalroots.com/assets/images/about/cer12.jpg", },
-            ], 
+            ],
             teams: [
                 {
                     title: "Dr. Prerna Jeloka",

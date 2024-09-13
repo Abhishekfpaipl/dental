@@ -1,12 +1,17 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed top-0 w-100" style="z-index: 10;">
+    <nav class="navbar navbar-expand-lg bg-light text-dark position-fixed top-0 w-100" style="z-index: 10;">
         <div class="container-fluid">
-            <router-link  class="navbar-brand" to="/">
-                <img src="https://www.thedentalroots.com/assets/images/logo.png" alt="The dental roots" height="30">
+            <router-link  class="navbar-brand d-flex align-items-center gap-2" to="/">
+                <img src="/img/logo.png" alt="The dental solutions" height="35">
+                <div class="d-flex flex-column lh-1 " style="color: var(--bg-primary) !important">
+                    <span class="fs-1">Dental Solutions</span>
+                    <!-- <span class="smaller">Creating beautiful smiles</span> -->
+                </div>
             </router-link>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
+                aria-controls="offcanvasNavbar"   style="background-color:var(--bg-primary) !important">
+                <i class="bi bi-list fs-2 text-white"></i>
+                <!-- <span class="navbar-toggler-icon"></span> -->
             </button>
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
