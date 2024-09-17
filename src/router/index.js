@@ -22,6 +22,16 @@ const routes = [
     component: () => import('@/pages/AboutUs.vue'),
   },
   {
+    path: "/contact-us",
+    name: "ContactUs",
+    component: () => import('@/pages/ContactUs.vue'),
+  },
+  {
+    path: "/career",
+    name: "CareerPage",
+    component: () => import('@/pages/CareerPage.vue'),
+  },
+  {
     path: "/product-detail",
     name: "ProductDetail",
     component: () => import('@/pages/ProductDetail.vue'),
@@ -40,6 +50,11 @@ const routes = [
     path: "/gallery",
     name: "GalleryPage",
     component: () => import('@/pages/GalleryPage.vue'),
+  },
+  {
+    path: "/faq",
+    name: "FaqPage",
+    component: () => import('@/pages/FaqPage.vue'),
   },
 
 ];

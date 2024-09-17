@@ -1,7 +1,7 @@
 <template>
     <div>
         <SectionTopBanner />
-        <div class="container py-5 " style="margin-top:-40px;">
+        <div class="container text-start py-5 " style="margin-top:-40px;">
             <h1 class="text-center mb-4">Terms and Conditions</h1>
 
             <section class="mb-5">

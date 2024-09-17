@@ -1,15 +1,18 @@
 <template>
     <div class="my-5 text-dark">
-        <div class="">
-            <h1 class="text-center">Testimonial</h1>
-            <router-link to="/testimonial">See All <i class="bi bi-arrow-right"></i></router-link>
+        <div class="d-flex justify-content-center align-items-center position-relative">
+            <h1 class="text-center mb-0">Testimonial</h1>
+            <router-link to="/testimonial" class="position-absolute end-0 text-decoration-none pe-md-5 pe-1" style="color: var(--bg-primary);">
+                See All <i class="bi bi-arrow-right"></i>
+            </router-link>
         </div>
+
 
         <article :class="['wrapper', { 'wrapper--vertical': isVertical }]" class="pb-5">
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container position-relative rounded p-2" style="background-color: #000;">
+                        <div class="card-container bg-light border position-relative rounded p-2">
                             <div class="card border-0">
                                 <div class="card-header d-flex justify-content-center algin-items-center">
                                     <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
@@ -18,12 +21,12 @@
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
                                 </div>
-                                <div class="card-body text-bg-dark py-2 px-1" style="max-width: 250px;">
+                                <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
                                     <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
-                                    <p class="mb-0 smaller mx-2 pb-2"
+                                    <!-- <p class="mb-0 smaller mx-2 pb-2"
                                         style="border-bottom: 2px solid black !important;">Fameset <i
-                                            class="bi bi-star-fill text-warning"></i> 8.5</p>
-                                    <p class="text-light smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
+                                            class="bi bi-star-fill text-warning"></i> 8.5</p> -->
+                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
                                         ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto iste
                                         voluptatibus error tempore qui dolores possimus, nam fugit repudiandae?</p>
                                 </div>
@@ -34,7 +37,7 @@
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container position-relative rounded p-2" style="background-color: #000;">
+                        <div class="card-container bg-light border position-relative rounded p-2">
                             <div class="card border-0">
                                 <div class="card-header d-flex justify-content-center algin-items-center">
                                     <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
@@ -43,12 +46,12 @@
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
                                 </div>
-                                <div class="card-body text-bg-dark py-2 px-1" style="max-width: 250px;">
+                                <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
                                     <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
-                                    <p class="mb-0 smaller mx-2 pb-2"
+                                    <!-- <p class="mb-0 smaller mx-2 pb-2"
                                         style="border-bottom: 2px solid black !important;">Fameset <i
-                                            class="bi bi-star-fill text-warning"></i> 8.5</p>
-                                    <p class="text-light smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
+                                            class="bi bi-star-fill text-warning"></i> 8.5</p> -->
+                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
                                         ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto iste
                                         voluptatibus error tempore qui dolores possimus, nam fugit repudiandae?</p>
                                 </div>
@@ -60,7 +63,7 @@
             <div class="marquee marquee--reverse" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'normal' : 'reverse' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container position-relative rounded p-2" style="background-color: #000;">
+                        <div class="card-container bg-light border position-relative rounded p-2">
                             <div class="card border-0">
                                 <div class="card-header d-flex justify-content-center algin-items-center">
                                     <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
@@ -69,12 +72,12 @@
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
                                 </div>
-                                <div class="card-body text-bg-dark py-2 px-1" style="max-width: 250px;">
+                                <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
                                     <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
-                                    <p class="mb-0 smaller mx-2 pb-2"
+                                    <!-- <p class="mb-0 smaller mx-2 pb-2"
                                         style="border-bottom: 2px solid black !important;">Fameset <i
-                                            class="bi bi-star-fill text-warning"></i> 8.5</p>
-                                    <p class="text-light smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
+                                            class="bi bi-star-fill text-warning"></i> 8.5</p> -->
+                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
                                         ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto iste
                                         voluptatibus error tempore qui dolores possimus, nam fugit repudiandae?</p>
                                 </div>
@@ -85,7 +88,7 @@
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'normal' : 'reverse' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container position-relative rounded p-2" style="background-color: #000;">
+                        <div class="card-container bg-light border position-relative rounded p-2">
                             <div class="card border-0">
                                 <div class="card-header d-flex justify-content-center algin-items-center">
                                     <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
@@ -94,12 +97,12 @@
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
                                 </div>
-                                <div class="card-body text-bg-dark py-2 px-1" style="max-width: 250px;">
+                                <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
                                     <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
-                                    <p class="mb-0 smaller mx-2 pb-2"
+                                    <!-- <p class="mb-0 smaller mx-2 pb-2"
                                         style="border-bottom: 2px solid black !important;">Fameset <i
-                                            class="bi bi-star-fill text-warning"></i> 8.5</p>
-                                    <p class="text-light smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
+                                            class="bi bi-star-fill text-warning"></i> 8.5</p> -->
+                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
                                         ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto iste
                                         voluptatibus error tempore qui dolores possimus, nam fugit repudiandae?</p>
                                 </div>
@@ -111,7 +114,7 @@
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container position-relative rounded p-2" style="background-color: #000;">
+                        <div class="card-container bg-light border position-relative rounded p-2">
                             <div class="card border-0">
                                 <div class="card-header d-flex justify-content-center algin-items-center">
                                     <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
@@ -120,12 +123,12 @@
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
                                 </div>
-                                <div class="card-body text-bg-dark py-2 px-1" style="max-width: 250px;">
+                                <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
                                     <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
-                                    <p class="mb-0 smaller mx-2 pb-2"
+                                    <!-- <p class="mb-0 smaller mx-2 pb-2"
                                         style="border-bottom: 2px solid black !important;">Fameset <i
-                                            class="bi bi-star-fill text-warning"></i> 8.5</p>
-                                    <p class="text-light smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
+                                            class="bi bi-star-fill text-warning"></i> 8.5</p> -->
+                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
                                         ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto iste
                                         voluptatibus error tempore qui dolores possimus, nam fugit repudiandae?</p>
                                 </div>
@@ -136,7 +139,7 @@
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container position-relative rounded p-2" style="background-color: #000;">
+                        <div class="card-container bg-light border position-relative rounded p-2">
                             <div class="card border-0">
                                 <div class="card-header d-flex justify-content-center algin-items-center">
                                     <div class="rounded-circle overflow-hidden border border-white border-2 p-1"
@@ -145,12 +148,12 @@
                                             style="width: 100%; height: 100%;object-fit: cover;" />
                                     </div>
                                 </div>
-                                <div class="card-body text-bg-dark py-2 px-1" style="max-width: 250px;">
+                                <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
                                     <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
-                                    <p class="mb-0 smaller mx-2 pb-2"
+                                    <!-- <p class="mb-0 smaller mx-2 pb-2"
                                         style="border-bottom: 2px solid black !important;">Fameset <i
-                                            class="bi bi-star-fill text-warning"></i> 8.5</p>
-                                    <p class="text-light smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
+                                            class="bi bi-star-fill text-warning"></i> 8.5</p> -->
+                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
                                         ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto iste
                                         voluptatibus error tempore qui dolores possimus, nam fugit repudiandae?</p>
                                 </div>
@@ -390,8 +393,7 @@ export default {
 
 
 .card-header {
-    background: linear-gradient(180deg, rgba(245, 197, 24, 1) 0%, rgba(33, 37, 41, 1) 95%);
-    ;
+    background: linear-gradient(180deg, rgba(126, 1, 128, 1) 0%, rgba(255, 255, 255, 1) 95%);
     padding: 10px;
     text-align: center;
     border-bottom: 0px !important;

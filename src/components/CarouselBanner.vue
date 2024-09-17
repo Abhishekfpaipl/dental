@@ -32,24 +32,24 @@ export default {
     return {
       slides: [
         {
-          image: 'https://www.thedentalroots.com/assets/images/home/award-w4.jpg',
+          image: '/img/denBanner.jpg',
           alt: 'First slide',
           title: 'expirence the thrill of peak performance',
           description: 'The 7100 series offers a hassle-free high performance solution that protects your bike and guarantees smiles for miles!',
           button: 'discover',
         },
         {
-          image: 'https://www.thedentalroots.com/assets/images/home/award-w1.jpg',
+          image: '/img/denBanner2.jpg',
           alt: 'Second slide',
           title: 'Second slide label',
           description: 'Some representative placeholder content for the second slide.'
         },
-        {
-          image: 'https://www.thedentalroots.com/assets/images/home/award-w2.jpg',
-          alt: 'Third slide',
-          title: 'Third slide label',
-          description: 'Some representative placeholder content for the third slide.'
-        }
+        // {
+        //   image: 'https://www.thedentalroots.com/assets/images/home/award-w2.jpg',
+        //   alt: 'Third slide',
+        //   title: 'Third slide label',
+        //   description: 'Some representative placeholder content for the third slide.'
+        // }
       ], 
     };
   }

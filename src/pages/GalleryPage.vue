@@ -1,40 +1,31 @@
 <template>
   <SectionTopBanner />
   <div class="container">
-    <div class="row">
-      <div class="col-md-4" v-for="(item, index) in galleryItems" :key="index">
-        <div class="card gallery-card" @mouseover="hoverItem = index" @mouseleave="hoverItem = null"
-          @click="openOffcanvas(index)">
-          <img :src="item.image" class="card-img-top" alt="Gallery image">
-          <div class="card-img-overlay" v-if="hoverItem === index">
-            <h5 class="card-title">{{ item.title }}</h5>
-          </div>
-        </div>
+    <ul class="nav nav-pills justify-content-start align-items-center" id="pills-tab" role="tablist">
+      <div class="d-flex overflow-x-scroll gap-3 my-3 p-2 px-3 rounded" id="scroll">
+        <li class="nav-item border rounded" role="presentation" v-for="(link, index) in links" :key="index">
+          <button class="nav-link" style="white-space: nowrap; color: var(--bg-primary);"
+            :class="{ 'active': index === activeTabIndex }" :id="'tab-' + index" data-bs-toggle="pill"
+            :data-bs-target="'#content-' + index" type="button" role="tab" :aria-controls="'content-' + index"
+            :aria-selected="index === activeTabIndex" @click="onTabClick(index)">{{
+              link.name
+            }}</button>
+        </li>
       </div>
-    </div>
+    </ul>
 
-    <!-- Offcanvas -->
-    <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="offcanvasGallery" aria-labelledby="offcanvasGalleryLabel">
-      <!-- <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasGalleryLabel">{{ currentTitle }}</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div> -->
-      <div class="offcanvas-body">
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item" :class="{ active: index === 0 }"
-              v-for="(carouselItem, index) in currentCarouselImages" :key="index">
-              <img :src="carouselItem" class="w-100" alt="carousel image">
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade" :class="{ 'show active': index === activeTabIndex }" v-for="(link, index) in links"
+        :key="index" :id="'content-' + index" role="tabpanel" :aria-labelledby="'tab-' + index" tabindex="0">
+        <div class="row">
+          <div class="col-md-4" v-for="(item, index) in galleryItems" :key="index">
+            <div class="card gallery-card">
+              <img :src="item.image" class="card-img-top" alt="Gallery image">
+              <div class="card-img-overlay" v-if="hoverItem === index">
+                <h5 class="card-title">{{ item.title }}</h5>
+              </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
         </div>
       </div>
     </div>
@@ -50,7 +41,18 @@ export default {
   },
   data() {
     return {
-      hoverItem: null,
+      activeTabIndex: 0,
+      links: [
+        {
+          name: "Name 1"
+        },
+        {
+          name: "Name 2"
+        },
+        {
+          name: "Name 3"
+        },
+      ],
       galleryItems: [
         {
           title: "Sushant Lok Gurgaon",
@@ -68,47 +70,31 @@ export default {
           carouselImages: ["/img/gallery/8.jpeg", "/img/gallery/9.jpeg"],
         },
       ],
-      currentTitle: '',
-      currentCarouselImages: []
     };
   },
   methods: {
-    openOffcanvas(index) {
-      this.currentTitle = this.galleryItems[index].title;
-      this.currentCarouselImages = this.galleryItems[index].carouselImages;
-      const offcanvas = new window.bootstrap.Offcanvas(document.getElementById('offcanvasGallery'));
-      offcanvas.show();
+    onTabClick(index) {
+      this.activeTabIndex = index;
+      this.scrollTabIntoView(index);
+    },
+    scrollTabIntoView(index) {
+      const tabElement = document.getElementById(`tab-${index}`);
+      if (tabElement) {
+        tabElement.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      }
     }
   }
 }
 </script>
 
 <style>
-.gallery-card {
-  position: relative;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+.nav-link {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.gallery-card:hover {
-  transform: scale(1.05);
-}
-
-.card-img-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.card-img-overlay h5 {
-  margin: 0;
-}
-
-.gallery-card:hover .card-img-overlay {
-  opacity: 1;
+.nav-link.active {
+  background-color: var(--bg-primary) !important;
+  color: white !important;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 </style>

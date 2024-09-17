@@ -1,12 +1,13 @@
 <template>
-    <footer class="text-bg-secondary py-5">
+    <footer class="pt-5" style="background-color: var(--bg-secondary); color: var(--bg-primary);">
         <div class="container">
             <div class="row">
                 <!-- Doctor Section -->
                 <div class="col-md-3">
+                    <img src="/img/logo.png" alt="The dental solutions" height="70" style="">
                     <h5 class="mb-3">{{ contact.title }}</h5>
-                    <p>{{ contact.phoneLabel }} : {{ contact.phone }}</p>
-                    <p>{{ contact.email }}</p>
+                    <p class="mb-1">{{ contact.address }}</p> 
+                    <p class="">{{ contact.email }}</p>
                 </div>
 
                 <!-- Quick Links -->
@@ -14,15 +15,19 @@
                     <h5 class="mb-3">{{ section.title }}</h5>
                     <ul class="list-unstyled">
                         <li v-for="(link, linkIndex) in section.links" :key="linkIndex">
-                            <router-link :to="link.path" class="text-decoration-none text-white">{{ link.text }}</router-link>
+                            <router-link :to="link.path" class="text-decoration-none "
+                                style=" color: var(--bg-primary)">{{ link.text
+                                }}</router-link>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="text-center mt-4">
-            <p>&copy; Thedentalsolutions. All rights reserved.</p>
-            <p>Made by passion</p>
+        <div class="py-2 d-flex justify-content-between px-md-4" style="background-color: var(--bg-primary);">
+            <p class="mb-0 text-white">All rights reserved</p>
+            <a href="https://www.covisor.in" class="text-white text-decoration-none">Copyright &copy; Covisor Infotech
+                Pvt
+                Ltd</a>
         </div>
     </footer>
 </template>
@@ -33,10 +38,11 @@ export default {
     data() {
         return {
             contact: {
-                title: "The Dental Soluction Doctors",
+                title: "Dental Solutions",
+                address: 'Dental Solutions I -98 , phase1 , Ashok vihar ,New Delhi - 110052',
                 phoneLabel: "Call us",
-                phone: "+91-8860012001",
-                email: "enquiry@thedentalsolutions.com"
+                phone: "+91-9818149152",
+                email: "enquiry@dentalsolutions.com"
             },
             sections: [
                 {
@@ -45,32 +51,30 @@ export default {
                         { path: "/about-us", text: "About us" },
                         { path: "/career", text: "Careers" },
                         { path: "/gallery", text: "Gallery" },
-                        { path: "/blogs", text: "Blogs" },
                         { path: "/faq", text: "FAQ's" },
                         { path: "/contact-us", text: "Contact Us" },
-                        { path: "/terms", text: "Terms & Conditions" },
+
                     ]
                 },
                 {
                     title: "Treatments",
                     links: [
-                        { path: "/", text: "Painless Root Canal Treatment" },
-                        { path: "/", text: "Implants" },
-                        { path: "/", text: "Kid's Dentistry" },
-                        { path: "/", text: "Painless Extractions (Tooth Removal)" },
-                        { path: "/", text: "Painless Wisdom Tooth Extraction" },
-                        { path: "/", text: "Braces" },
+                        { path: "/product-detail", text: "Painless Root Canal Treatment" },
+                        { path: "/product-detail", text: "Implants" },
+                        { path: "/product-detail", text: "Kid's Dentistry" },
+                        { path: "/product-detail", text: "Painless Extractions (Tooth Removal)" },
+                        { path: "/product-detail", text: "Painless Wisdom Tooth Extraction" },
+                        { path: "/product-detail", text: "Braces" },
                     ]
                 },
                 {
                     title: "Patient Guide",
                     links: [
-                        { path: "/testimonials", text: "Testimonials" },
-                        { path: "/", text: "Dental Tourism" },
-                        { path: "/", text: "International Patients" },
+                        { path: "/testimonial", text: "Testimonials" },
+                        { path: "/product-detail", text: "Dental Tourism" },
+                        { path: "/product-detail", text: "International Patients" },
                         { path: "/privacy", text: "Privacy Policy" },
-                        { path: "/faq", text: "FAQ's" },
-                        { path: "/contact-us", text: "Contact Us" },
+                        { path: "/terms", text: "Terms & Conditions" },
                     ]
                 }
             ]

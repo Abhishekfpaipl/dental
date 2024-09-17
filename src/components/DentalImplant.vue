@@ -1,31 +1,25 @@
 <template>
     <div class="container my-5 py-5">
-        <h2 class="text-center">Dental Implant</h2>
-        <p class="text-center mb-3">India's leading and most trusted Dental Clinic</p>
-        <div class="row align-items-center">
-            <div class="col-md-4">
-                <div class="">
-                    <div class="d-flex align-items-center gap-3" v-for="(link, index) in links" :key="index">
-                        <i class="bi bi-play-circle fs-1 text-start"></i>
-                        <p class="">{{ link.name }}</p>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-start">
-                    <button class="btn btn-outline-dark rounded-pill mt-4">Book an appointment</button>
-                </div>
+        <h2 class="text-center">Dental Implants</h2>
+        <p class="text-center mb-3">India's Premier Dental Clinic for Reliable and Advanced Implant Solutions</p>
+
+        <div class="row align-items-center" style="background-color: var(--bg-primary);">
+            <div class="col-md-6 text-center px-0">
+                <img src="/img/implant.jpg" alt="Dental Implant" class="img-fluid w-100" />
             </div>
-            <div class="col-md-4 text-center">
-                <img src="/img/implant.jpg" alt="Dental Implant" class="img-fluid" />
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-6 text-white my-3 my-md-0">
                 <p class="text-start">
-                    A dental implant is an artificial tooth root made up of titanium, which allows them to integrate
-                    with bone without being recognized as a foreign object in our body. It is placed in our jaw to hold
-                    a replacement tooth or bridge. Implants look, feel, and function like natural teeth thereby offering
-                    the most realistic, long-lasting solution for the restoration of functionality of your smile.
+                    A dental implant is an artificial tooth root, typically made of titanium, which integrates
+                    seamlessly with the bone, allowing it to be accepted naturally by the body. This advanced solution
+                    is placed into the jawbone to support a replacement tooth or bridge, restoring both the appearance
+                    and functionality of your smile. Dental implants look, feel, and function like natural teeth,
+                    offering a long-lasting and realistic solution for those seeking to regain confidence in their oral
+                    health. In India, dental implants have become increasingly popular due to their durability and
+                    ability to blend with natural teeth, making them an excellent choice for restoring smiles and
+                    improving overall dental well-being.
                 </p>
                 <div class="d-flex justify-content-center align-items-center">
-                    <router-link to="/services" class="btn btn-outline-dark rounded-pill">View All Services</router-link>
+                    <router-link to="/services" class="btn btn-light mt-3 rounded-pill">View All Services</router-link>
                 </div>
             </div>
         </div>

@@ -26,7 +26,7 @@ export default {
 
 :root {
   --bg-primary: #7E0180;
-  --bg-secondary: #FFB200;
+  --bg-secondary: #FCF0FF;
   --bg-third: #481E14;
 }
 
@@ -43,6 +43,13 @@ export default {
 .text-ellipsis {
   display: -webkit-box;
   -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-ellipsis2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
