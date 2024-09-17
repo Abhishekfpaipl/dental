@@ -23,15 +23,15 @@
                     </div>
                     <div class="position-absolute text-center start-0 ms-0" style="top: 0px;">
                         <span class="text-white smaller p-1 pt-0 rounded-end-3"
-                            style="background-color:var(--bg-primary); border:1px solid rgba(255, 162, 0, 1) !important;">
+                            style="background-color:var(--bg-primary); border:1px solid var(--bg-primary) !important;">
                             starts from ₹{{ service.price }}</span>
                     </div>
                 </router-link>
             </div>
             <div class="col-md-2 d-none d-md-block my-0">
                 <router-link to=""
-                    class="dummy-card text-decoration-none d-flex flex-column justify-content-center align-items-center text-dark"
-                    style="background-color:rgba(255, 206, 86, 0.2); border:1px solid rgba(255, 206, 86, 1) !important;">
+                    class="dummy-card text-decoration-none d-flex flex-column justify-content-center align-items-center"
+                    style="background-color:var(--bg-secondary); border:1px solid var(--bg-primary) !important; color: var(--bg-primary);">
                     <span class="me-2 text-uppercase fs-4"> see more</span> <i class="bi bi-arrow-right fs-2"></i>
                 </router-link>
             </div>
