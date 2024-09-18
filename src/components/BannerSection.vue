@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid" style="background-color: var(--bg-secondary); height: 95vh;">
-        <div class="row justify-conten-center align-items-center mt-5 pt-5">
+        <div class="row justify-conten-center align-items-center pt-5">
             <div class="col-md-5 px-md-5">
                 <h1 class="mt-4 mt-md-0">Dental Solutions</h1>
                 <AutoTypeDeleteText :texts="services" :typingSpeed="150" :deleteSpeed="50" :delay="500" />

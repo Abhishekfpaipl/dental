@@ -6,20 +6,25 @@
                 <div class="col-md-3">
                     <img src="/img/logo.png" alt="The dental solutions" height="70" style="">
                     <h5 class="mb-3">{{ contact.title }}</h5>
-                    <p class="mb-1">{{ contact.address }}</p> 
+                    <p class="mb-1">{{ contact.address }}</p>
                     <p class="">{{ contact.email }}</p>
                 </div>
 
                 <!-- Quick Links -->
-                <div class="col-md-3 text-start" v-for="(section, index) in sections" :key="index">
-                    <h5 class="mb-3">{{ section.title }}</h5>
-                    <ul class="list-unstyled">
-                        <li v-for="(link, linkIndex) in section.links" :key="linkIndex">
-                            <router-link :to="link.path" class="text-decoration-none "
-                                style=" color: var(--bg-primary)">{{ link.text
-                                }}</router-link>
-                        </li>
-                    </ul>
+                <div class="col-md-9 mt-4 mt-md-0">
+                    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-1 justify-content-center ">
+
+                        <div class="col text-center" v-for="(section, index) in sections" :key="index">
+                            <h5 class="mb-3">{{ section.title }}</h5>
+                            <ul class="list-unstyled">
+                                <li v-for="(link, linkIndex) in section.links" :key="linkIndex">
+                                    <router-link :to="link.path" class="text-decoration-none "
+                                        style=" color: var(--bg-primary)">{{ link.text
+                                        }}</router-link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,6 +62,16 @@ export default {
                     ]
                 },
                 {
+                    title: "Patient Guide",
+                    links: [
+                        { path: "/testimonial", text: "Testimonials" },
+                        { path: "/product-detail", text: "Dental Tourism" },
+                        { path: "/product-detail", text: "International Patients" },
+                        { path: "/privacy", text: "Privacy Policy" },
+                        { path: "/terms", text: "Terms & Conditions" },
+                    ]
+                },
+                {
                     title: "Treatments",
                     links: [
                         { path: "/product-detail", text: "Painless Root Canal Treatment" },
@@ -67,16 +82,6 @@ export default {
                         { path: "/product-detail", text: "Braces" },
                     ]
                 },
-                {
-                    title: "Patient Guide",
-                    links: [
-                        { path: "/testimonial", text: "Testimonials" },
-                        { path: "/product-detail", text: "Dental Tourism" },
-                        { path: "/product-detail", text: "International Patients" },
-                        { path: "/privacy", text: "Privacy Policy" },
-                        { path: "/terms", text: "Terms & Conditions" },
-                    ]
-                }
             ]
         };
     }
