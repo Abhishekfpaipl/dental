@@ -55,10 +55,10 @@ export default {
                             "sid": "dental-bridges",
                             "title": "Dental Bridges"
                         },
-                        {
-                            "sid": "scaling-and-polishing",
-                            "title": "Scaling and Polishing"
-                        }
+                        // {
+                        //     "sid": "scaling-and-polishing",
+                        //     "title": "Scaling and Polishing"
+                        // }
                     ]
                 },
                 {

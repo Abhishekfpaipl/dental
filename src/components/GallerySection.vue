@@ -12,14 +12,14 @@
   </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade p-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content bg-transparent">
-        <div class="modal-body">
-          <div class="d-flex justify-content-end">
+        <div class="modal-body p-0">
+          <!-- <div class="d-flex justify-content-end">
             <i class="bi bi-x text-white fs-1" data-bs-dismiss="modal" aria-label="Close"></i>
-          </div>
-          <div id="carouselExampleIndicators" class="carousel slide">
+          </div> -->
+          <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center align-items-center">
             <div class="carousel-indicators">
               <button v-for="(image, index) in images" :key="'indicator-' + index" type="button"
                 :data-bs-target="'#carouselExampleIndicators'" :data-bs-slide-to="index"
@@ -29,7 +29,7 @@
             <div class="carousel-inner">
               <div v-for="(image, index) in images" :key="'carousel-item-' + index" class="carousel-item"
                 :class="{ 'active': index === activeIndex }">
-                <img :src="image" class="vh-100 vw-100" alt="..." style="object-fit: contain;">
+                <img :src="image" class="vh-100 vw-100" alt="..." style="object-fit: contain;" data-bs-dismiss="modal">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -52,15 +52,15 @@
 <script>
 export default {
   name: "GallerySection",
-  props:{
-    images:{
+  props: {
+    images: {
       type: Array,
       required: true
     }
   },
   data() {
     return {
-     
+
       activeIndex: 0
     }
   },

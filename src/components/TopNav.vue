@@ -12,9 +12,8 @@
         </div>
         <div class="flex-fill d-none d-lg-flex justify-content-end gap-5 align-items-center"
             :class="{ 'hide-on-scroll': hideOnScroll }">
-            <router-link :to="link.path" v-for="(link, index) in meus" :key="index"
-                class="my-1 text-decoration-none" :class="{ 'border-bottom': $route.path === link.path }"
-                style="color:var(--bg-primary) !important;">
+            <router-link :to="link.path" v-for="(link, index) in meus" :key="index" class="my-1 text-decoration-none"
+                :class="{ 'border-bottom': $route.path === link.path }" style="color:var(--bg-primary) !important;">
                 <button @click="selectMenu(index)"
                     class="btn rounded border-0 w-100 d-flex align-items-center p-0 py-1">
                     <span>{{ link.title }}</span>
@@ -68,30 +67,50 @@ export default {
                     path: '/services',
                 },
                 {
-                    id: 1,
-                    title: 'Implants',
-                    path: '/product-detail',
+                    id: 2,
+                    title: 'About Us',
+                    path: '/about-us',
                 },
                 {
-                    id: 3,
-                    title: 'Invisalign',
-                    path: '/product-detail',
+                    id: 2,
+                    title: 'Contact Us',
+                    path: '/contact-us',
                 },
                 {
-                    id: 4,
-                    title: 'Veneers',
-                    path: '/product-detail',
+                    id: 2,
+                    title: 'Privacy Policy',
+                    path: '/privacy-policy',
                 },
                 {
-                    id: 4,
-                    title: 'Smile Makeovers',
-                    path: '/product-detail',
+                    id: 2,
+                    title: 'Gallery',
+                    path: '/gallery',
                 },
-                {
-                    id: 4,
-                    title: "Kid's Dentistry",
-                    path: '/product-detail',
-                },
+                // {
+                //     id: 1,
+                //     title: 'Implants',
+                //     path: '/product-detail',
+                // },
+                // {
+                //     id: 3,
+                //     title: 'Invisalign',
+                //     path: '/product-detail',
+                // },
+                // {
+                //     id: 4,
+                //     title: 'Veneers',
+                //     path: '/product-detail',
+                // },
+                // {
+                //     id: 4,
+                //     title: 'Smile Makeovers',
+                //     path: '/product-detail',
+                // },
+                // {
+                //     id: 4,
+                //     title: "Kid's Dentistry",
+                //     path: '/product-detail',
+                // },
             ],
             backgroundOpacity: 0,
             hideOnScroll: true,

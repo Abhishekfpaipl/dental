@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 my-5">
             <div class="col" v-for="(item, index) in services" :key="index">
-                <router-link to="/product-detail" class="card border-0 rounded-0 h-100 overflow-hidden position-relative">
+                <router-link :to="'/product-detail/' + item.sid" class="card border-0 rounded-0 h-100 overflow-hidden position-relative">
                     <div class="img-wrapper position-relative overflow-hidden" style="height: 300px;">
                         <img :src="item.image" class="card-img-top" alt="Dental Image" />
                         <div class="overlay d-flex flex-column align-items-start justify-content-end p-3">

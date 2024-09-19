@@ -1,4 +1,5 @@
 import { createStore } from "vuex";
+import gallery from "./gallery";
 
 export default createStore({
   state: {
@@ -10,6 +11,7 @@ export default createStore({
         description: 'Preview your smile visualize your teeth after invisalign',
         image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/invisalign-and-braces-the-dental-roots.jpg',
         long_description: "Invisalign aligners are virtually invisible, custom-made, and removable braces designed to correct a variety of dental issues such as crowding, overbites, and misaligned teeth. This sophisticated treatment utilizes 3D technology to create a precise series of clear aligners that gradually move your teeth into their optimal position. The journey begins with a detailed scan or impression of your teeth, followed by the creation of a customized treatment plan that maps out the movements of each tooth in a virtual setup. Once approved by your orthodontist, the aligners are crafted, and your treatment can begin. You’ll be required to wear the aligners for 20-22 hours daily, switching to the next set as instructed by your orthodontist. To ensure optimal progress, your orthodontist will schedule regular appointments at our branches in Panchsheel Park, Sushant Lok (Gurgaon), or Tata Primanti (Sohna Road). With countless satisfied patients globally, Invisalign has proven to deliver outstanding results. Our certified providers at Dental Solutions are committed to giving you the flawless smile you've always wanted—quickly and comfortably.",
+        benefitTitle: "Benefits of Invisalign",
         benefits: [
           {
             "image": "/img/productBenefits/invisible.svg",
@@ -47,7 +49,8 @@ export default createStore({
             "description": "A perfect smile can greatly enhance your self-confidence. Invisalign helps you achieve that beautiful smile discreetly, boosting your self-esteem and overall sense of well-being."
           }
         ],
-        images: [
+        typeTitle: "Types of Invisalign",
+        types: [
           {
             image: "https://www.thedentalroots.com/assets/images/Invisalign/Overbite.jpg",
             title: "Overbite",
@@ -115,7 +118,8 @@ export default createStore({
             description: "At Dental Solutions, we’re dedicated to providing the best root canal treatments with minimal discomfort and maximum effectiveness. Contact us today to book an appointment or learn more about how our advanced techniques can help you maintain a healthy, pain-free smile."
           }
         ],
-        images: [
+        typeTitle: "Types of Root Canal Treatments",
+        types: [
           {
             "image": "https://www.thedentalroots.com/assets/images/Invisalign/Overbite.jpg",
             "title": "Infected Tooth Before Treatment"
@@ -295,6 +299,7 @@ export default createStore({
             description: "Your journey to a perfect smile begins with a thorough consultation with Dr. Dheeraj Setia and his expert team. We take the time to understand your needs and tailor a bespoke treatment plan. The planning phase involves detailed imaging and three-dimensional assessments to ensure precise implant placement.",
           },
         ],
+        benefitTitle: "Benefits of Implants",
         benefits: [
           {
             "image": "/img/implants/standardImplant.svg",
@@ -616,6 +621,7 @@ export default createStore({
         description: 'Find the right denture for you!',
         image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
         long_description: "Dentures are removable dental appliances designed to replace missing teeth and restore the function and appearance of your smile. Whether you need a full set of dentures or partial dentures to replace a few missing teeth, they offer a practical and effective solution to improve oral health and confidence.",
+        benefitTitle: "Benefits of Dentures ",
         benefits: [
           {
             "image": "/img/productBenefits/invisible.svg",
@@ -669,6 +675,7 @@ export default createStore({
         description: 'We perfect  your smile with love, braces, and aligners',
         image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
         long_description: "Braces are a widely used orthodontic solution designed to correct misaligned teeth and jaw issues, providing a functional and aesthetically pleasing smile. Whether you’re dealing with crowded teeth, gaps, or bite problems, braces can help you achieve a straighter, more harmonious smile.",
+        benefitTitle: "Benefits of Braces",
         benefits: [
           {
             "image": "/img/productBenefits/metal.jpg",
@@ -763,6 +770,7 @@ export default createStore({
         description: 'Restore your smile to perfect condition',
         image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
         long_description: "Dental bridges are a popular restorative dental solution used to replace one or more missing teeth, restoring both function and appearance. A bridge is a custom-made prosthetic device that literally 'bridges' the gap created by missing teeth. It is anchored by dental crowns placed on the adjacent healthy teeth or implants, filling the space with artificial teeth designed to match your natural ones.",
+        benefitTitle: "Benefits of Dental Bridges",
         benefits: [
           {
             title: "Restores Function",
@@ -838,6 +846,7 @@ export default createStore({
         description: 'This restoractive procedure uses prosthetic devices to return your smile to its natural state',
         image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
         long_description: "Porcelain crowns are a popular and effective solution for restoring damaged or weakened teeth, providing both functional benefits and aesthetic appeal. These dental crowns, also known as ceramic crowns, are designed to mimic the natural appearance of your teeth while offering exceptional strength and durability.",
+        benefitTitle: "Benefits of Porcelain Crowns",
         benefits: [
           {
             title: "Natural Appearance",
@@ -892,14 +901,178 @@ export default createStore({
           },
           {
             title: "Caring for Porcelain Crowns:",
-            description: "To ensure the longevity of your porcelain crowns, maintain excellent oral hygiene by brushing and flossing regularly. Visit your dentist for routine check-ups and cleanings to monitor the health of your crowns and surrounding teeth. At The Dental Roots, we offer expert porcelain crown services to restore and enhance your smile with precision and care. Contact us today to schedule a consultation and discover how porcelain crowns can benefit your dental health and aesthetics.",
+            description: "To ensure the longevity of your porcelain crowns, maintain excellent oral hygiene by brushing and flossing regularly. Visit your dentist for routine check-ups and cleanings to monitor the health of your crowns and surrounding teeth. At Dental Solutions, we offer expert porcelain crown services to restore and enhance your smile with precision and care. Contact us today to schedule a consultation and discover how porcelain crowns can benefit your dental health and aesthetics.",
+          },
+        ],
+        typeTitle: "Types of Porcelain Crowns",
+        types: [
+          {
+            title: "Full Porcelain Crowns",
+            description: " Full porcelain crowns are made entirely from high-quality ceramic material. They are designed to match the natural color and translucency of your teeth, providing a seamless and aesthetically pleasing result.",
+          },
+          {
+            title: "Porcelain-Fused-to-Metal (PFM) Crowns",
+            description: " Porcelain-fused-to-metal crowns feature a metal base covered with a layer of porcelain. The metal provides strength and support, while the porcelain layer offers a natural-looking finish.",
+          },
+          {
+            title: "Zirconia Crowns",
+            description: "Zirconia crowns are made from a highly durable and biocompatible ceramic material known as zirconium oxide. These crowns are renowned for their strength and resistance to wear.",
+          },
+          {
+            title: "E-Max Crowns",
+            description: "E-Max crowns are made from lithium disilicate, a type of glass-ceramic known for its exceptional strength and translucency. They offer a balance between aesthetics and durability.",
+          },
+          {
+            title: "Leucite-Reinforced Porcelain Crowns",
+            description: "Leucite-reinforced porcelain crowns are made from a type of ceramic reinforced with leucite crystals to enhance strength and durability.",
           },
         ],
         extraInfo: {
-          title: "",
-          description: "",
+          title: "Features of Porcelain Crowns: Enhancing Your Smile with Durability and Aesthetics",
+          description: "Porcelain crowns offer a range of features that make them a popular choice for dental restoration. With their natural appearance, biocompatibility, and durability, porcelain crowns provide an ideal solution for restoring both the function and aesthetics of your teeth. They resist staining, require minimal tooth reduction, and offer a custom fit, ensuring a seamless integration with your smile. Whether used for cosmetic enhancement or functional restoration, porcelain crowns deliver a reliable and long-lasting solution for achieving a confident and beautiful smile.",
         },
+        features: [
+          "Natural Appearance:  Porcelain crowns are designed to mimic the natural color and translucency of your teeth. They blend seamlessly with surrounding teeth, making them an excellent choice for visible areas of your mouth.",
+          "Biocompatibility: Porcelain is a biocompatible material, meaning it is well-tolerated by the body and less likely to cause allergic reactions or sensitivities.",
+          "Durability: Porcelain crowns are durable and resistant to wear and tear. They can withstand the forces of chewing and biting, making them a reliable option for long-term use.",
+          "Stain Resistance: Porcelain crowns resist staining and discoloration, maintaining their appearance over time and ensuring that your smile remains bright.",
+          "Minimal Tooth Reduction:  Porcelain crowns often require less tooth reduction compared to other crown types. This means that less of the natural tooth structure is removed during the preparation process.",
+          "Custom Fit:  Each porcelain crown is custom-made to fit your tooth precisely. Advanced technology and precise measurements ensure a comfortable and accurate fit.",
+          "Versatility: Porcelain crowns are versatile and can be used in various situations, including covering discolored teeth, restoring decayed teeth, and protecting weakened teeth."
+        ]
       },
+      {
+        title: 'Implants All On 4',
+        sid: 'implants-all-on-4',
+        category: "Surgical  Dentistry",
+        description: 'Transform your smile with the All-On-4 implant technique, offering a full arch restoration using just four implants for a natural and durable solution.',
+        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        long_description: "The All-On-4 dental implant procedure is a cutting-edge solution for those looking to restore a full arch of missing teeth efficiently and effectively. This innovative technique involves placing four implants in specific locations in the jawbone to support a complete set of prosthetic teeth. The implants are strategically positioned to maximize stability and support, allowing for a secure fit and natural appearance.",
+        questions: [
+          {
+            title: "What Are All-On-4 Dental Implants?",
+            description: "All-on-4 dental implants offer a revolutionary solution for patients missing an entire arch of teeth. This advanced implant technique replaces a full set of teeth with just four strategically placed titanium posts, eliminating the need for a separate implant for each missing tooth. Ideal for both the upper and lower jaws, All-on-4 provides a secure and stable foundation for a complete set of artificial teeth.",
+          },
+          {
+            title: "What to Expect During and After the Procedure",
+            description: "Our skilled implantologist, Dr. Gupta, along with his experienced team, ensures that your All-on-4 implant procedure is as comfortable and painless as possible. Post-surgery, we may recommend medication to manage any discomfort, along with applying ice packs to reduce swelling. To aid in your recovery, avoid physical activity and stress, and maintain excellent oral hygiene. However, refrain from flossing for the first two weeks after surgery.",
+          },
+        ],
+        typeTitle: "How It Works",
+        types: [
+          {
+            title: "Strategic Placement",
+            description: "Four titanium posts are implanted into your jawbone, serving as anchors for a full arch of replacement teeth. These posts are strategically positioned to maximize stability and support.",
+          },
+          {
+            title: "Bone Integration",
+            description: "Over time, the titanium posts fuse with your jawbone in a process called osseointegration, creating a strong and durable foundation for your new teeth.",
+          },
+          {
+            title: "Immediate Results",
+            description: "The All-on-4 technique allows for the immediate placement of a temporary set of teeth on the same day as the implants, providing you with a functional and aesthetically pleasing smile right away.",
+          },
+        ],
+        benefitTitle: "Benefits of All-On-4 Dental Implants",
+        benefits: [
+          {
+            title: "Cost-Effective",
+            description: "Replacing an entire arch of teeth with just four implants reduces the overall cost compared to individual implants for each missing tooth.",
+          },
+          {
+            title: "Stability and Function",
+            description: "The implants provide a stable base for your new teeth, allowing you to eat, speak, and smile with confidence.",
+          },
+          {
+            title: "Minimal Discomfort",
+            description: " The procedure is minimally invasive, and the recovery time is typically shorter compared to traditional implant methods.",
+          },
+          {
+            title: "Bone Preservation",
+            description: "The implants help preserve the jawbone structure, preventing bone loss that can occur with missing teeth."
+          }
+        ],
+        extraInfo: {
+          title: "Comprehensive All-on-4 Dental Implants: Your Path to a Complete Smile",
+          description: "All-on-4 dental implants provide a revolutionary solution for replacing a full arch of missing teeth with just four strategically placed titanium posts. Ideal for those missing multiple teeth, this procedure offers a cost-effective, durable, and aesthetically pleasing alternative to traditional dentures. Our skilled team, led by Dr. Gupta, ensures a seamless and comfortable experience from start to finish at our convenient locations in Delhi NCR. Experience the benefits of All-on-4 dental implants and regain your confidence with a beautiful, functional smile."
+        },
+        features: [
+          "Efficient Full Arch Replacement: Replaces an entire arch of teeth with just four implants, avoiding the need for individual implants for each tooth.",
+          "Durable Titanium Posts: Utilizes titanium posts that fuse with the jawbone for a strong, long-lasting foundation.",
+          "Quick Procedure: Typically completed in one surgical session with a shorter recovery time compared to traditional implants.",
+          "Immediate Results: Provides a new set of functional teeth in a relatively short period, often with temporary teeth placed on the same day as surgery.",
+          "Cost-Effective Solution: Offers a more affordable alternative to placing individual implants for each missing tooth.",
+          "Aesthetic and Functional Restoration: Restores both the appearance and function of natural teeth, improving chewing ability and speech.",
+          "Minimized Bone Loss: Helps maintain jawbone structure by stimulating the bone through the titanium posts.",
+          "Convenient Locations: Available at our clinics Delhi NCR."
+        ]
+      },
+      {
+        title: "Implants All On 6",
+        sid: "implants-all-on-6",
+        category: "Surgical Dentistry",
+        description: "Restore your full smile with the All-On-6 implant technique, offering enhanced stability and durability by using six implants to support a full arch of replacement teeth.",
+        image: "https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/implants-the-dental-roots.jpg",
+        long_description: "The All-On-6 dental implant procedure is a modern solution for patients who need a full arch restoration of their upper or lower teeth. By placing six implants in the jawbone, we ensure maximum support for your new teeth. This advanced procedure offers a strong, natural-looking, and durable result, allowing you to eat, speak, and smile confidently. With six strategically placed implants, the distribution of pressure during chewing is optimized for a secure, long-lasting fit.",
+        questions: [
+          {
+            title: "What Are All-On-6 Dental Implants?",
+            description: "All-on-6 dental implants offer an advanced solution for patients who are missing most or all of their teeth in one arch. Unlike the All-on-4 technique, which uses four implants, All-on-6 uses six implants to provide enhanced stability and support for a full set of prosthetic teeth. This method is ideal for patients with slightly more bone density, ensuring a firm and secure foundation for long-lasting results."
+          },
+          {
+            title: "What to Expect During and After the Procedure",
+            description: "Our experienced implantologist, Dr. Gupta, and his team ensure your All-on-6 procedure is performed comfortably under local anesthesia. After the procedure, mild discomfort may be managed with prescribed medication, and ice packs can help reduce swelling. Refrain from strenuous activity for a few days post-surgery and avoid flossing for the first two weeks. Maintain good oral hygiene by gently brushing your teeth. The implants will gradually integrate with the jawbone for long-term stability."
+          }
+        ],
+        typeTitle: "How It Works",
+        types: [
+          {
+            title: "Enhanced Stability with Six Implants",
+            description: "Six titanium posts are inserted into your jawbone to support a full arch of replacement teeth. This provides greater stability and strength compared to fewer implants."
+          },
+          {
+            title: "Bone Integration",
+            description: "The implants fuse with the jawbone through a process called osseointegration, ensuring a secure and durable foundation for your prosthetic teeth."
+          },
+          {
+            title: "Immediate Results",
+            description: "The All-on-6 method often allows for the immediate placement of temporary teeth on the same day as the implants, so you can leave the clinic with a new smile."
+          }
+        ],
+        benefitTitle: "Benefits of All-On-6 Dental Implants",
+        benefits: [
+          {
+            title: "Superior Stability",
+            description: "With six implants providing support, the All-on-6 technique offers greater stability and strength, especially for patients with sufficient bone density."
+          },
+          {
+            title: "Natural Look and Function",
+            description: "The implants provide a secure base for your new teeth, restoring natural appearance and function for eating, speaking, and smiling."
+          },
+          {
+            title: "Cost-Effective for Full Arch Restoration",
+            description: "The All-on-6 technique offers a cost-effective solution to full arch restoration, reducing the need for individual implants for each missing tooth."
+          },
+          {
+            title: "Minimized Bone Loss",
+            description: "The implants help preserve the jawbone structure, preventing the bone deterioration that typically occurs when teeth are missing."
+          }
+        ],
+        extraInfo: {
+          title: "Comprehensive All-on-6 Dental Implants: Achieve a Complete, Durable Smile",
+          description: "All-on-6 dental implants offer a superior solution for those looking to replace a full arch of missing teeth with six strategically placed titanium posts. This technique ensures a stable, durable, and long-lasting foundation for a complete set of prosthetic teeth. Our expert team, led by Dr. Gupta, provides a seamless experience in our Delhi NCR locations. Discover the transformative power of All-on-6 dental implants today."
+        },
+        features: [
+          "Enhanced Full Arch Replacement: Six implants provide greater support for a full arch of teeth, compared to traditional dentures or fewer implants.",
+          "Durable Titanium Posts: The titanium implants fuse with the jawbone to create a strong, long-lasting foundation for your new teeth.",
+          "Quick Procedure: The surgery is typically completed in a single session, with a shorter recovery time compared to individual implants for each missing tooth.",
+          "Immediate Results: Temporary teeth are often placed on the same day as the implants, allowing for immediate function and improved aesthetics.",
+          "Cost-Effective Full Arch Solution: By using six implants for a full arch, this technique is more affordable compared to replacing each missing tooth individually.",
+          "Aesthetic and Functional Restoration: The All-on-6 approach restores the look, feel, and function of your natural teeth, allowing for improved chewing and speaking abilities.",
+          "Minimized Bone Loss: Stimulates the jawbone and prevents bone deterioration that occurs with missing teeth.",
+          "Available at Multiple Locations: Access expert All-on-6 dental implant services at Delhi NCR."
+        ]
+      }
     ],
     faqs: [
       {
@@ -1046,5 +1219,7 @@ export default createStore({
   },
   mutations: {},
   actions: {},
-  modules: {},
+  modules: {
+    gallery: gallery
+  },
 });

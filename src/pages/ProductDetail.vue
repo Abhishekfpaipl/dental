@@ -9,8 +9,8 @@
                         <p class="text-start fw-bold">{{ question.title }}</p>
                         <p class="text-start">{{ question.description }}</p>
                     </div>
-                    <ProductBenefitSection :title="product.title" :benefits="product.benefits" />
-                    <ProductBenefitSection :benefits="product.images" />
+                    <ProductBenefitSection :title="product.benefitTitle" :benefits="product.benefits" />
+                    <ProductBenefitSection :title="product.typeTitle" :benefits="product.types" />
                 </div>
                 <div class="col-md-4">
                     <div class="bg-light sticky-sidebar p-3 pb-4">
