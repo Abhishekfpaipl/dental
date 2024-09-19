@@ -14,27 +14,14 @@
                         </div>
                     </div>
                     <div class="d-flex flex-wrap py-3 px-2">
-                        <router-link to="/product-detail" class="btn m-1 text-white"
+                        <router-link :to="'/product-detail/' + item.sid" class="btn m-1 text-white"
                             style="background-color: var(--bg-primary);" v-for="(item, i) in service.items" :key="i">
-                            {{ item }}
+                            {{ item.title }}
                         </router-link>
-                        <!-- <ul class="list-group list-group-flush">
-                            <li class="list-group-item text-start py-1 px-0 bg-transparent text-white border-0 mb-0 pb-0"
-                                v-for="(item, i) in service.items" :key="i">
-                                <router-link to="/product-detail" class="text-dark text-decoration-none">
-                                    <i class="bi bi-chevron-right me-2"></i>{{ item }}
-                                </router-link>
-                            </li>
-                        </ul> -->
                     </div>
                 </div>
             </div>
-
         </div>
-        <!-- <router-link to="" class="text-decoration-none text-dark border-bottom pb-2 align-self-end">
-            <span>View All treatments</span>
-            <i class="bi bi-arrow-right ms-3"></i>
-        </router-link> -->
     </div>
 </template>
 
@@ -45,44 +32,98 @@ export default {
         return {
             services: [
                 {
-                    title: 'General Dentistry',
-                    image: '/img/1.png',
-                    items: [
-                        'Painless Root Canal Treatment',
-                        'Dentures',
-                        'Tooth Coloured Restoration',
-                        'Kid\'s Dentistry',
-                        'Dental Bridges',
-                        'Scaling and polishing',
-                    ],
+                    "title": "General Dentistry",
+                    "image": "/img/1.png",
+                    "items": [
+                        {
+                            "sid": "painless-root-canal-treatment",
+                            "title": "Painless Root Canal Treatment"
+                        },
+                        {
+                            "sid": "dentures",
+                            "title": "Dentures"
+                        },
+                        {
+                            "sid": "tooth-coloured-restoration",
+                            "title": "Tooth Coloured Restoration"
+                        },
+                        {
+                            "sid": "kids-dentistry",
+                            "title": "Kid's Dentistry"
+                        },
+                        {
+                            "sid": "dental-bridges",
+                            "title": "Dental Bridges"
+                        },
+                        {
+                            "sid": "scaling-and-polishing",
+                            "title": "Scaling and Polishing"
+                        }
+                    ]
                 },
                 {
-                    title: 'Cosmetic Dentistry',
-                    image: '/img/2.png',
-                    items: [
-                        'Invisalign',
-                        'Veneers',
-                        'Smile Makeovers',
-                        'Teeth Whitening',
-                        'Braces',
-                        'Porcelain Crowns',
-                    ],
+                    "title": "Cosmetic Dentistry",
+                    "image": "/img/2.png",
+                    "items": [
+                        {
+                            "sid": "invisalign",
+                            "title": "Invisalign"
+                        },
+                        {
+                            "sid": "veneers",
+                            "title": "Veneers"
+                        },
+                        {
+                            "sid": "smile-makeovers",
+                            "title": "Smile Makeovers"
+                        },
+                        {
+                            "sid": "teeth-whitening",
+                            "title": "Teeth Whitening"
+                        },
+                        {
+                            "sid": "braces",
+                            "title": "Braces"
+                        },
+                        {
+                            "sid": "porcelain-crowns",
+                            "title": "Porcelain Crowns"
+                        }
+                    ]
                 },
                 {
-                    title: 'Surgical Dentistry',
-                    image: '/img/3.png',
-                    items: [
-                        'Painless Wisdom Tooth Extraction',
-                        'Implants',
-                        'Implants all on 6',
-                        'Implants all on 4',
-                        'Painless Tooth Extractions ',
-                        'Laser Dentistry',
-                    ],
-                },
-            ],
+                    "title": "Surgical Dentistry",
+                    "image": "/img/3.png",
+                    "items": [
+                        {
+                            "sid": "painless-wisdom-tooth-extraction",
+                            "title": "Painless Wisdom Tooth Extraction"
+                        },
+                        {
+                            "sid": "implants",
+                            "title": "Implants"
+                        },
+                        {
+                            "sid": "implants-all-on-6",
+                            "title": "Implants All On 6"
+                        },
+                        {
+                            "sid": "implants-all-on-4",
+                            "title": "Implants All On 4"
+                        },
+                        {
+                            "sid": "painless-tooth-extractions",
+                            "title": "Painless Tooth Extractions"
+                        },
+                        {
+                            "sid": "laser-dentistry",
+                            "title": "Laser Dentistry"
+                        }
+                    ]
+                }
+            ]
         };
-    },
+    }, 
 };
 </script>
 

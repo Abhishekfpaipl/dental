@@ -4,123 +4,49 @@
         <div class="container my-5">
             <div class="row">
                 <div class="col-md-8">
-                    <p class="text-start">
-                        Many people assume that getting a root canal is stressful or painful—but that’s a misconception!
-                        In
-                        reality, our patients are often surprised by how comfortable and seamless the procedure is. Root
-                        canal
-                        treatment is one of the most effective solutions for stopping painful decay, treating infection,
-                        and
-                        saving a tooth from extraction.
-                    </p>
-                    <p class="text-start fw-bold">
-                        What is a Root Canal Treatment?
-                    </p>
-                    <p class="text-start">
-                        Root canal treatment, also known as endodontic therapy, is designed to eliminate bacteria from
-                        the
-                        infected
-                        root canal, prevent future infections, and save the natural tooth. This restorative procedure
-                        involves
-                        removing the inflamed or infected pulp inside the tooth, thoroughly cleaning and disinfecting
-                        the
-                        root
-                        canals, and then sealing the space with a rubber-like material. In many cases, a crown or cap is
-                        placed
-                        on
-                        the tooth afterward to strengthen and protect it.
-                    </p>
-
-                    <p class="text-start fw-bold">
-                        Comfortable, Advanced Treatment
-                    </p>
-                    <p class="text-start">
-
-                        Thanks to advancements in modern digital technology and anesthesia, root canal treatments are no
-                        longer
-                        something to dread. What once was considered painful is now a painless, efficient, and
-                        comfortable
-                        procedure. At The Dental Roots, we use state-of-the-art equipment and techniques to ensure that
-                        your
-                        treatment is as smooth and pain-free as possible.
-                    </p>
-
-                    <p class="text-start fw-bold">
-                        Why Choose Root Canal Treatment?
-                    </p>
-                    <p class="text-start">
-
-                        Root canal treatment is the best option to preserve your natural tooth and avoid more invasive
-                        and
-                        costly
-                        procedures such as tooth extraction, bridges, or implants. With proper care, a tooth that has
-                        undergone
-                        a
-                        root canal can last a lifetime, giving it a high success rate. It’s also significantly more
-                        affordable
-                        than
-                        replacing a lost tooth.
-
-                        However, maintaining good oral hygiene is essential. Even after a root canal, decay can still
-                        occur,
-                        so
-                        regular dental check-ups and cleanings are necessary to ensure long-term health and function.
-                    </p>
-
-                    <p class="text-start fw-bold">
-                        Why Choose The Dental Roots?
-                    </p>
-                    <p class="text-start">
-
-                        At The Dental Roots, we’re proud to be the only dental clinic in Delhi NCR with more than FIVE
-                        highly
-                        qualified and experienced Endodontists. With over 10 years of expertise and modern technology,
-                        we
-                        offer
-                        painless and highly effective root canal treatments that not only relieve tooth pain but also
-                        save
-                        your
-                        natural tooth. Whether you’re in New Delhi or Gurgaon, our dedicated team ensures a comfortable
-                        experience
-                        from start to finish.
-
-                        Don’t let fear or outdated information keep you from taking care of your dental health. Schedule
-                        your
-                        root
-                        canal with The Dental Roots and enjoy long-lasting relief and restored confidence in your smile!
-                    </p>
+                    <p class="text-start">{{ product.long_description }}</p>
+                    <div v-show="product.questions" v-for="(question, index) in product.questions" :key="index">
+                        <p class="text-start fw-bold">{{ question.title }}</p>
+                        <p class="text-start">{{ question.description }}</p>
+                    </div>
+                    <ProductBenefitSection :title="product.title" :benefits="product.benefits" />
+                    <ProductBenefitSection :benefits="product.images" />
                 </div>
-                <div class="col-md-4 bg-secondary">
-                    <p class="text-start py-3 fs-4">Book An Appointment</p>
-                    <form @submit.prevent="submitForm">
-                        <div class="mb-3">
-                            <input type="text" class="form-control " placeholder="Your Full Name" v-model="fullName">
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email Address" v-model="email">
-                        </div>
-                        <div class="mb-3">
-                            <input type="number" class="form-control" placeholder="Your phone Number" v-model="number">
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="4" placeholder="Write Message"
-                                v-model="message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-warning px-4 py-2">Book Now</button>
-                    </form>
+                <div class="col-md-4">
+                    <div class="bg-light sticky-sidebar p-3 pb-4">
+                        <p class="text-start py-3 fs-4">Book An Appointment</p>
+                        <form @submit.prevent="submitForm" class="">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Full Name" v-model="fullName">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email Address"
+                                    v-model="email">
+                            </div>
+                            <div class="mb-3">
+                                <input type="number" class="form-control" placeholder="Your phone Number"
+                                    v-model="number">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Write Message"
+                                    v-model="message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning px-4 py-2">Book Now</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+
         <ImageTextSection
             image-src="https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/painless-root-canal-treatment-other_img_2-the-dental-roots.jpg"
-            image-alt="Sample Image" title="Endodontics team" heading="Save your Teeth, Take Back your Life"
-            text="We offer an inclusive, non-judgemental environment where you can seek treatment for dental concerns like advanced decay. At The Dental Roots New Delhi and Gurgaon, our team is focused on delivering an enjoyable experience and successful outcomes. It all starts with our years of experience and commitment to advanced technology and the latest techniques. We’ll help you feel at home here."
-            :imageFirst="true" />
+            image-alt="Sample Image" :heading="product.extraInfo.title" :text="product.extraInfo.description"
+            :points="product.features" :imageFirst="true" />
 
-        <ImageTextSection image-src="/img/banner.jpg" image-alt="Sample Image" title="Endodontics team"
-            heading="Laser Root Canal Treatment" :points="points"
-            text="We offer an inclusive, non-judgemental environment where you can seek treatment for dental concerns like advanced decay. At The Dental Roots New Delhi and Gurgaon, our team is focused on delivering an enjoyable experience and successful outcomes. It all starts with our years of experience and commitment to advanced technology and the latest techniques. We’ll help you feel at home here."
-            :imageFirst="false" />
+        <div v-if="product.extraInfo2" class="">
+            <ImageTextSection image-src="/img/banner.jpg" image-alt="Sample Image" :heading="product.extraInfo2.title"
+                :text="product.extraInfo2.description" :points="product.features2" :imageFirst="false" />
+        </div>
 
         <!-- <ImageOverlay imageSrc="/img/banner.jpg" title="Laser Root Canal Treatment" :points="points"
             bookBtnText="Book an appointment" callBtnText="Call us: +91-8860012001" phoneNumber="+918860012001" /> -->
@@ -131,12 +57,14 @@
 </template>
 <script>
 import SectionTopBanner from '@/components/SectionTopBanner.vue';
+import ProductBenefitSection from '@/components/ProductBenefitSection.vue';
 import ImageTextSection from '@/components/ImageTextSection.vue';
 // import ImageOverlay from '@/components/ImageOverlay.vue';
 import FaqSection from '@/components/FaqSection.vue';
 import MoreServices from '@/components/MoreServices.vue';
 export default {
     components: {
+        ProductBenefitSection,
         SectionTopBanner,
         ImageTextSection,
         // ImageOverlay,
@@ -228,6 +156,12 @@ export default {
             ],
         }
     },
+    computed: {
+        product() {
+            let productId = this.$route.params.productId;
+            return this.$store.getters.getService(productId)
+        }
+    },
     methods: {
         submitForm() {
             const phoneNumber = '918860012001';
@@ -242,6 +176,14 @@ export default {
     }
 }
 </script>
-<style lang="">
+<style>
+@media (min-width: 768px) {
 
+    /* Sticky sidebar for desktop view */
+    .sticky-sidebar {
+        position: sticky;
+        top: 10%;
+        /* Adjust this value to control the top offset */
+    }
+}
 </style>

@@ -2,7 +2,7 @@
     <div class="banner-container">
         <img src="/img/sectionBanner1.jpg" alt="Product Banner" class="banner-image">
         <div class="overlay">
-            <h1 class="banner-title">{{ pageName }}</h1>
+            <h1 class="display-1 banner-title">{{ pageName }}</h1>
         </div>
     </div>
 </template>
@@ -48,8 +48,7 @@ export default {
     align-items: center;
 }
 
-.banner-title {
-    font-size: 4rem;
+.banner-title { 
     color: white;
     font-weight: bold;
     text-transform: uppercase;

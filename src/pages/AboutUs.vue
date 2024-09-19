@@ -34,7 +34,7 @@
                 routine care or a more complex procedure, we guarantee that you’ll leave with a brighter, healthier
                 smile. Visit us today and discover why Dental Solutions continues to set the standard in modern dental
                 care.
-            </p> 
+            </p>
             <ImageTextSection image-src="/img/demo.jpeg" heading="Dr. Atul Gupta" subHeading="B.D.S, M.D.S, endodontist"
                 :button="true" image-alt="Dr. Atul Gupta"
                 text="Dr. Atual Gupta is a principal dentist at THE DENTAL Solutions, providing patients with treatment involving all aspects of dentistry including painless root canal treatments, cosmetic dentistry, dental implants, rehabilitative and general dental care.\n\nHis vision is to fulfill the need for specialized dental care and treatment resulted in the establishment of The Dental Solutions, New Delhi and Gurgaon. He completed his graduation from Pune University, 1999 and did his masters in Conservative and endodontic in 2002 from Rajiv Gandhi University, Karnataka and has been providing dental care to his patients since then."
@@ -48,25 +48,28 @@
                 subtitle="Our award-winning dental team are committed to providing exceptional dental care for all patients" />
             <MoreServices :slides="slides" title="International Business Award 2018"
                 subtitle="Best Dental Hospital for Dental Implants, Root Canal Treatment and Cosmetic Dentistry in India" />
+            <WhyChooseUs />
         </div>
     </div>
 </template>
 
 <script>
 import SectionTopBanner from '@/components/SectionTopBanner.vue';
-import CounterSection from '@/components/CounterSection.vue'; 
+import CounterSection from '@/components/CounterSection.vue';
 import ImageTextSection from '@/components/ImageTextSection.vue';
 // import TeamSection from '@/components/TeamSection.vue';
 import MoreServices from '@/components/MoreServices.vue';
+import WhyChooseUs from '@/components/WhyChooseUs.vue';
 
 export default {
     name: 'AboutUs',
     components: {
         SectionTopBanner,
-        CounterSection, 
+        CounterSection,
         ImageTextSection,
         // TeamSection,
-        MoreServices
+        MoreServices,
+        WhyChooseUs
     },
     data() {
         return {

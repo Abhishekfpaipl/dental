@@ -17,6 +17,7 @@
         <DentalImplant />
         <OtherCard />
         <AboutSection />
+        <WhyChooseUs />
         <TestimonialSection />
     </div>
 </template>
@@ -31,6 +32,7 @@ import DentalImplant from '@/components/DentalImplant.vue';
 import AboutSection from '@/components/AboutSection.vue';
 // import CarouselBanner from '@/components/CarouselBanner.vue';
 import TestimonialSection from '@/components/TestimonialSection.vue';
+import WhyChooseUs from '@/components/WhyChooseUs.vue';
 import OtherCard from '@/components/OtherCard.vue';
 export default {
     name: "HomePage",
@@ -42,6 +44,7 @@ export default {
         DentalCard,
         DentalImplant,
         AboutSection,
+        WhyChooseUs,
         // CarouselBanner,
         TestimonialSection,
         OtherCard,
