@@ -4,7 +4,7 @@
         <div class="container my-5">
             <div class="row">
                 <div class="col-md-8">
-                    <p class="text-start">{{ product.long_description }}</p>
+                    <p v-if="product.long_description" class="text-start">{{ product.long_description }}</p>
                     <div v-show="product.questions" v-for="(question, index) in product.questions" :key="index">
                         <p class="text-start fw-bold">{{ question.title }}</p>
                         <p class="text-start">{{ question.description }}</p>
@@ -37,11 +37,12 @@
                 </div>
             </div>
         </div>
-
-        <ImageTextSection
-            image-src="https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/painless-root-canal-treatment-other_img_2-the-dental-roots.jpg"
-            image-alt="Sample Image" :heading="product.extraInfo.title" :text="product.extraInfo.description"
-            :points="product.features" :imageFirst="true" />
+        <div v-if="product.extraInfo" class="">
+            <ImageTextSection
+                image-src="https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/painless-root-canal-treatment-other_img_2-the-dental-roots.jpg"
+                image-alt="Sample Image" :heading="product.extraInfo.title" :text="product.extraInfo.description"
+                :points="product.features" :imageFirst="true" />
+        </div>
 
         <div v-if="product.extraInfo2" class="">
             <ImageTextSection image-src="/img/banner.jpg" image-alt="Sample Image" :heading="product.extraInfo2.title"

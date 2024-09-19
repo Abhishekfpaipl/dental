@@ -333,7 +333,7 @@ export default createStore({
           "Minimal Maintenance Required: Caring for your dental implants is straightforward. Routine brushing, flossing, and regular dental check-ups are typically sufficient to maintain their function and appearance. Implants are resistant to staining and wear, reducing the need for extensive upkeep.",
           "Enhanced Aesthetic and Functional Benefits: Implants not only restore the functionality of your smile but also enhance your overall facial aesthetics. They can improve the alignment and symmetry of your teeth, contributing to a balanced and pleasing appearance that complements your unique facial features.",
           "Bone Preservation and Structural Support: Implants help preserve the jawbone by preventing bone loss that typically occurs with missing teeth. By maintaining the bone structure, implants support surrounding teeth and help maintain facial contours, ensuring long-term oral health and stability."
-        ], 
+        ],
       },
       {
         title: 'Laser Dentistry',
@@ -341,14 +341,105 @@ export default createStore({
         category: "Surgical  Dentistry",
         description: 'In recent years, laser dentistry has superseded  many traditional dentistry practices',
         image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
-        long_description:""
+        long_description: "In recent years, laser dentistry has revolutionized traditional practices, offering precision and reducing discomfort. At Dental Solutions, with locations in Panchsheel Park New Delhi, Sushant Lok Gurgaon, and Tata Primanti Sohna Road, we leverage cutting-edge dental lasers to enhance a wide range of treatments. Our team is dedicated to incorporating the latest advancements to provide superior care and optimal patient outcomes.",
+        questions: [
+          {
+            title: "Embracing Advanced Laser Dentistry",
+            description: "In recent years, laser dentistry has revolutionized traditional practices, offering precision and reducing discomfort. At Dental Solutions, with locations in Panchsheel Park New Delhi, Sushant Lok Gurgaon, and Tata Primanti Sohna Road, we leverage cutting-edge dental lasers to enhance a wide range of treatments. Our team is dedicated to incorporating the latest advancements to provide superior care and optimal patient outcomes.",
+          },
+          {
+            title: "Precision in Periodontal Disease Treatment",
+            description: "Our use of lasers extends to treating periodontal disease, where the technology plays a crucial role in improving patient experiences. By employing lasers, we vaporize infected tissue, effectively disinfecting the area while promoting tissue regeneration. The laser's ability to seal blood vessels and nerve endings minimizes post-procedure pain and accelerates healing.",
+          },
+          {
+            title: "Sculpting Your Smile with Gum Contouring",
+            description: "Lasers are ideal for refining your gumline, whether you're addressing a gummy smile or preparing for a dental crown. By using lasers for gum contouring, we create a more balanced and aesthetically pleasing gumline, contributing to a more symmetrical smile.",
+          },
+          {
+            title: "Expanding Soft Tissue Applications",
+            description: "Our dental lasers are versatile tools for a range of soft tissue treatments. From exposing unerupted permanent teeth in children to performing frenectomies and removing tissue from partially exposed wisdom teeth, we continuously explore new uses for laser technology. Additionally, lasers are effective in treating canker sores and other oral lesions.",
+          },
+          {
+            title: "Innovative Hard Tissue Treatments",
+            description: "Laser technology also extends to hard tissue applications. We use lasers to remove tooth decay without the need for traditional drilling, preparing enamel for composite resin fillings. Lasers are highly efficient in excavating deep pits and fissures in molars before applying sealants. By effectively etching tooth enamel, lasers improve the surface for bonding and sealant application.",
+          },
+        ],
+        extraInfo: {
+          title: "A New Era of Pain-Free Dental Treatments",
+          description: "In Delhi NCR, Dental Solutions is at the forefront of revolutionizing dental care with cutting-edge laser technology. Imagine a dental experience free from the fear of noisy drills and discomfort. Laser dentistry transforms routine procedures—such as gum contouring, cavity fillings, and root canal treatments—into quicker, more precise, and remarkably comfortable experiences.",
+        },
+        features: [
+          "At Dental Solutions in New Delhi and Gurgaon, our team is expertly trained in performing a comprehensive range of dental procedures with exceptional care, whether utilizing advanced laser technology or traditional methods. While every procedure is handled with the utmost precision, laser dentistry offers distinct advantages over conventional techniques.",
+          "Laser technology provides unparalleled accuracy, often surpassing traditional scalpel precision. The thermal energy from the laser beam not only cuts but also cauterizes blood vessels simultaneously. This results in reduced bleeding, improved visibility of the surgical site, and a significant decrease in downtime and discomfort following the procedure.",
+          "With Dental Solutions, you can say goodbye to discomfort and embrace the future of dental care. Our skilled team harnesses the power of lasers to provide outstanding results in both gum health and tooth restoration. Don’t let fear or anxiety prevent you from achieving optimal oral health. Contact Dental Solutions and experience firsthand the transformative benefits of laser dentistry. Your journey to a healthier, more confident smile begins with us.",
+          "Our expertise in laser dentistry ensures you receive top-tier care and a more relaxed visit, transforming your dental experience into something you can look forward to. Bid farewell to the anxiety of past dental visits and step into a new era of pain-free, efficient treatments."
+        ],
+        extraInfo2: {
+          title: "Discover the Advantages of Laser Dentistry",
+          description: "Laser dentistry brings a host of benefits that significantly enhance the overall dental experience. Here’s how it makes a difference",
+        },
+        features2: [
+          "Accelerated Healing and Tissue Regeneration Laser technology promotes quicker healing by stimulating tissue regeneration. This means your mouth recovers faster, with less discomfort compared to traditional methods.",
+          "Preservation of Natural Tooth Structure Lasers allow for precise treatment, preserving more of your natural tooth. This is crucial for maintaining the integrity and strength of your teeth.",
+          "Minimal Bleeding During and After Treatment The laser’s thermal energy cauterizes blood vessels as it cuts, which minimizes bleeding during the procedure and reduces post-treatment bleeding.",
+          "Reduced Need for Anesthesia Laser procedures often require less anesthesia, making the treatment more comfortable and less invasive. This is particularly beneficial for patients who are sensitive to numbing agents.",
+          "Less Need for Stitches and Sutures With lasers, many procedures that traditionally require stitches can now be performed without them. This results in less discomfort and a quicker recovery time.",
+          "Lower Risk of Bacterial Infections The laser’s precision and its ability to sterilize the treatment area reduce the risk of bacterial infections after the procedure, promoting a cleaner and healthier healing process."
+        ]
       },
       {
         title: 'Smile Makeovers',
         sid: 'smile-makeovers',
         category: "Cosmetic Dentistry",
         description: 'Hollywood smile makeovers treatment',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg'
+        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        long_description: "",
+        questions: [
+          {
+            title: "Is a Smile Makeover the Right Choice?",
+            description: "Considering a smile makeover but unsure if it’s the best option for you? At Dental Solutions, we offer comprehensive evaluations to determine if a makeover aligns with your needs. Our team is dedicated to addressing a wide range of oral health and cosmetic concerns, and we’ll provide you with honest advice and explore all potential treatments to ensure you receive the best care.",
+          },
+          {
+            title: "How We Design Your Perfect Smile",
+            description: "Transform your smile into a Hollywood-worthy masterpiece at Dental Solutions. We begin with a thorough clinical evaluation of your teeth and gums, complemented by professional photographs and videos. Using advanced digital and 3D smile design technology, we meticulously craft the smile you’ve always dreamed of. Our clinic in New Delhi and Gurgaon is equipped with cutting-edge techniques and treatments such as dental veneers and laminates. Our skilled team ensures that your smile makeover is both precise and tailored to your unique needs, all while prioritizing your comfort and safety.",
+          },
+          {
+            title: "Post-Makeover Eating and Drinking",
+            description: "The ability to eat and drink immediately after a smile makeover varies depending on the procedures performed. For instance, if you’ve had dental implants, we may recommend sticking to soft foods and avoiding chewy, crunchy, or sticky items for a day or two. Our team will provide specific aftercare instructions to ensure a smooth recovery.",
+          },
+          {
+            title: "The Benefits of a Smile Makeover",
+            description: "A smile makeover can significantly enhance your confidence and overall well-being. Addressing issues such as cracks, chips, misalignment, crowding, or staining can not only improve your appearance but also reduce the risk of oral health problems. With our state-of-the-art solutions, we can completely rejuvenate your smile, helping you feel more confident and revitalized.",
+          },
+          {
+            title: "Are Smile Makeover Procedures Painful?",
+            description: "Thanks to advancements in dental technology, most procedures are minimally uncomfortable. Anesthesia is used to numb the treatment area, and over-the-counter pain relief can manage any post-procedure discomfort. Typically, any soreness subsides within 24-48 hours, allowing you to enjoy your new smile with minimal disruption.",
+          },
+          {
+            title: "Can Teenagers Get a Smile Makeover?",
+            description: "Absolutely. Provided your teeth and gums are healthy, a smile makeover can be a fantastic option for teenagers. A beautiful smile can greatly enhance self-esteem and social interactions during these formative years. If you’re a teenager or a parent considering a smile makeover, consult with us to explore the best options for achieving the smile you want.",
+          },
+          {
+            title: "How Long Does a Smile Makeover Take?",
+            description: "The duration of a smile makeover varies based on the complexity of the procedures and the extent of the changes desired. Some makeovers can be completed in a single visit, while others may require several appointments. We will work with you to develop a timeline that fits your schedule and meets your smile goals.",
+          },
+        ],
+        extraInfo: {
+          title: "Transform Your Smile, Transform Your Life",
+          description: "A smile is often the centerpiece of your personality and a key factor in how you perceive yourself. A radiant, confident smile not only enhances your own happiness but also positively impacts those around you. At Dental Solutions, our goal is to not only perfect your smile but also to foster a positive outlook on life. We are driven by the desire to bring joy to our patients, continuously improving our services and embracing cutting-edge technology to make a meaningful difference in your life. Let us help you shine brighter and feel more confident every day."
+        },
+        features: [
+          "Tailored Treatments for Your Unique Smile: Each treatment is customized to meet your specific needs and goals, ensuring that your new smile perfectly complements your individual features and enhances your natural beauty.",
+          "State-of-the-Art Technology: We use the latest advancements in dental technology to deliver precise, efficient, and comfortable treatments. From digital imaging to advanced laser technology, our tools ensure optimal results.",
+          "Expert Care and Personal Attention: Our experienced team provides personalized care, addressing all your concerns and working closely with you to achieve the smile you’ve always dreamed of. We prioritize your comfort and satisfaction throughout the entire process.",
+          "Comprehensive Smile Solutions: Whether you need veneers, implants, whitening, or other cosmetic enhancements, we offer a wide range of services to address various dental concerns and achieve a complete smile makeover.",
+          "Commitment to Your Well-Being: We focus on not just enhancing your smile but also improving your overall well-being. Our goal is to boost your confidence and self-esteem, making you feel great both inside and out.",
+          "Long-Lasting Results: Our treatments are designed to provide durable and aesthetically pleasing results. With proper care, your new smile will continue to shine brightly for years to come, bringing ongoing joy and satisfaction."
+        ],
+        extraInfo2: {
+          title: "Does Dental Insurance Cover the Cost of Smile Makeovers?",
+          description: "Dental insurance typically provides limited coverage for cosmetic procedures like smile makeovers. Most insurance plans classify these treatments as elective or aesthetic enhancements rather than essential dental care. As a result, coverage is often minimal, if available at all. However, don’t let this deter you from achieving your dream smile. Numerous financing options are available to help you manage the costs of a smile makeover. These flexible payment plans allow you to spread the cost over an extended period, making it easier to fit the investment into your budget. At Dental Solutions, we are committed to helping you explore all available options to make your smile transformation as accessible and affordable as possible. Reach out to our team to discuss how we can assist you in achieving the smile you deserve."
+        }
       },
       {
         title: 'Kids Dentistry',
@@ -356,56 +447,458 @@ export default createStore({
         category: "General Dentistry",
         description: 'Trusted pediatric dentistry at the Dental Solutions',
         image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
-        long_description: "Welcome to Dental Solutions, where we warmly invite parents and children alike, because we believe that kids bring joy to every environment—and our clinic is no exception. At Dental Solutions, we are dedicated to providing top-notch dental care for children of all ages, from toddlers to teenagers. Our highly skilled pediatric dentists ensure that every dental visit is stress-free, relaxing, and positive for your child. So, if you're searching for a trusted pediatric dental clinic near you, we’re here to help. We pride ourselves on creating a welcoming atmosphere with a friendly, caring team and in-chair entertainment to keep your child engaged and comfortable. Our dentists take the time to explain treatments in a way that your child can understand, making dental care a fun and educational experience rather than a fearful one. Additionally, Dental Solutions offers emergency pediatric dental appointments for any urgent situations. Whether it's a fall, toothache, or dental injury, we’re here to help your child feel better and put things right. We're committed to making every trip to the dentist an enjoyable experience for your little ones!"
+        long_description: "Welcome to Dental Solutions, where we warmly invite parents and children alike, because we believe that kids bring joy to every environment—and our clinic is no exception. At Dental Solutions, we are dedicated to providing top-notch dental care for children of all ages, from toddlers to teenagers. Our highly skilled pediatric dentists ensure that every dental visit is stress-free, relaxing, and positive for your child. So, if you're searching for a trusted pediatric dental clinic near you, we’re here to help. We pride ourselves on creating a welcoming atmosphere with a friendly, caring team and in-chair entertainment to keep your child engaged and comfortable. Our dentists take the time to explain treatments in a way that your child can understand, making dental care a fun and educational experience rather than a fearful one. Additionally, Dental Solutions offers emergency pediatric dental appointments for any urgent situations. Whether it's a fall, toothache, or dental injury, we’re here to help your child feel better and put things right. We're committed to making every trip to the dentist an enjoyable experience for your little ones!",
+        questions: [
+          {
+            title: "Welcoming Smiles for Every Child at Dental Solutions",
+            description: "At Dental Solutions, we know that children bring a special kind of joy, and we are committed to making every visit to our clinic a delightful experience. Our expert pediatric dentists are dedicated to providing high-quality dental care that caters specifically to the needs of kids, toddlers, and teenagers. We strive to create a relaxing and stress-free environment where your child feels at ease, with a friendly team and engaging in-chair entertainment to make dental visits enjoyable rather than intimidating.",
+          },
+          {
+            title: "Pediatric Dental Care Tailored for Your Child",
+            description: "Comprehensive Pediatric Dentistry: Our pediatric dentists, or pedodontists, specialize in the unique dental needs of children. They focus on developing healthy oral habits, monitoring dental health, and providing early intervention when necessary, including the potential need for braces. Early Positive Dental Experiences: Introducing your child to dental care at an early age helps them build a positive association with the dentist. Regular visits ensure that your child’s teeth and gums are healthy, and advancements in dental technology make it possible to prevent issues before they arise.",
+          },
+          {
+            title: "Preventive Care for Healthy Smiles",
+            description: "Dental Cleanings: Our thorough cleanings use specialized tools to remove hardened plaque that regular brushing can’t tackle. We also check for early signs of dental issues, making sure they’re addressed before they become serious. Our team is gentle and experienced in making cleanings a fun experience for your child. Fluoride Treatments: Fluoride is essential for strengthening and protecting your child's teeth against decay. We offer tasty fluoride treatments that fit seamlessly into your child’s preventative care routine. Dental Sealants: These thin, plastic coatings protect the grooves of the teeth from decay, making them easier to clean and less prone to plaque build-up. Sealants create a smooth surface that safeguards your child’s teeth from cavities.",
+          },
+          {
+            title: "Diagnostic Care for Early Detection",
+            description: "Dental Check-ups: Regular check-ups, recommended every six months, are crucial for maintaining oral health. These exams help us catch potential problems early, protecting against gum disease, tooth loss, and other conditions. Digital X-rays: Our state-of-the-art digital X-ray technology provides detailed images of your child's teeth, bones, and supporting tissues. This modern diagnostic tool allows us to quickly and accurately assess your child's dental health, all within the comfort of our clinic.",
+          },
+          {
+            title: "Emergency Dental Care for Kids",
+            description: "In case of a dental emergency, such as a fall or toothache, we offer prompt and effective care to address urgent issues and get your child back to smiling in no time. At Dental Solutions, our goal is to ensure that every child receives the best dental care while feeling relaxed and happy. From routine visits to emergency care, we are here to support your child’s dental health with compassion and expertise.",
+          },
+        ],
+        extraInfo: {
+          title: "What to Expect During Your Child’s First Dental Visit",
+          description: "At Dental Solutions, we aim to make your child’s first visit to our dental center a positive and reassuring experience. Our goal is to create a welcoming and supportive environment that makes your child’s first dental visit a smooth and enjoyable experience. At Dental Solutions, we are here to support both you and your child every step of the way in their journey to excellent oral health. Here’s what typically happens during this important initial appointment:"
+        },
+        features: [
+          " Timing of the First Visit: We recommend scheduling your child’s first “regular” dental check-up no later than their first birthday. Early visits help ensure that your child’s dental health is off to a great start.",
+          "Gentle Examination: Our team will gently and carefully examine your child’s teeth and gums. This thorough yet gentle approach helps us assess their oral health and address any concerns in a comfortable manner.",
+          "X-rays for Comprehensive Assessment: To get a complete picture of your child’s dental development, we may take X-rays. These images help us detect any early signs of decay and monitor the growth of facial bones and permanent teeth beneath the gums.",
+          "Fluoride Application: To assist in preventing tooth decay, we will apply topical fluoride. We’ll also discuss with you how to ensure your child is getting the right amount of fluoride at home for optimal dental health.",
+          "Oral Hygiene Guidance: One of the most important aspects of the visit is discussing proper brushing and care techniques. We’ll provide you with detailed instructions on how to care for your child’s teeth, ensuring they develop healthy brushing habits from a young age.",
+        ],
+        extraInfo2: {
+          title: "Our Restorative Care",
+          description: "Pediatric restorative dentistry can help improve the appearance and overall health of a child’s smile after experiencing tooth loss or damage from disease, injury, or other causes. It is important to seek proper treatment and dental reconstruction for lost or damaged teeth in order to prevent further damage and relieve difficulties with eating or speaking.",
+        },
+        features2: [
+          "Composite Fillings: Our composite fillings are a top choice for restoring your child's teeth. Made from durable, metal-free materials, these fillings blend seamlessly with their natural smile. They are designed to provide a strong and reliable solution for cavities while maintaining the aesthetic appearance of your child's teeth.",
+          "Pulpotomies and Crowns: When a baby tooth is severely damaged, decayed, or infected, a pulpotomy—essentially a baby root canal—may be necessary. We perform these procedures with utmost care, followed by placing robust crowns to restore the tooth. These crowns are crafted to ensure that the tooth remains functional for biting and chewing. Without a crown, the tooth might need to be extracted, but our goal is to preserve it for as long as possible, maintaining your child’s dental health and function.",
+          "Tooth Extraction: At Dental Solutions, we prioritize conservative treatments and consider extractions only as a last resort. If an extraction is needed, we ensure that the procedure is as comfortable and painless as possible for your child. Our pediatric dental center in Gurgaon and New Delhi is dedicated to providing gentle and thoughtful care tailored to the unique needs of young patients. If you’re searching for a compassionate and skilled pediatric dentist, schedule a consultation with us today."
+        ]
       },
       {
-        title: 'Painless Extraction (Tooth Removal)',
-        sid: 'painless-extraction-tooth-removal',
+        title: 'Painless Tooth Extraction',
+        sid: 'painless-tooth-extractions',
         category: "Surgical Dentistry",
         description: 'Painless tooth extraction in Delhi NCR, India',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg'
+        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        long_description: "At Dental Solutions, we understand that tooth extractions can be a daunting experience for both children and parents. That's why we prioritize a painless and stress-free approach to tooth removal. Our skilled team uses the latest techniques and state-of-the-art technology to ensure that the extraction process is as gentle as possible. We begin by administering a local anesthetic to numb the area, ensuring that your child remains completely comfortable throughout the procedure. We employ minimally invasive methods to carefully remove the tooth while preserving the surrounding tissue. Our goal is to make the experience as smooth and painless as possible, with minimal discomfort during and after the procedure. Post-extraction, we provide clear instructions and supportive care to aid in a swift and uneventful recovery. Whether it's for a damaged, decayed, or impacted tooth, our focus is on maintaining your child’s comfort and well-being. If you have concerns about your child's dental health or need a reliable and compassionate dentist for tooth extractions, Dental Solutions is here to provide exceptional care and support.",
+        questions: [
+          {
+            title: "Maintaining Oral Health with Tooth Extractions",
+            description: "When a tooth is beyond repair through fillings, crowns, or root canals, a dental extraction may become necessary. At our practice, we are committed to providing a thorough diagnosis and clear guidance, ensuring you are well-informed and comfortable with the process. We understand that the prospect of a tooth extraction can be stressful and anxiety-inducing. Rest assured, we offer various sedation options to ensure your comfort throughout the procedure. Our priority is to support you every step of the way. Tooth extraction is not our first choice. We explore all restorative options to preserve your natural tooth as long as possible. However, extraction might be recommended for teeth that are severely decayed, cracked, or damaged, causing intense pain, or contributing to crowding issues. Using advanced digital imaging technology, we carefully assess the condition of your tooth to make informed decisions regarding the necessity of removal.",
+          },
+          {
+            title: "Understanding Tooth Extraction Socket Preservation",
+            description: "Following a tooth extraction, an empty socket is left where the tooth once was. If this socket is not properly maintained, the supporting bone may resorb and become thin, which can complicate future treatment options such as partial dentures, bridges, or dental implants. Tooth extraction socket preservation involves techniques to minimize bone shrinkage, preserving the bone’s depth and height for better outcomes in future restorative procedures.",
+          },
+          {
+            title: "Benefits of Socket Preservation",
+            description: "Socket preservation helps maintain the horizontal facial bone structure, reducing the likelihood of requiring a replacement denture or a reline due to bone and gum shrinkage. It also minimizes gap formation under the pontic of a bridge and improves bone depth and height, enhancing the prognosis for dental implant placement and potentially reducing the need for future bone grafts. Additionally, immediate bone grafting can save up to six months of healing time compared to grafting performed after the socket has healed and shrunk.",
+          },
+        ],
+        extraInfo: {
+          title: "The Tooth Extraction Procedure: What to Expect",
+          description: "During a tooth extraction at our clinic, your comfort and well-being are our top priorities. Here’s a step-by-step overview of what you can expect during the procedure:"
+        },
+        features: [
+          "Anesthesia and Comfort: To ensure you remain comfortable throughout the extraction, we begin by administering a local anesthetic. This numbs the area around the tooth, allowing you to stay awake but pain-free during the procedure. We prioritize your comfort, so you should not experience any pain, though you may feel some pressure or movement.",
+          "Procedure Duration: The duration of the tooth extraction procedure can vary depending on several factors, including the complexity of the extraction and the tooth’s location. While some extractions may be completed in as little as 5 minutes, more complex cases could take up to 30 minutes. We will provide an estimate of the time required before the procedure begins, so you are fully informed.",
+          "Extraction Technique: The extraction process involves widening the tooth socket to facilitate the removal. We gently rock the tooth back and forth to loosen it from its socket. Once adequately loosened, the tooth is carefully extracted. Our skilled team ensures that the procedure is performed with precision to minimize discomfort and promote a smooth recovery.",
+          "Aftercare and Recovery: Following the extraction, we will provide you with detailed aftercare instructions to support your recovery. This includes guidance on managing any post-procedure discomfort, keeping the extraction site clean, and monitoring for any signs of complications. Our goal is to ensure a swift and comfortable healing process."
+        ],
+        extraInfo2: {
+          title: "Elevate Your Oral Health with Dental Solutions",
+          description: "In conclusion, Dental Solutions is your premier destination for exceptional dental care in Delhi NCR, dedicated to making high-quality oral health accessible and affordable for all. We are committed to providing clear and comprehensive guidance on tooth extraction procedures, treatment options, and associated costs, ensuring that you have a thorough understanding of your dental care journey. At Dental Solutions, we recognize that every patient’s needs are unique. During our personalized consultations, our experienced dentists conduct a thorough assessment of your specific situation. We take the time to discuss a tailored treatment plan, answer all your questions, and provide a transparent breakdown of costs, ensuring that you are fully informed and comfortable with your dental care decisions. Your oral health and satisfaction are our top priorities, and we strive to deliver exceptional care that enhances your overall well-being.",
+        },
+        features2: [
+          "Gauze Pad Placement: A gauze pad will be placed in the socket to control bleeding and aid in clotting.",
+          "Medications and Instructions: Our team will provide specific medications and detailed aftercare instructions based on your individual needs.",
+          "Healing Time: Typically, the extraction site will heal within 1-2 weeks with proper care, though it may take longer for wisdom teeth or multiple extractions.",
+          "Single or Multiple Extractions: One or more teeth can be removed during a single appointment. The choice will be based on your situation and preferences.",
+          "Wisdom Tooth Extraction: Many patients in Delhi NCR prefer to have all necessary wisdom teeth extracted in one visit to minimize downtime.",
+          "Replacement Options: We offer a variety of solutions to replace extracted teeth, ensuring you can restore your smile and maintain oral health."
+        ]
       },
       {
         title: 'Teeth Whitening',
         sid: 'teeth-whitening',
         category: "Cosmetic  Dentistry",
         description: 'Bring back  the glow  of your smile - safe, effective, and fast with long-lasting white',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg'
+        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        long_description: "Transform your smile with our professional teeth whitening services at Dental Solutions. Teeth whitening is an effective cosmetic procedure designed to remove stains and brighten your teeth, giving you a radiant, youthful appearance.",
+        questions: [
+          {
+            title: "Illuminate Your Smile with Professional Teeth Whitening",
+            description: "Nothing enhances your appearance like a radiant, pearly white smile. At Dental Solutions, we offer dentist-guided whitening treatments that are not only safe and effective but also deliver noticeable results in just a single visit.",
+          },
+          {
+            title: "Why Choose Professional Teeth Whitening?",
+            description: "Professional whitening treatments are designed to rejuvenate your smile, restoring its brilliance and brightness. This one-time procedure, performed by our expert dentists at Dental Solutions in New Delhi and Gurgaon, is among the most popular and effective cosmetic enhancements available. A vibrant smile is one of your most valuable assets—often the first thing people notice. It can significantly boost your self-confidence and leave a lasting impression. Over time, factors like coffee, tea, soda, and smoking can stain and dull your teeth. Fortunately, these stains don’t have to be permanent. At Dental Solutions, we use Philips ZOOM Whitening, a leading whitening brand requested by patients for its exceptional results. Zoom! Laser Teeth Whitening: Brilliant Results in a Single Visit Zoom! Laser Teeth Whitening is the cutting-edge treatment our cosmetic dentists use to achieve dramatic improvements in tooth color. This advanced in-office whitening technique can lighten your teeth by several shades in just one hour. During the treatment, a specially formulated bleaching solution is applied to your teeth using custom-designed trays. A laser then gently heats the solution, activating oxygen molecules that penetrate the enamel to dissolve stains. This process effectively targets extrinsic stains and can tackle more severe discoloration.",
+          },
+        ],
+        extraInfo: {
+          title: "Transform Your Smile with Expert Teeth Whitening",
+          description: "Experience affordable and comfortable teeth whitening at Dental Solutions,  in Delhi NCR. Our skilled cosmetic dentists offer a quick, painless treatment that can enhance your smile in just one hour. With state-of-the-art technology and a commitment to patient comfort, we provide safe and effective whitening tailored to your needs. Book your appointment today and enjoy a brighter, more confident smile with Dental Solutions.",
+        },
+        features: [
+          "Dental Solutions offers the most cost-effective and comfortable teeth whitening treatments in Delhi NCR. Performed by skilled cosmetic dentists, our professional teeth whitening procedure is a quick, painless, and highly effective way to rejuvenate your smile in just one hour. At Dental Solutions, we prioritize both efficiency and patient comfort, ensuring that every treatment is tailored to meet your individual needs. Our state-of-the-art facilities and well-trained team provide a safe and relaxing environment, where you can achieve noticeable results without any discomfort.",
+          "As the leading dental clinic in Delhi NCR, Dental Solutions utilizes the latest advancements in teeth whitening technology to deliver outstanding results. Whether you're dealing with stubborn stains from coffee, tea, or lifestyle factors, our personalized care guarantees a brighter, whiter smile. We are committed to transparent communication and patient satisfaction, guiding you through every step of the process to ensure you feel informed and at ease.",
+          "For those looking for a reliable and effective solution to enhance their smile, Dental Solutions is your top choice. With a reputation for excellence and attention to detail, we make achieving a radiant smile easier and more comfortable than ever. Book your appointment today and experience the difference of professional teeth whitening at Dental Solutions—where your best smile awaits!",
+        ],
       },
       {
         title: 'Painless Wisdom Tooth Extraction',
         sid: 'painless-wisdom-tooth-extraction',
         category: "Surgical Dentistry",
         description: 'A surgial procedure to remove one or more wisdom teeth',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg'
+        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        long_description: "At Dental Solutions, we specialize in providing a seamless and pain-free wisdom tooth extraction experience. Our goal is to ensure that your procedure is as comfortable and stress-free as possible, utilizing the latest techniques and anesthesia options to minimize discomfort.",
+        questions: [
+          {
+            title: "What is Wisdom Tooth Removal?",
+            description: "Wisdom tooth removal is a surgical procedure designed to extract one or more wisdom teeth, the last set of molars that typically emerge in late adolescence or early adulthood. At Dental Solutions, our primary goal is to maintain the health and strength of your natural teeth for life. Located in Gurgaon and South Delhi, our multi-specialty center features a team of skilled Oral and Maxillofacial Surgeons who are experts in handling wisdom tooth extractions and other jaw-related disorders.",
+          },
+          {
+            title: "Wisdom Teeth Treatment in Delhi NCR ",
+            description: "At Dental Solutions, wisdom tooth extraction is recommended only when necessary—typically in cases of impaction or crowding. If your wisdom teeth are correctly positioned and not causing discomfort, extraction may not be needed. However, when extraction is required, it is generally performed in a single session under local anesthesia to ensure a painless experience. Our Oral and Maxillofacial Surgeons, specializing in the diagnosis and treatment of conditions related to teeth, jaws, and facial structures, will ensure your procedure is as comfortable and efficient as possible. We provide detailed post-treatment care instructions to support a swift recovery.",
+          },
+          {
+            title: "What Causes an Impacted Wisdom Tooth?",
+            description: "Wisdom teeth often become impacted because they are the last to emerge and there may not be sufficient space in the jaw for them to come through properly. Impacted wisdom teeth can grow in the wrong direction, leading to partial or full impaction.",
+          },
+          {
+            title: "How is an Impacted Wisdom Tooth Diagnosed?",
+            description: "At Dental Solutions, we utilize advanced diagnostic tools, including an in-house OPG and CT scan machine, to accurately assess the position and condition of your wisdom teeth. X-rays help us determine if the teeth are impacted and whether they have caused any damage to surrounding teeth or bone. Based on these findings, we will discuss the benefits and risks of surgical extraction with you.",
+          },
+          {
+            title: "What are the Symptoms of an Impacted Wisdom Tooth?",
+            description: "Symptoms of an impacted wisdom tooth can vary. Some patients may experience no symptoms, while others may notice discomfort or pain. Common signs of an impacted wisdom tooth include: Pain or swelling around the jaw, Red, swollen, or bleeding gums, Bad breath, An unpleasant taste in the mouth, Difficulty opening the mouth",
+          },
+        ],
+        extraInfo: {
+          title: "How are Impacted Wisdom Teeth Treated?",
+          description: "When impacted wisdom teeth cause symptoms or dental issues, surgical extraction is often the recommended treatment. This procedure is typically performed on an outpatient basis, allowing you to return home the same day. Depending on the complexity of the extraction and your comfort level, various types of anesthesia may be used to ensure a smooth and pain-free experience:",
+        },
+        features: [
+          "Local Anesthesia: This numbs the specific area around your wisdom teeth, ensuring you remain comfortable while fully awake during the procedure.",
+          "Sedation Anesthesia: This option helps you relax and blocks pain, making the procedure more comfortable and reducing anxiety, while you remain partially conscious.",
+          "General Anesthesia: For more complex cases or if you prefer to be completely unaware of the procedure, general anesthesia is used to make you sleep throughout the extraction, so you don’t feel any pain or discomfort."
+        ],
+        extraInfo2: {
+          title: "Recovery and Care After Wisdom Tooth Extraction",
+          description: "Most people can resume their normal activities within a few days following wisdom tooth extraction, though complete healing of your mouth may take up to six weeks. For the first 4 to 5 days, a diet of soft foods is recommended to facilitate healing. Post-Surgery Care:",
+        },
+        features2: [
+          "Pain, Bleeding, and Swelling: It is normal to experience some discomfort, bleeding, and swelling after the procedure. Your dentist will provide specific instructions for managing these symptoms, including recommendations for pain medication and the use of cold compresses.",
+          "Dry Socket: Although rare, a condition known as dry socket may occur if the blood clot that forms in the extraction site is dislodged or fails to develop properly, exposing the bone. If you suspect you have a dry socket, contact your dentist immediately for treatment."
+        ]
       },
       {
         title: 'Dentures',
         sid: 'dentures',
         category: "General Dentistry",
         description: 'Find the right denture for you!',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg'
+        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        long_description: "Dentures are removable dental appliances designed to replace missing teeth and restore the function and appearance of your smile. Whether you need a full set of dentures or partial dentures to replace a few missing teeth, they offer a practical and effective solution to improve oral health and confidence.",
+        benefits: [
+          {
+            "image": "/img/productBenefits/invisible.svg",
+            "title": "Restored Function",
+            "description": "Dentures help you eat and speak more comfortably, allowing you to enjoy a varied diet and communicate clearly."
+          },
+          {
+            "image": "/img/productBenefits/invisible.svg",
+            "title": "Enhanced Appearance",
+            "description": "Custom-designed to match the natural color and shape of your teeth, dentures improve your smile and overall facial aesthetics."
+          },
+          {
+            "image": "/img/productBenefits/invisible.svg",
+            "title": "Comfort and Fit",
+            "description": "Modern dentures are crafted for a comfortable fit and natural look, with advanced materials and techniques ensuring durability and ease of use."
+          },
+        ],
+        questions: [
+          {
+            title: "Types of Dentures:",
+            description: "Full Dentures: Used when all of the natural teeth are missing, full dentures rest on the gums and are supported by the underlying bone. They are custom-made to fit snugly and look natural, providing a complete restoration of your smile.",
+          },
+          {
+            title: "",
+            description: "Partial Dentures: Ideal for those who still have some natural teeth, partial dentures fill in the gaps left by missing teeth. They are designed to blend seamlessly with your existing teeth and are anchored in place using clasps or other attachments.",
+          },
+          {
+            title: "Getting Your Dentures",
+            description: "The process of getting dentures involves several steps, including a thorough examination, impressions of your mouth, and fittings to ensure the best possible fit. Our experienced team at Dental Solutions will guide you through each stage, from selecting the right type of dentures to adjusting them for optimal comfort."
+          }
+        ],
+        extraInfo: {
+          title: "Tips and Advice for Caring for Your Dentures",
+          description: "Proper care and maintenance of your dentures are essential to ensure their longevity and your continued oral health. With the right practices, you can keep your dentures clean, comfortable, and functional. Here are some helpful tips to keep your dentures in excellent condition:",
+        },
+        features: [
+          "Clean Daily: Brush your dentures daily with a denture brush and mild denture cleaner to remove food particles and plaque. Avoid using regular toothpaste, as it can be too abrasive and damage the denture material.",
+          "Rinse After Meals: Rinse your dentures with water after eating to remove loose food particles and prevent stains. This simple step helps keep them fresh and clean.",
+          "Soak Overnight: Place your dentures in a denture cleaning solution or plain water overnight. This helps maintain their shape, prevents warping, and keeps them moist.",
+          "Handle with Care: When cleaning or handling your dentures, do so over a soft surface, like a towel or basin of water, to prevent accidental damage if they are dropped.",
+          "Check for Fit: Regularly check your dentures for signs of looseness or discomfort. If you notice any changes, visit your dentist for adjustments to ensure a proper fit.",
+          "Maintain Oral Hygiene: Even with dentures, continue to brush your gums, tongue, and any remaining natural teeth daily. This practice helps prevent oral infections and promotes overall oral health.",
+          "Avoid Harsh Chemicals: Refrain from using bleach or other harsh chemicals on your dentures, as they can damage the material. Stick to products specifically designed for denture care.",
+          "Regular Dental Visits: Schedule regular check-ups with your dentist to monitor the condition of your dentures and the health of your oral tissues. Regular visits ensure any issues are addressed promptly."
+        ]
       },
       {
         title: 'Braces',
         sid: 'braces',
         category: "Cosmetic  Dentistry",
         description: 'We perfect  your smile with love, braces, and aligners',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg'
+        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        long_description: "Braces are a widely used orthodontic solution designed to correct misaligned teeth and jaw issues, providing a functional and aesthetically pleasing smile. Whether you’re dealing with crowded teeth, gaps, or bite problems, braces can help you achieve a straighter, more harmonious smile.",
+        benefits: [
+          {
+            "image": "/img/productBenefits/metal.jpg",
+            "title": "Traditional Metal Braces",
+            "description": "Metal braces are the most common and well-known type of dental braces. They consist of metal brackets and wires, which are highly effective in correcting various dental issues. Despite their traditional appearance, modern metal braces are now more comfortable and less conspicuous than ever before."
+          },
+          {
+            "image": "/img/productBenefits/ceramic.jpg",
+            "title": "Ceramic Braces",
+            "description": "Ceramic braces, also known as clear braces, are a popular choice for those who want a less noticeable orthodontic treatment option. These braces blend in with the natural color of your teeth, making them a discreet choice while providing excellent results."
+          },
+          {
+            "image": "/img/productBenefits/lingual.svg",
+            "title": "Lingual Braces",
+            "description": "Lingual braces are hidden behind the teeth, making them completely invisible when you smile. They are custom-made to fit the contours of your teeth and are an excellent choice for those who prefer a concealed orthodontic solution."
+          },
+          {
+            "image": "/img/productBenefits/invisalign.jpg",
+            "title": "Invisalign",
+            "description": "Invisalign is a revolutionary orthodontic treatment that uses clear, removable aligners to straighten your teeth gradually. It offers the ultimate convenience and aesthetics, as the aligners are virtually invisible."
+          },
+        ],
+        questions: [
+          {
+            title: "Which Orthodontic Treatment is Right for You?",
+            description: "Choosing the right orthodontic treatment depends on your specific needs and preferences. Here’s an overview of the most common options to help you make an informed decision:",
+          },
+          {
+            title: "Metal Braces",
+            description: "Metal braces are highly effective for addressing severe crowding and misalignment. They offer precise control over tooth movement, making them a reliable choice for complex cases. However, their most notable feature—metal brackets and wires—can be more visible, which some patients find less desirable.",
+          },
+          {
+            title: "Ceramic Braces",
+            description: "Constructed from tooth-colored ceramic or porcelain materials, ceramic braces blend with the natural color of your teeth, making them less noticeable than traditional metal braces. They are effective for moderate cases and often come with wires that match the color of your teeth. The primary drawback is the potential for staining if proper oral hygiene is not maintained.",
+          },
+          {
+            title: "Invisible Braces",
+            description: " Clear aligners, also known as invisible braces, are designed for patients who prefer a more discreet option. These removable aligners are custom-made from clear plastic and gradually shift your teeth into place. They offer the advantage of being less noticeable and removable for eating and cleaning, but they can be more expensive, take longer to show results, and may not be suitable for significant dental issues.",
+          },
+          {
+            title: "Lingual Braces",
+            description: "Lingual braces are placed on the back surfaces of the teeth, making them virtually invisible from the outside. They are effective for a wide range of orthodontic issues, including complex cases. However, they can be more challenging to maintain and might be uncomfortable initially due to their placement on the tongue side of the teeth.",
+          },
+          {
+            title: "Benefits of Getting Dental Braces in India",
+            description: "Enhanced Confidence: A straighter smile can significantly boost your confidence, transforming how you feel in social and professional settings",
+          },
+          {
+            title: "Improved Oral Health",
+            description: "Correcting misalignment with braces can prevent and address oral health issues such as gum disease and tooth decay, promoting better overall dental hygiene.",
+          },
+          {
+            title: "Functional Improvements",
+            description: "Braces can improve your bite, making chewing and speaking easier, while also alleviating discomfort and jaw pain caused by misaligned teeth.",
+          },
+          {
+            title: "Long-Term Investment",
+            description: "Investing in dental braces is not just about improving your appearance but also enhancing your long-term oral health and quality of life. A well-aligned smile contributes to overall well-being and functionality.",
+          },
+          {
+            title: "",
+            description: "Whether you’re considering metal, ceramic, invisible, or lingual braces, our expert team at Dental Solutions will help you choose the best option for achieving a beautiful, healthy smile. Schedule a consultation to explore your orthodontic treatment options and start your journey to a more confident you.",
+          },
+        ],
+        extraInfo: {
+          title: "Why Orthodontic Treatment is Important",
+          description: "Orthodontic treatment plays a crucial role in maintaining optimal oral health and enhancing overall dental function. Misaligned or crowded teeth can lead to several significant issues:",
+        },
+        features: [
+          "Improved Oral Hygiene: Crowded and crooked teeth can make it challenging to maintain proper oral hygiene, increasing the risk of tooth decay, gum disease, and eventual tooth loss. Straightening your teeth makes them easier to clean, reducing the likelihood of these dental problems.",
+          "Preventing Abnormal Wear: Misalignment can cause uneven wear on tooth surfaces, leading to premature wear and potential damage. Orthodontic treatment helps distribute bite forces evenly, preventing abnormal wear and protecting your teeth.",
+          "Enhanced Chewing Function: Proper alignment improves your ability to chew food efficiently and comfortably. Misaligned teeth can affect your chewing function and lead to discomfort.",
+          "Reducing Excessive Stress: Incorrect dental structure can place undue stress on the supporting bone and surrounding tissues, potentially leading to jaw pain and other related issues. Orthodontic treatment corrects these structural imbalances, relieving unnecessary stress."
+        ],
+        extraInfo2: {
+          title: "What Should You Know Before Getting Braces?",
+          description: "Before embarking on your journey with braces, there are several important factors to consider to ensure a smooth and successful orthodontic experience:"
+        },
+        features2: [
+          "Braces Are for All Ages: Braces are not just for children or teenagers. Orthodontic treatment can be effective at any age. Whether you’re a teenager or an adult, braces can help address misaligned teeth and achieve a straighter smile.",
+          " Choose a Skilled Orthodontist: Selecting a qualified orthodontist is crucial. Orthodontists are specialists trained specifically to correct crooked teeth and manage cosmetic dental issues, offering a level of expertise beyond that of a general dentist.",
+          "Treatment Duration and Cost: Orthodontic treatment typically lasts around two years, though this can vary based on individual needs and the complexity of the case. Costs can also vary widely depending on location, the type of braces used, and the facility. Discuss treatment options and financial details with your orthodontist to understand what to expect.",
+          " Expect Some Initial Discomfort: It’s normal to experience some discomfort when you first get braces. This usually subsides after a few days. During this adjustment period, stick to soft foods and avoid hard, sticky, or sugary items that could damage the braces.",
+          "Be Aware of Potential Allergies: Some individuals may have allergies to materials used in braces, such as nickel or latex. If you have known allergies or sensitivities, inform your orthodontist, who can provide alternative materials to avoid any adverse reactions.",
+          "Retainers Are Essential: After completing your orthodontic treatment, retainers will be necessary to keep your teeth in their new positions. These retainers are often clear and discreet, and wearing them as directed will help prevent your teeth from shifting back to their original alignment.",
+        ]
       },
       {
         title: 'Dental Bridges',
         sid: 'dental-bridges',
         category: "General Dentistry",
         description: 'Restore your smile to perfect condition',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg'
+        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        long_description: "Dental bridges are a popular restorative dental solution used to replace one or more missing teeth, restoring both function and appearance. A bridge is a custom-made prosthetic device that literally 'bridges' the gap created by missing teeth. It is anchored by dental crowns placed on the adjacent healthy teeth or implants, filling the space with artificial teeth designed to match your natural ones.",
+        benefits: [
+          {
+            title: "Restores Function",
+            description: "Dental bridges restore your ability to chew and speak properly, which can be affected by missing teeth. They help maintain your bite and improve overall oral function.",
+          },
+          {
+            title: "Enhances Aesthetics",
+            description: "By filling gaps from missing teeth, bridges improve your smile’s appearance and help maintain the natural shape of your face, boosting your confidence.",
+          },
+          {
+            title: "Prevents Teeth Shifting",
+            description: "Missing teeth can cause neighboring teeth to shift out of position. A dental bridge helps maintain proper alignment, preventing further dental issues.",
+          },
+          {
+            title: "Durable and Long-Lasting",
+            description: "With proper care, dental bridges can last for many years. They are made from durable materials such as porcelain, ceramic, or metal, ensuring a long-lasting solution.",
+          },
+        ],
+        questions: [
+          {
+            title: "Discover Exceptional Dental Care in Delhi NCR",
+            description: "If you're missing one or more teeth and seeking a reliable solution, Dental Solutions is your premier destination for dental bridge treatments in Delhi NCR. Our clinics in Panchsheel Park, New Delhi, Sushant Lok, Gurgaon, and Tata Primanti Sohna Road are equipped to offer world-class dental care with a commitment to excellence and personalized treatment.",
+          },
+          {
+            title: "Why Choose Dental Bridges?",
+            description: "Dental bridges are a proven method to replace missing teeth and restore both function and aesthetics. If you: Are missing one or more teeth, Have a strong and stable bite, Prefer a non-surgical solution. Then a dental bridge might be the ideal option for you. Our expert team will evaluate your condition and help you determine if a dental bridge is the right choice for your oral health and future needs.",
+          },
+          {
+            title: "Understanding Dental Bridges",
+            description: "Dental bridges effectively 'bridge' the gap left by missing teeth. This procedure involves placing an artificial tooth, or pontic, in the gap, which is anchored securely by crowns attached to the adjacent healthy teeth (abutments). This approach can also involve dental implants for enhanced stability, particularly when multiple teeth are missing.",
+          },
+          {
+            title: "Why Dental Solutions?",
+            description: "At Dental Solutions, our experienced dentists use the latest techniques and technology to ensure your dental bridge treatment is effective, comfortable, and aesthetically pleasing. Whether you’re considering a traditional bridge or an implant-supported bridge, our team is dedicated to providing the highest quality care tailored to your needs.",
+          },
+          {
+            title: "Schedule Your Consultation Today",
+            description: "Ready to restore your smile with a dental bridge? Contact Dental Solutions for a comprehensive consultation and discover how we can help you achieve a complete and confident smile. Book your appointment today at our clinics in Delhi NCR.",
+          },
+        ],
+        extraInfo: {
+          title: "What To Expect When Getting a Bridge",
+          description: "Getting a dental bridge is a straightforward process that restores the functionality and appearance of your smile. Here’s a detailed overview of what you can expect during the procedure:",
+        },
+        features: [
+          "Comfort During the Procedure: The entire process is performed under local anaesthesia to ensure you are comfortable and experience no pain.",
+          "Preparation of the Tooth:Your dentist will assess the area and may perform additional procedures such as extractions or root canal treatments if necessary to prepare the teeth for the bridge.",
+          "Creating the Perfect Fit: An impression of the prepared area will be taken to design a bridge that fits seamlessly into your mouth, ensuring optimal comfort and function.",
+          "Temporary Bridge: While your permanent bridge is being crafted, a temporary bridge will be placed to protect your teeth and gums, allowing you to function normally.",
+          "Placement of the Permanent Bridge: Once the permanent bridge is ready, it will be placed and secured using special dental cement. Your dentist will check to ensure it fits well and matches the function and appearance of your natural teeth.",
+          "Securing the Bridge: The neighboring teeth will be prepared to serve as anchors for the bridge, ensuring a secure and stable fit.",
+          "Final Checks:  After placement, your dentist will make final adjustments to ensure the bridge functions correctly and integrates well with your smile."
+        ],
+        extraInfo2: {
+          title: "Caring for Your Dental Bridges",
+          description: "Maintaining your dental bridges is essential to ensure their longevity and keep your smile healthy. Proper care involves a few key practices and avoiding certain habits to protect your investment. Here’s how you can take care of your dental bridges effectively:"
+        },
+        features2: [
+          "Do:",
+          "Brush Regularly: Use a soft-bristle toothbrush to clean your dental bridges after every meal and snack. This helps remove food particles and plaque, keeping your bridge and surrounding teeth in excellent condition.",
+          "Floss Daily: Floss at least once a day to clean between the teeth and around the bridge. Special flossing devices or floss threaders can be used to reach under the bridge, preventing plaque buildup and gum disease.",
+          "Regular Check-ups: Schedule and attend dental cleanings every six months at our office. Regular professional cleanings ensure that your bridge is maintained properly and any potential issues are addressed promptly.",
+          "Do Not:",
+          "Avoid Abrasive Toothpaste: Refrain from using abrasive toothpaste, such as those containing baking soda or charcoal. These can scratch and damage the surface of your bridge, compromising its appearance and function.",
+          "Steer Clear of Hard Foods: Do not bite into ice, hard candy, or other hard substances. These can place undue stress on your bridge, potentially causing damage or dislodging it.",
+          "Avoid Chewing Non-Food Items: Resist the urge to chew on non-food items like pens or pencils. This habit can harm your bridge and surrounding teeth, leading to discomfort or damage."
+        ]
       },
       {
-        title: 'Procelain Crowns',
-        sid: 'procelain-crowns',
+        title: 'Porcelain Crowns',
+        sid: 'porcelain-crowns',
         category: "Cosmetic Dentistry",
         description: 'This restoractive procedure uses prosthetic devices to return your smile to its natural state',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg'
+        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        long_description: "Porcelain crowns are a popular and effective solution for restoring damaged or weakened teeth, providing both functional benefits and aesthetic appeal. These dental crowns, also known as ceramic crowns, are designed to mimic the natural appearance of your teeth while offering exceptional strength and durability.",
+        benefits: [
+          {
+            title: "Natural Appearance",
+            description: "Porcelain crowns are highly aesthetic and match the color and translucency of natural teeth, creating a seamless and attractive smile.",
+          },
+          {
+            title: "Durability",
+            description: "Made from robust ceramic materials, porcelain crowns are durable and can withstand normal chewing forces, making them a long-lasting solution.",
+          },
+          {
+            title: "Biocompatibility",
+            description: "Porcelain is a biocompatible material that is less likely to cause allergic reactions or sensitivities, ensuring comfort and safety for most patients.",
+          },
+          {
+            title: "Stain Resistance",
+            description: "Porcelain crowns resist staining and discoloration, maintaining their appearance over time and ensuring your smile remains bright.",
+          },
+        ],
+        questions: [
+          {
+            title: "What Are Porcelain Crowns?",
+            description: "Porcelain crowns are tooth-shaped caps made from high-quality ceramic materials. They are used to cover a damaged tooth, providing protection and restoring its shape, size, and function. Unlike traditional metal crowns, porcelain crowns are designed to blend seamlessly with your natural teeth, making them an ideal choice for visible areas of the mouth.",
+          },
+          {
+            title: "When Are Porcelain Crowns Used?",
+            description: "Porcelain crowns are commonly used in various dental situations, including:",
+          },
+          {
+            description: "Restoring a Tooth After Root Canal Treatment: To provide strength and protection to a tooth that has undergone a root canal.",
+          },
+          {
+            description: "Covering a Large Filling: To restore a tooth that has a substantial filling and is at risk of further damage.",
+          },
+          {
+            description: "Enhancing the Appearance of a Discolored or Misshapen Tooth: To improve the aesthetics of teeth that are uneven or have cosmetic issues.",
+          },
+          {
+            description: "Supporting a Dental Bridge: To act as an anchor for a bridge when replacing missing teeth.",
+          },
+          {
+            title: "The Procedure for Getting Porcelain Crowns:",
+            description: "Initial Consultation: Your dentist will assess your dental health and determine if a porcelain crown is the right solution for you.",
+          },
+          {
+            description: "Preparation: The damaged tooth is prepared by removing any decay and reshaping it to accommodate the crown. An impression of the tooth is then taken to create a custom-fit crown.",
+          },
+          {
+            description: "Temporary Crown: A temporary crown is placed to protect the prepared tooth while the permanent porcelain crown is being made.",
+          },
+          {
+            description: "Fitting and Cementation: Once the permanent porcelain crown is ready, it is carefully placed and adjusted for proper fit and bite. The crown is then cemented into place, completing the restoration.",
+          },
+          {
+            title: "Caring for Porcelain Crowns:",
+            description: "To ensure the longevity of your porcelain crowns, maintain excellent oral hygiene by brushing and flossing regularly. Visit your dentist for routine check-ups and cleanings to monitor the health of your crowns and surrounding teeth. At The Dental Roots, we offer expert porcelain crown services to restore and enhance your smile with precision and care. Contact us today to schedule a consultation and discover how porcelain crowns can benefit your dental health and aesthetics.",
+          },
+        ],
+        extraInfo: {
+          title: "",
+          description: "",
+        },
       },
     ],
     faqs: [

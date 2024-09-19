@@ -6,7 +6,7 @@
             <div class="col" v-for="(benefit, index) in benefits" :key="index">
                 <div class="card rounded-0 h-100">
                     <div class="card-body">
-                        <img :src="benefit.image" :alt="benefit.title" class="card-img-top"
+                        <img v-if="benefit.image" :src="benefit.image" :alt="benefit.title" class="card-img-top"
                             style="height: 80px;width: 80px;object-fit: contain;">
                         <p class="mt-4 fw-bold">{{ benefit.title }}</p>
                         <p v-if="benefit.description">{{ benefit.description }}</p>
