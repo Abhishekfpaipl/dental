@@ -22,12 +22,12 @@
                     offering a long-lasting and realistic solution for those seeking to regain confidence in their oral
                     health. In India, dental implants have become increasingly popular due to their durability and
                     ability to blend with natural teeth, making them an excellent choice for restoring smiles and
-                    improving overall dental well-being." :imageFirst="true" />
+                    improving overall dental well-being." link="/product-detail/implants" :imageFirst="true" />
 
         <DentalImplant image="/img/invisalign.jpg" title="Invisalign"
             subtitle="Invisalign is a modern, virtually invisible orthodontic treatment that uses clear, removable aligners to straighten teeth. It's an excellent option for those seeking a discreet and comfortable alternative to traditional braces."
             description="Invisalign offers an innovative approach to teeth straightening using custom-made, clear aligners that gradually shift teeth into their proper position. Unlike metal braces, Invisalign aligners are nearly invisible and can be easily removed for eating, brushing, and flossing, making them a convenient and hygienic option for both teens and adults. The aligners are made from smooth, BPA-free plastic, ensuring a comfortable fit without the discomfort of wires or brackets. Each set of aligners is worn for about two weeks, gradually moving the teeth into alignment based on the personalized treatment plan created by your dentist or orthodontist. Invisalign is ideal for treating mild to moderate orthodontic issues, offering patients a more comfortable, aesthetically pleasing solution to achieving a perfect smile."
-            :imageFirst="false" />
+            link="/product-detail/invisalign" :imageFirst="false" />
         <OtherCard />
         <AboutSection />
         <WhyChooseUs />

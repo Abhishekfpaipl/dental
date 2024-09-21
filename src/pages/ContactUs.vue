@@ -2,7 +2,7 @@
     <div class="">
 
         <SectionTopBanner />
-        <div class="container bg-white rounded-top-5" style="margin-top: -40px;" v-observe>
+        <div class="container bg-white rounded-top-5" v-observe>
             <div class="row p-3">
                 <div class="col-12 pt-4 text-center">
                     <form @submit.prevent="submitQuery()" class="mt-4 row g-3 needs-validation" novalidate>
@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-5 py-5 text-bg-dark" v-observe>
+        <div class="container-fluid mt-5 py-5" style="background-color: var(--bg-secondary);" v-observe>
             <div class="row justify-content-center align-items-center">
                 <h1 class="text-uppercase mb-4 text-center">Need to get in touch with us?</h1>
                 <div class="col-12 col-md-6 mt-5 mt-md-0 ">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <img src="/img/contactus.png" style="width: 100%;" alt="">
+                    <img src="/img/contactUs.svg" style="width: 100%;" alt="">
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-dark text-light p-4">
+    <div class=" text-light p-4" style="background-color: var(--bg-primary);">
         <h2 class="text-center mb-4">Badges</h2>
         <div class="row mt-4">
             <div class="col-md-3 mb-3" v-for="(badge, index) in badges" :key="index">

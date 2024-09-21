@@ -29,7 +29,7 @@
                 </router-link>
             </div>
             <div class="col-md-2 d-none d-md-block my-0">
-                <router-link to=""
+                <router-link to="/services"
                     class="dummy-card text-decoration-none d-flex flex-column justify-content-center align-items-center"
                     style="background-color:var(--bg-secondary); border:1px solid var(--bg-primary) !important; color: var(--bg-primary);">
                     <span class="me-2 text-uppercase fs-4"> see more</span> <i class="bi bi-arrow-right fs-2"></i>

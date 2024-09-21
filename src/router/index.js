@@ -48,15 +48,30 @@ const routes = [
   },
   {
     path: "/gallery",
-    name: "GalleryPage",
-    component: () => import('@/pages/GalleryPage.vue'),
+    // name: "GalleryPage",
+    children: [
+      {
+        path: 'office',
+        name: 'Gallery-Office',
+        component: () => import('@/pages/GalleryPage.vue'),
+      },
+      {
+        path: 'customers',
+        name: 'Gallery-Customer',
+        component: () => import('@/pages/GalleryCustomer.vue')
+      },
+      {
+        path: 'doctors',
+        name: 'Gallery-Doctors',
+        component: () => import('@/pages/GalleryDoctors.vue')
+      },
+    ]
   },
   {
     path: "/faq",
     name: "FaqPage",
     component: () => import('@/pages/FaqPage.vue'),
   },
-
 ];
 
 const router = createRouter({

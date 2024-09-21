@@ -1,12 +1,12 @@
 <template>
-    <footer class="pt-5" style="background-color: var(--bg-secondary); color: var(--bg-primary);">
+    <footer class="pt-5 bg-white text-dark">
         <div class="container">
             <div class="row">
                 <!-- Doctor Section -->
                 <div class="col-md-3">
                     <img src="/img/logo.png" alt="The dental solutions" height="70" style="">
-                    <h5 class="mb-3">{{ contact.title }}</h5>
-                    <p class="mb-1">{{ contact.address }}</p>
+                    <!-- <h5 class="mb-3">{{ contact.title }}</h5> -->
+                    <p class="mb-1 mt-3">{{ contact.address }}</p>
                     <p class="">{{ contact.email }}</p>
                 </div>
 
@@ -18,7 +18,7 @@
                             <h5 class="mb-3">{{ section.title }}</h5>
                             <ul class="list-unstyled">
                                 <li v-for="(link, linkIndex) in section.links" :key="linkIndex">
-                                    <router-link :to="link.path" class="text-decoration-none "
+                                    <router-link :to="link.path" class="text-decoration-none text-dark"
                                         style=" color: var(--bg-primary)">{{ link.text
                                         }}</router-link>
                                 </li>

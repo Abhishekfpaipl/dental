@@ -12,7 +12,7 @@
                     {{ description }}
                 </p>
                 <div class="d-flex justify-content-center align-items-center mb-4">
-                    <router-link to="/services" class="btn btn-light mt-3 rounded-pill">View All Services</router-link>
+                    <router-link :to="link" class="btn btn-light mt-3 rounded-pill primary-btn" >Know More</router-link>
                 </div>
             </div>
         </div>
@@ -44,7 +44,9 @@ export default {
             type: Boolean,
             default: true
         },
-
+        link:{
+            type: String,
+        }
     }
 };
 </script>

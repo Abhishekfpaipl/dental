@@ -1,13 +1,13 @@
 <template>
     <!-- desktop view -->
     <div class="containerr d-flex justify-content-between align-items-center gap-5" ref="topnav"
-        :style="`background: rgba(252,240,255, ${backgroundOpacity});`">
+        :style="`background: rgba(255,255,255, ${backgroundOpacity});`">
         <div class="d-flex align-items-center gap-3">
             <router-link to="/" :class="{ 'hide-on-scroll': hideOnScroll }"
                 class="text-decoration-none text-dark d-flex align-items-center gap-2">
-                <img src="/img/logo.png" alt="Dental Solutions" style="height: 40px;">
-                <span class="mb-0 fw-bold fs-4 text-uppercase" style="color:var(--bg-primary) !important">Dental
-                    Solutions</span>
+                <img src="/img/logo.png" alt="Dental Solutions" style="height: 50px;">
+                <!-- <span class="mb-0 fw-bold fs-4 text-uppercase" style="color:var(--bg-primary) !important">Dental
+                    Solutions</span> -->
             </router-link>
         </div>
         <div class="flex-fill d-none d-lg-flex justify-content-end gap-5 align-items-center"

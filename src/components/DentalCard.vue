@@ -6,16 +6,16 @@
 
         <div class="row">
             <div class="col-md-4" v-for="(service, index) in services" :key="index">
-                <div class="card h-100">
-                    <div class="card overflow-hidden position-relative mb-0">
-                        <img :src="service.image" class="card-img h-100" style="min-height: 100%;" :alt="service.title">
+                <div class="card h-100" style="border: 1px solid var(--bg-primary) !important">
+                    <div class="card overflow-hidden rounded-bottom-0 position-relative mb-0">
+                        <img :src="service.image" class="w-100" style="height: 250px;object-fit: cover;" :alt="service.title">
                         <div class="d-flex justify-content-center align-items-center overlay">
                             <h4 class="mb-1">{{ service.title }}</h4>
                         </div>
                     </div>
                     <div class="d-flex flex-wrap py-3 px-2">
-                        <router-link :to="'/product-detail/' + item.sid" class="btn m-1 text-white"
-                            style="background-color: var(--bg-primary);" v-for="(item, i) in service.items" :key="i">
+                        <router-link :to="'/product-detail/' + item.sid" class="btn m-1"
+                            style="color: var(--bg-primary); border: 1px solid var(--bg-primary)" v-for="(item, i) in service.items" :key="i">
                             {{ item.title }}
                         </router-link>
                     </div>
@@ -33,7 +33,7 @@ export default {
             services: [
                 {
                     "title": "General Dentistry",
-                    "image": "/img/1.png",
+                    "image": "/img/general.jpg",
                     "items": [
                         {
                             "sid": "painless-root-canal-treatment",
@@ -63,7 +63,7 @@ export default {
                 },
                 {
                     "title": "Cosmetic Dentistry",
-                    "image": "/img/2.png",
+                    "image": "/img/cosmetic.jpg",
                     "items": [
                         {
                             "sid": "invisalign",
@@ -93,7 +93,7 @@ export default {
                 },
                 {
                     "title": "Surgical Dentistry",
-                    "image": "/img/3.png",
+                    "image": "/img/surgical.jpg",
                     "items": [
                         {
                             "sid": "painless-wisdom-tooth-extraction",
@@ -134,7 +134,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(126, 1, 128, 0.7);
     /* Semi-transparent black */
     color: white;
 }

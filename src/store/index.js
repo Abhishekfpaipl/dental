@@ -9,7 +9,7 @@ export default createStore({
         sid: "invisalign",
         category: "Cosmetic Dentistry",
         description: 'Preview your smile visualize your teeth after invisalign',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/invisalign-and-braces-the-dental-roots.jpg',
+        image: '/img/products/invis.jpg',
         long_description: "Invisalign aligners are virtually invisible, custom-made, and removable braces designed to correct a variety of dental issues such as crowding, overbites, and misaligned teeth. This sophisticated treatment utilizes 3D technology to create a precise series of clear aligners that gradually move your teeth into their optimal position. The journey begins with a detailed scan or impression of your teeth, followed by the creation of a customized treatment plan that maps out the movements of each tooth in a virtual setup. Once approved by your orthodontist, the aligners are crafted, and your treatment can begin. You’ll be required to wear the aligners for 20-22 hours daily, switching to the next set as instructed by your orthodontist. To ensure optimal progress, your orthodontist will schedule regular appointments at our branches in Panchsheel Park, Sushant Lok (Gurgaon), or Tata Primanti (Sohna Road). With countless satisfied patients globally, Invisalign has proven to deliver outstanding results. Our certified providers at Dental Solutions are committed to giving you the flawless smile you've always wanted—quickly and comfortably.",
         benefitTitle: "Benefits of Invisalign",
         benefits: [
@@ -94,7 +94,7 @@ export default createStore({
         sid: 'painless-root-canal-treatment',
         category: "General Dentistry",
         description: 'A painless cosmetic solution for a smile you\'ll love',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/tooth-coloured-restoration-the-dental-roots.jpg',
+        image: '/img/products/rootcanal.jpg',
         long_description: " Many people assume that getting a root canal is stressful or painful—but that’s a misconception! In reality, our patients are often surprised by how comfortable and seamless the procedure is. Root canal treatment is one of the most effective solutions for stopping painful decay, treating infection, and saving a tooth from extraction.",
         questions: [
           {
@@ -162,7 +162,7 @@ export default createStore({
         sid: 'tooth-coloured-restoration',
         category: "General Dentistry",
         description: 'A painless cosmetic solution for a smile you\'ll love',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/tooth-coloured-restoration-the-dental-roots.jpg',
+        image: '/img/products/teethcolor.jpg',
         long_description: "In today's advanced world of dentistry, achieving the perfect smile goes beyond just maintaining excellent oral hygiene—it also involves the art of restorative techniques. Tooth-colored fillings and composite restorations represent a modern, innovative solution that surpasses conventional methods. These state-of-the-art procedures provide a flawless fusion of aesthetics and functionality, ensuring a natural, beautiful smile while restoring the strength and integrity of your teeth.",
         questions: [
           {
@@ -225,7 +225,7 @@ export default createStore({
         sid: 'veneers',
         category: "Cosmetic Dentistry",
         description: 'Get porcelain Veneers treatment at Dental Solutions and enhance your smile',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        image: '/img/products/veneers.jpg',
         long_description: "A beautiful smile is a powerful asset, and dissatisfaction with yours can impact every facet of your life. If you often find yourself hiding your smile or feeling self-conscious about your teeth, it could affect your confidence, job opportunities, personal relationships, and overall happiness. But you don’t have to feel this way anymore. With porcelain veneers from Dental Solutions, you can achieve a radiant smile that reflects your confidence and enhances your appearance. Our expert team in New Delhi and Gurgaon works closely with a renowned master ceramist to design veneers that are custom-crafted to complement your unique smile and facial features. The veneers we offer are not only stunning but also durable, addressing a wide range of cosmetic concerns to give you a smile that you’ll be proud to share with the world. Porcelain veneers are thin, custom-made shells made of tooth-coloured materials like porcelain or resin composite. They are expertly designed to cover the front surface of teeth, improving their shape, size, and colour. Minimal tooth preparation is required, as only a small portion of the tooth's front surface is trimmed. Veneers are ideal for those with discoloured, chipped, uneven, or irregularly shaped teeth, or for closing gaps. Veneers are one of our most sought-after cosmetic treatments for a reason—they offer a transformative boost to your confidence. Not only do they conceal imperfections, but they can also enhance your facial symmetry, highlighting your natural features like cheekbones.",
         questions: [
           {
@@ -283,7 +283,7 @@ export default createStore({
         sid: 'implants',
         category: "Surgical  Dentistry",
         description: 'India’s leading and most trusted Dental Clinic',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/tooth-coloured-restoration-the-dental-roots.jpg',
+        image: '/img/products/implants.jpg',
         long_description: "A radiant smile can be transformative, and at Dental Solutions, we understand the importance of achieving the highest standard of dental care. Our clinic, renowned for luxury and excellence, offers state-of-the-art dental implant services in Delhi and Gurgaon. With the latest technology and personalized treatment plans, we ensure that every patient receives the best care for a stunning and functional smile.",
         questions: [
           {
@@ -345,7 +345,7 @@ export default createStore({
         sid: 'laser-dentistry',
         category: "Surgical  Dentistry",
         description: 'In recent years, laser dentistry has superseded  many traditional dentistry practices',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        image: '/img/products/laser.jpg',
         long_description: "In recent years, laser dentistry has revolutionized traditional practices, offering precision and reducing discomfort. At Dental Solutions, with locations in Panchsheel Park New Delhi, Sushant Lok Gurgaon, and Tata Primanti Sohna Road, we leverage cutting-edge dental lasers to enhance a wide range of treatments. Our team is dedicated to incorporating the latest advancements to provide superior care and optimal patient outcomes.",
         questions: [
           {
@@ -397,7 +397,7 @@ export default createStore({
         sid: 'smile-makeovers',
         category: "Cosmetic Dentistry",
         description: 'Hollywood smile makeovers treatment',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        image: '/img/products/smile.jpg',
         long_description: "",
         questions: [
           {
@@ -451,7 +451,7 @@ export default createStore({
         sid: 'kids-dentistry',
         category: "General Dentistry",
         description: 'Trusted pediatric dentistry at the Dental Solutions',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        image: '/img/products/kids.jpg',
         long_description: "Welcome to Dental Solutions, where we warmly invite parents and children alike, because we believe that kids bring joy to every environment—and our clinic is no exception. At Dental Solutions, we are dedicated to providing top-notch dental care for children of all ages, from toddlers to teenagers. Our highly skilled pediatric dentists ensure that every dental visit is stress-free, relaxing, and positive for your child. So, if you're searching for a trusted pediatric dental clinic near you, we’re here to help. We pride ourselves on creating a welcoming atmosphere with a friendly, caring team and in-chair entertainment to keep your child engaged and comfortable. Our dentists take the time to explain treatments in a way that your child can understand, making dental care a fun and educational experience rather than a fearful one. Additionally, Dental Solutions offers emergency pediatric dental appointments for any urgent situations. Whether it's a fall, toothache, or dental injury, we’re here to help your child feel better and put things right. We're committed to making every trip to the dentist an enjoyable experience for your little ones!",
         questions: [
           {
@@ -501,7 +501,7 @@ export default createStore({
         sid: 'painless-tooth-extractions',
         category: "Surgical Dentistry",
         description: 'Painless tooth extraction in Delhi NCR, India',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        image: '/img/products/toothextraction.jpg',
         long_description: "At Dental Solutions, we understand that tooth extractions can be a daunting experience for both children and parents. That's why we prioritize a painless and stress-free approach to tooth removal. Our skilled team uses the latest techniques and state-of-the-art technology to ensure that the extraction process is as gentle as possible. We begin by administering a local anesthetic to numb the area, ensuring that your child remains completely comfortable throughout the procedure. We employ minimally invasive methods to carefully remove the tooth while preserving the surrounding tissue. Our goal is to make the experience as smooth and painless as possible, with minimal discomfort during and after the procedure. Post-extraction, we provide clear instructions and supportive care to aid in a swift and uneventful recovery. Whether it's for a damaged, decayed, or impacted tooth, our focus is on maintaining your child’s comfort and well-being. If you have concerns about your child's dental health or need a reliable and compassionate dentist for tooth extractions, Dental Solutions is here to provide exceptional care and support.",
         questions: [
           {
@@ -545,7 +545,7 @@ export default createStore({
         sid: 'teeth-whitening',
         category: "Cosmetic  Dentistry",
         description: 'Bring back  the glow  of your smile - safe, effective, and fast with long-lasting white',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        image: '/img/products/teethwhite.jpg',
         long_description: "Transform your smile with our professional teeth whitening services at Dental Solutions. Teeth whitening is an effective cosmetic procedure designed to remove stains and brighten your teeth, giving you a radiant, youthful appearance.",
         questions: [
           {
@@ -572,7 +572,7 @@ export default createStore({
         sid: 'painless-wisdom-tooth-extraction',
         category: "Surgical Dentistry",
         description: 'A surgial procedure to remove one or more wisdom teeth',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        image: '/img/products/wisdom.jpg',
         long_description: "At Dental Solutions, we specialize in providing a seamless and pain-free wisdom tooth extraction experience. Our goal is to ensure that your procedure is as comfortable and stress-free as possible, utilizing the latest techniques and anesthesia options to minimize discomfort.",
         questions: [
           {
@@ -619,7 +619,7 @@ export default createStore({
         sid: 'dentures',
         category: "General Dentistry",
         description: 'Find the right denture for you!',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        image: '/img/products/dentures.jpg',
         long_description: "Dentures are removable dental appliances designed to replace missing teeth and restore the function and appearance of your smile. Whether you need a full set of dentures or partial dentures to replace a few missing teeth, they offer a practical and effective solution to improve oral health and confidence.",
         benefitTitle: "Benefits of Dentures ",
         benefits: [
@@ -673,7 +673,7 @@ export default createStore({
         sid: 'braces',
         category: "Cosmetic  Dentistry",
         description: 'We perfect  your smile with love, braces, and aligners',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        image: '/img/products/braces.jpg',
         long_description: "Braces are a widely used orthodontic solution designed to correct misaligned teeth and jaw issues, providing a functional and aesthetically pleasing smile. Whether you’re dealing with crowded teeth, gaps, or bite problems, braces can help you achieve a straighter, more harmonious smile.",
         benefitTitle: "Benefits of Braces",
         benefits: [
@@ -768,7 +768,7 @@ export default createStore({
         sid: 'dental-bridges',
         category: "General Dentistry",
         description: 'Restore your smile to perfect condition',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        image: '/img/products/dentalbridges.jpg',
         long_description: "Dental bridges are a popular restorative dental solution used to replace one or more missing teeth, restoring both function and appearance. A bridge is a custom-made prosthetic device that literally 'bridges' the gap created by missing teeth. It is anchored by dental crowns placed on the adjacent healthy teeth or implants, filling the space with artificial teeth designed to match your natural ones.",
         benefitTitle: "Benefits of Dental Bridges",
         benefits: [
@@ -844,7 +844,7 @@ export default createStore({
         sid: 'porcelain-crowns',
         category: "Cosmetic Dentistry",
         description: 'This restoractive procedure uses prosthetic devices to return your smile to its natural state',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        image: '/img/products/crown.jpg',
         long_description: "Porcelain crowns are a popular and effective solution for restoring damaged or weakened teeth, providing both functional benefits and aesthetic appeal. These dental crowns, also known as ceramic crowns, are designed to mimic the natural appearance of your teeth while offering exceptional strength and durability.",
         benefitTitle: "Benefits of Porcelain Crowns",
         benefits: [
@@ -946,7 +946,7 @@ export default createStore({
         sid: 'implants-all-on-4',
         category: "Surgical  Dentistry",
         description: 'Transform your smile with the All-On-4 implant technique, offering a full arch restoration using just four implants for a natural and durable solution.',
-        image: 'https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/veneers-the-dental-roots.jpg',
+        image: '/img/products/implants.jpg',
         long_description: "The All-On-4 dental implant procedure is a cutting-edge solution for those looking to restore a full arch of missing teeth efficiently and effectively. This innovative technique involves placing four implants in specific locations in the jawbone to support a complete set of prosthetic teeth. The implants are strategically positioned to maximize stability and support, allowing for a secure fit and natural appearance.",
         questions: [
           {
@@ -1012,7 +1012,7 @@ export default createStore({
         sid: "implants-all-on-6",
         category: "Surgical Dentistry",
         description: "Restore your full smile with the All-On-6 implant technique, offering enhanced stability and durability by using six implants to support a full arch of replacement teeth.",
-        image: "https://www.thedentalroots.com/TheDentalRootslmages/ServiceImages/implants-the-dental-roots.jpg",
+        image: "/img/products/implants.jpg",
         long_description: "The All-On-6 dental implant procedure is a modern solution for patients who need a full arch restoration of their upper or lower teeth. By placing six implants in the jawbone, we ensure maximum support for your new teeth. This advanced procedure offers a strong, natural-looking, and durable result, allowing you to eat, speak, and smile confidently. With six strategically placed implants, the distribution of pressure during chewing is optimized for a secure, long-lasting fit.",
         questions: [
           {
