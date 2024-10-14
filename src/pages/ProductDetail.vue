@@ -3,7 +3,22 @@
         <SectionTopBanner />
         <div class="container my-5">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-12 mb-5 ">
+                    <div class="d-none d-md-flex justify-content-center align-items-center gap-3">
+                        <!-- <a href="/img/demo.pdf" download="file.pdf" class="btn w-25"
+                            style="border:1px solid rgba(255, 162, 0, 1) !important;">
+                            <i class="bi bi-download me-2"></i>
+                            <span>Download</span>
+                        </a> -->
+                        <button class="btn d-flex justify-content-center align-items-center w-25"
+                            style="background-color:rgba(255, 206, 86, 1); border:1px solid rgba(255, 162, 0, 1) !important;"
+                            data-bs-toggle="modal" data-bs-target="#enquirymodal"><span> Enquiry </span><i
+                                class="bi bi-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- <div class="col-md-8"> -->
+                <div class="col-12">
                     <p v-if="product.long_description" class="text-start">{{ product.long_description }}</p>
                     <div v-show="product.questions" v-for="(question, index) in product.questions" :key="index">
                         <p class="text-start fw-bold">{{ question.title }}</p>
@@ -12,7 +27,7 @@
                     <ProductBenefitSection :title="product.benefitTitle" :benefits="product.benefits" />
                     <ProductBenefitSection :title="product.typeTitle" :benefits="product.types" />
                 </div>
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <div class="bg-light sticky-sidebar p-3 pb-4">
                         <p class="text-start py-3 fs-4">Book An Appointment</p>
                         <form @submit.prevent="submitForm" class="">
@@ -34,7 +49,7 @@
                             <button type="submit" class="btn btn-warning px-4 py-2">Book Now</button>
                         </form>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div v-if="product.extraInfo" class="">
@@ -52,6 +67,47 @@
         <MoreServices :slides="services" title="More services"
             subtitle="India’s leading and most trusted Dental Clinic" />
         <FaqSection />
+    </div>
+    <div class="position-fixed bottom-0 w-100 btn-group d-flex d-md-none" style="z-index:10">
+        <a href="/img/demo.pdf" download="file.pdf" class="btn btn-dark w-25 rounded-0"><i
+                class="bi bi-download fs-2"></i></a>
+        <button class="btn btn-warning w-75 rounded-0 d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal" data-bs-target="#enquirymodal">
+            <span class="text-dark fs-5">₹ 9999</span>
+            <span class="ms-2 fs-5">Enquiry</span>
+            <i class="bi bi-arrow-right ms-2 fs-1"></i>
+        </button>
+    </div>
+    <div class="modal fade" id="enquirymodal" tabindex="-1" aria-labelledby="enquirymodalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content position-relative">
+                <div class="modal-header border-0 pt-4">
+                    <h1 class="modal-title fs-5" id="enquirymodalLabel">{{ pageName }}</h1>
+                </div>
+                <div class="position-absolute rounded-circle wh-40 bg-danger text-white px-2 p-1 end-0"
+                    data-bs-dismiss="modal" style="top: -3%;">
+                    <i class="bi bi-x fs-5"></i>
+                </div>
+                <div class="modal-body">
+                    <form @submit.prevent="submitForm" class="">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Full Name" v-model="fullName">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email Address" v-model="email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" placeholder="Your phone Number" v-model="number">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Write Message"
+                                v-model="message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning px-4 py-2">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -97,7 +153,7 @@ export default {
 
             const url = `https://wa.me/${phoneNumber}?text=${message}`;
             window.open(url, '_blank');
-        }
+        },
     }
 }
 </script>

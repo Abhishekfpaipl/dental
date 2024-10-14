@@ -1,7 +1,8 @@
 <template>
     <!-- desktop view -->
-    <div class="containerr d-flex justify-content-between align-items-center gap-5" ref="topnav"
-        :style="`background: rgba(255,255,255, ${backgroundOpacity});`">
+    <!-- <div class="containerr d-flex justify-content-between align-items-center gap-5" ref="topnav"
+        :style="`background: rgba(255,255,255, ${backgroundOpacity});`"> -->
+    <div class="containerr d-flex justify-content-between align-items-center gap-5 bg-white" ref="topnav" >
         <div class="d-flex align-items-center gap-3">
             <router-link to="/" :class="{ 'hide-on-scroll': hideOnScroll }"
                 class="text-decoration-none text-dark d-flex align-items-center gap-2">
@@ -126,31 +127,31 @@ export default {
         selectMenu(index) {
             this.selectedMenu = index;
         },
-        handleScroll() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercentage = (scrollTop / scrollHeight) * 100;
+        // handleScroll() {
+        //     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        //     const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        //     const scrollPercentage = (scrollTop / scrollHeight) * 100;
 
-            if (scrollPercentage >= 5) {
-                this.backgroundOpacity = 1;
-                this.hideOnScroll = false;
-            } else if (scrollPercentage >= 3) {
-                this.backgroundOpacity = 0.5;
-                this.hideOnScroll = false;
-            } else {
-                this.backgroundOpacity = 0;
-                this.hideOnScroll = true;
-            }
-        },
+        //     if (scrollPercentage >= 5) {
+        //         this.backgroundOpacity = 1;
+        //         this.hideOnScroll = false;
+        //     } else if (scrollPercentage >= 3) {
+        //         this.backgroundOpacity = 0.5;
+        //         this.hideOnScroll = false;
+        //     } else {
+        //         this.backgroundOpacity = 0;
+        //         this.hideOnScroll = true;
+        //     }
+        // },
     },
 }
 </script>
 
 <style scoped>
-.hide-on-scroll {
+/* .hide-on-scroll {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-}
+} */
 
 .containerr {
     position: fixed;
@@ -163,7 +164,6 @@ export default {
 }
 
 .border-bottom {
-    border-bottom: 2px solid var(--bg-primary) !important;
-    /* Style for active link */
+    border-bottom: 2px solid var(--bg-primary) !important; 
 }
 </style>
