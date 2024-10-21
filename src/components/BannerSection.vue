@@ -1,17 +1,20 @@
 <template>
-    <div class="container-fluid" style="background-color: var(--bg-secondary); height: 95vh;">
-        <div class="row justify-conten-center align-items-center pt-5">
+    <div class="container-fluid h-100" style="background-color: var(--bg-secondary); height: 95vh;">
+        <div class="row justify-content-center align-items-center pt-5 mt-5 mt-md-0">
             <div class="col-md-5 px-md-5">
-                <img src="/img/logo.png" alt="Logo" style="height: 70px; object-fit: contain;">
-                <h1 class="mt-4 mt-md-0">Dental Solutions</h1>
-                <AutoTypeDeleteText :texts="services" :typingSpeed="150" :deleteSpeed="50" :delay="500" />
-                <div class="mt-3 text-center">
-                    <p class="my-1"><i class="bi bi-check2-square me-2"></i>&nbsp;Lorem ipsum dolor sit amet.</p>
-                    <p class="my-1"><i class="bi bi-check2-square me-2"></i>&nbsp;Lorem ipsum dolor sit amet.</p>
-                    <p class="my-1"><i class="bi bi-check2-square me-2"></i>&nbsp;Lorem ipsum dolor sit amet.</p>
+                <div class="bg-white rounded p-3">
+                    <img src="/img/logo.png" alt="Logo" style="height: 70px; object-fit: contain;">
+                    <h1 class="mt-4 mt-md-0">Dental Solutions</h1>
+                    <AutoTypeDeleteText :texts="services" :typingSpeed="150" :deleteSpeed="50" :delay="500" />
+                    <div class="mt-3 text-center">
+                        <p class="my-1"><i class="bi bi-check2-square me-2"></i>&nbsp;Lorem ipsum dolor sit amet.</p>
+                        <p class="my-1"><i class="bi bi-check2-square me-2"></i>&nbsp;Lorem ipsum dolor sit amet.</p>
+                        <p class="my-1"><i class="bi bi-check2-square me-2"></i>&nbsp;Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <router-link to="/services" class="btn mt-4"
+                        style="color: var(--bg-primary); border: 1px solid var(--bg-primary);">Explore our
+                        services</router-link>
                 </div>
-                <router-link to="/services" class="btn mt-4"
-                    style="color: var(--bg-primary); border: 1px solid var(--bg-primary);">Explore our services</router-link> 
             </div>
             <div class="col-md-7 mt-5 mt-md-0">
                 <img src="/img/contactUs.svg" alt="Banner" style="width: 100%;">

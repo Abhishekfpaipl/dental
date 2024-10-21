@@ -37,7 +37,7 @@ const routes = [
     component: () => import('@/pages/ProductDetail.vue'),
   },
   {
-    path: "/services",
+    path: '/services/:category',
     name: "ServicePage",
     component: () => import('@/pages/ServicePage.vue'),
   },

@@ -1,6 +1,6 @@
 <template>
   <div class="container" v-observe>
-
+    <h1 class="text-center mb-1">Gallery</h1>
     <div class="my-5 row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2">
       <div class="col" v-for="(image, index) in images" :key="index" data-bs-toggle="modal"
         data-bs-target="#exampleModal">

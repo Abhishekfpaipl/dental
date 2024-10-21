@@ -26,19 +26,24 @@
         </div> -->
         <div class="row ">
             <div class="col-12 my-0" v-for="(service, index) in services" :key="index">
-                <p class="text-center fw-bold fs-3">{{ service.title }}</p>
+                <div class="d-flex justify-content-between justify-content-md-center align-items-center">
+                    <p class="text-center fw-bold fs-3 text-uppercase mb-0">{{ service.title }}</p>
+                    <router-link :to="'/services/' + service.category" class="d-md-none d-block text-dark"><i
+                            class="bi bi-arrow-right fs-2"></i></router-link>
+                </div>
                 <div
                     class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-1 my-4 d-flex justify-content-center align-items-center">
-                    <div class="col" v-for="(service, index) in service.items.slice(0, 4)" :key="index">
+                    <div class="col my-md-0" v-for="(service, index) in service.items.slice(0, 4)" :key="index">
                         <router-link :to="'/product-detail/' + service.sid"
-                            class="text-decoration-none my-1 card border position-relative rounded-0 overflow-hidden dummy-card">
+                            class="text-decoration-none card  position-relative rounded-0 overflow-hidden dummy-card"
+                            style="background-color:var(--bg-secondary); border:1px solid var(--bg-primary) !important;">
                             <div class="card-img-container">
                                 <img :src="service.image" class="card-img-top rounded-0" alt="..."
                                     style="object-fit: cover;height: 170px;">
                             </div>
-                            <div class="card-body p-2">
+                            <div class="card-body p-2" style=" color:var(--bg-primary) !important;">
                                 <div class="d-flex justify-content-center align-items-center fw-bold text-ellipsis2 text-center small"
-                                    style="min-height: 50px">{{ service.title }}</div>
+                                    style="min-height: 50px;">{{ service.title }}</div>
                                 <p class="small my-0 text-ellipsis2">{{ service.description }}</p>
                             </div>
                             <div class="position-absolute text-center start-0 ms-0" style="top: 0px;">
@@ -49,11 +54,11 @@
                         </router-link>
                     </div>
                     <div class="col-md-2 d-none d-md-block my-0">
-                        <router-link to="/services"
+                        <router-link :to="'/services/' + service.category"
                             class="dummy-card text-decoration-none d-flex flex-column justify-content-center align-items-center"
                             style="background-color:var(--bg-secondary); border:1px solid var(--bg-primary) !important; color: var(--bg-primary);">
-                            <span class="me-2 text-uppercase fs-4"> see more</span> <i
-                                class="bi bi-arrow-right fs-2"></i>
+                            <span class="me-2 text-uppercase fs-4">see more</span>
+                            <i class="bi bi-arrow-right fs-2"></i>
                         </router-link>
                     </div>
                 </div>
@@ -71,8 +76,9 @@ export default {
         return {
             services: [
                 {
-                    "title": "General Dentistry",
+                    "title": "General ",
                     "image": "/img/general.jpg",
+                    "category": "General ",
                     "items": [
                         {
                             "sid": "painless-root-canal-treatment",
@@ -102,8 +108,9 @@ export default {
                     ]
                 },
                 {
-                    "title": "Cosmetic Dentistry",
+                    "title": "Cosmetic ",
                     "image": "/img/cosmetic.jpg",
+                    "category": "Cosmetic ",
                     "items": [
                         {
                             "sid": "invisalign",
@@ -138,8 +145,9 @@ export default {
                     ]
                 },
                 {
-                    "title": "Surgical Dentistry",
+                    "title": "Surgical ",
                     "image": "/img/surgical.jpg",
+                    "category": "Surgical ",
                     "items": [
                         {
                             "sid": "painless-wisdom-tooth-extraction",

@@ -1,6 +1,6 @@
 <template>
     <div class="banner-container">
-        <img src="/img/sectionBanner1.jpg" alt="Product Banner" class="banner-image">
+        <img src="/img/banner1.jpeg" alt="Product Banner" class="banner-image">
         <div class="overlay">
             <h1 class="display-1 banner-title">{{ pageName }}</h1>
         </div>
@@ -40,7 +40,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(126, 1, 128, 0.5);
     opacity: 90%;
     /* Opacity with transparency */
     display: flex;

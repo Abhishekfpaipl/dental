@@ -8,10 +8,12 @@
                 <i class="bi bi-arrow-right"></i>
             </router-link>
         </div>
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-1 my-4 d-flex justify-content-center align-items-center">
+        <div
+            class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-1 my-4 d-flex justify-content-center align-items-center">
             <div class="col my-0" v-for="(service, index) in services.slice(1, 4)" :key="index">
                 <router-link :to="'/product-detail/' + service.sid"
-                    class="text-decoration-none my-1 card border position-relative rounded-0 overflow-hidden">
+                    class="text-decoration-none my-1 card  position-relative rounded-0 overflow-hidden"
+                    style="border:1px solid var(--bg-primary) !important;">
                     <div class="card-img-container">
                         <img :src="service.image" class="card-img-top rounded-0" alt="..."
                             style="object-fit: cover;height: 170px;">
@@ -84,8 +86,8 @@ export default {
 
         }
     },
-    computed:{
-        services(){
+    computed: {
+        services() {
             return this.$store.getters.getServices
         }
     },

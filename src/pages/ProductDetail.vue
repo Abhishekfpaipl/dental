@@ -66,7 +66,7 @@
             bookBtnText="Book an appointment" callBtnText="Call us: +91-8860012001" phoneNumber="+918860012001" /> -->
         <MoreServices :slides="services" title="More services"
             subtitle="India’s leading and most trusted Dental Clinic" />
-        <FaqSection />
+        <!-- <FaqSection /> -->
     </div>
     <div class="position-fixed bottom-0 w-100 btn-group d-flex d-md-none" style="z-index:10">
         <a href="/img/demo.pdf" download="file.pdf" class="btn btn-dark w-25 rounded-0"><i
@@ -115,7 +115,7 @@ import SectionTopBanner from '@/components/SectionTopBanner.vue';
 import ProductBenefitSection from '@/components/ProductBenefitSection.vue';
 import ImageTextSection from '@/components/ImageTextSection.vue';
 // import ImageOverlay from '@/components/ImageOverlay.vue';
-import FaqSection from '@/components/FaqSection.vue';
+// import FaqSection from '@/components/FaqSection.vue';
 import MoreServices from '@/components/MoreServices.vue';
 export default {
     components: {
@@ -123,7 +123,7 @@ export default {
         SectionTopBanner,
         ImageTextSection,
         // ImageOverlay,
-        FaqSection,
+        // FaqSection,
         MoreServices,
     },
     data() {
