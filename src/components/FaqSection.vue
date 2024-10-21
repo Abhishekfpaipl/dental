@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container pb-5">
         <h1 class="text-center my-4">Questions To Ask Your Doctor</h1>
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item" v-for="(question, index) in questions" :key="index">

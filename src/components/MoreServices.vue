@@ -1,15 +1,15 @@
 <template>
     <div class="swiper-container container my-5">
-        <h1 class="text-center mb-1">{{ title }}</h1>
-        <p class="text-center text-muted mb-5">{{ subtitle }}</p>
+        <h1 v-if="title" class="text-center mb-1">{{ title }}</h1>
+        <p v-if="subtitle" class="text-center text-muted mb-5">{{ subtitle }}</p>
         <swiper :slidesPerView="1" :spaceBetween="10" :loop="true" :navigation="navigation" :pagination="pagination"
             :breakpoints="breakpoints" :modules="modules" class="mySwiper">
             <swiper-slide v-for="(slide, index) in slides" :key="index">
                 <router-link to="/" class="text-decoration-none text-dark">
-                    <img :src="slide.image" :alt="slide.title" class="w-100" style="height: 300px; object-fit: cover;"/>
+                    <img v-if="slide.image" :src="slide.image" alt="products" class="w-100" style="height: 300px; object-fit: cover;"/>
                     <div class="slide-content">
-                        <p class="fw-bold mb-1 text-start">{{ slide.title }}</p>
-                        <p class="text-start">{{ slide.description }}</p>
+                        <p v-if="slide.title" class="fw-bold mb-1 text-start">{{ slide.title }}</p>
+                        <p v-if="slide.description" class="text-start">{{ slide.description }}</p>
                     </div>
                 </router-link>
             </swiper-slide>

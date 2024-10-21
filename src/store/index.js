@@ -1207,6 +1207,44 @@ export default createStore({
           }
         ]
       }
+    ],
+    dentists: [
+      {
+        name: 'Dr. Shweta Gupta',
+        sid: 'dr-shweta-gupta',
+        qualifications: 'BDS, MDS,',
+        image: 'https://static.vecteezy.com/system/resources/previews/001/840/612/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg',
+        button: 'Know more about her',
+        points: [
+          "	Dr. Shweta Gupta is a Dentist, Orthodontist and implantologist Dentist in Ashok Vihar, Delhi.",
+          "	He was the Finest orthodontist in India to be certified in aligner therapy(Invisalign).",
+          "He has been nominated for Many Awards for his work in dentistry.",
+          "	He is also attached to many Hospitals and clinics as a specialist consultant and holds the post of executive orthodontist for a few corporate dental chains.",
+          "	He maintains his private practice at Paschim Vihar, Delhi at DENTAL WORKS.",
+          "	Dr.Shweta Gupta is known for specialty services in orthodontics, lingual orthodontics and invisible orthodontics.",
+          "	For his quest to achieve excellence – he has also done his fellowship in implantology and works with the best in business implant brands in his setup.",
+          "	Patients from all across the globe have got their treatment done by him and can vouch for his work par excellence.",
+        ],
+      },
+      {
+        name: 'Dr. Atul Gupta',
+        sid: 'dr-atul-gupta',
+        qualifications: 'BDS, MDS ',
+        image: 'https://static.vecteezy.com/system/resources/previews/001/840/612/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg',
+        button: 'Know more about him',
+        points: [
+          "	Dr. Atul Gupta is a Dentist, Orthodontist and implantologist Dentist in Ashok Vihar, Delhi.",
+          "	He was the Finest orthodontist in India to be certified in aligner therapy(Invisalign).",
+          "He has been nominated for Many Awards for his work in dentistry.",
+          "	He is also attached to many Hospitals and clinics as a specialist consultant and holds the post of executive orthodontist for a few corporate dental chains.",
+          "	He maintains his private practice at Paschim Vihar, Delhi at DENTAL WORKS.",
+          "	Dr.Atul Gupta is known for specialty services in orthodontics, lingual orthodontics and invisible orthodontics.",
+          "	For his quest to achieve excellence – he has also done his fellowship in implantology and works with the best in business implant brands in his setup.",
+          "	Patients from all across the globe have got their treatment done by him and can vouch for his work par excellence.",
+        ],
+        // "Dr. Atul Gupta is a Dentist, Orthodontist and implantologist Dentist in Ashok Vihar, Delhi. He was the Finest orthodontist in India to be certified in aligner therapy (Invisalign).	He has been nominated for Many Awards for his work in dentistry.He is also attached to many Hospitals and clinics as a specialist consultant and holds the post of executive orthodontist for a few corporate dental chains.He maintains his private practice at Paschim Vihar, Delhi at DENTAL WORKS.Dr. Atul Gupta is known for specialty services in orthodontics, lingual orthodontics and invisible orthodontics.For his quest to achieve excellence – he has also done his fellowship in implantology and works with the best in business implant brands in his setup.Patients from all across the globe have got their treatment done by him and can vouch for his work par excellence."
+        // route:"/doctor/",
+      }
     ]
   },
   getters: {
@@ -1216,6 +1254,11 @@ export default createStore({
       return state.services[index];
     },
     getFaq: state => state.faqs,
+    getDentists: state => state.dentists,
+    getDentist: (state) => (productId) => {
+      let index = state.dentists.findIndex(product => product.sid == productId);
+      return state.dentists[index];
+    },
   },
   mutations: {},
   actions: {},

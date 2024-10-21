@@ -1,8 +1,5 @@
 <template>
     <div class="container my-5">
-        <h1 class="text-center mb-1">Exceptional Dental Care for Every Smile</h1>
-        <p class="text-center mb-5">Providing India’s most advanced and trusted dental treatments for a healthier,
-            brighter smile</p>
 
         <!-- <div class="row">
             <div class="col-md-4" v-for="(service, index) in services" :key="index">
@@ -25,9 +22,9 @@
             </div>
         </div> -->
         <div class="row ">
-            <div class="col-12 my-0" v-for="(service, index) in services" :key="index">
+            <div class="col-12 my-5" v-for="(service, index) in services" :key="index">
                 <div class="d-flex justify-content-between justify-content-md-center align-items-center">
-                    <p class="text-center fw-bold fs-3 text-uppercase mb-0">{{ service.title }}</p>
+                    <h1 class="text-center text-uppercase mb-0">{{ service.title }}</h1>
                     <router-link :to="'/services/' + service.category" class="d-md-none d-block text-dark"><i
                             class="bi bi-arrow-right fs-2"></i></router-link>
                 </div>
@@ -46,11 +43,12 @@
                                     style="min-height: 50px;">{{ service.title }}</div>
                                 <p class="small my-0 text-ellipsis2">{{ service.description }}</p>
                             </div>
-                            <div class="position-absolute text-center start-0 ms-0" style="top: 0px;">
+                            <!-- <div class="position-absolute text-center start-0 ms-0" style="top: 0px;">
                                 <span class="text-white smaller p-1 pt-0 rounded-end-3"
                                     style="background-color:var(--bg-primary); border:1px solid var(--bg-primary) !important;">
                                     starts from ₹ 10,000{{ service.price }}</span>
-                            </div>
+                            </div> -->
+                            <button class="btn btn-sm text-white rounded-0" style="background-color: var(--bg-primary)">Know More</button>
                         </router-link>
                     </div>
                     <div class="col-md-2 d-none d-md-block my-0">

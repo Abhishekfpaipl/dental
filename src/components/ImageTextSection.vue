@@ -1,21 +1,22 @@
 <template>
     <div class="container my-5">
         <h1 v-if="title" class="text-center mb-5">{{ title }}</h1>
-        <div class="row">
-            <div :class="imageFirst ? 'col-md-6 order-1' : 'col-md-6 order-2'">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div v-if="imageSrc" :class="imageFirst ? 'col-md-6 order-1' : 'col-md-6 order-2'">
                 <img :src="imageSrc" :alt="imageAlt" class="img-fluid sticky-image" />
             </div>
             <div
-                :class="imageFirst ? 'col-md-6 order-2 mt-5 mt-md-0 bg-light px-3 py-2' : 'col-md-6 order-1 mb-4 mb-md-0 bg-light px-3 py-2'">
-                <h2 v-if="heading" class="text-start">{{ heading }}</h2>
+                :class="imageFirst ? 'col-md-6 order-2 mt-5 mt-md-0 px-3 py-2' : 'col-md-6 order-1 mb-4 mb-md-0 px-3 py-2'">
+                <h2 v-if="heading" class="text-start text-capitalize">{{ heading }}</h2>
                 <p v-if="subHeading" class="text-start text-uppercase">{{ subHeading }}</p>
-                <p v-if="text" class="text-start">{{ text }}</p>
+                <!-- <p v-if="text" class="text-start">{{ text }}</p> -->
+                <p v-if="text" class="text-start" v-html="text"></p>
                 <ul v-if="points" class="text-start">
                     <li v-for="(point, index) in points" :key="index" class="mb-2">{{ point }}</li>
                 </ul>
                 <div v-if="button" class="d-flex justify-content-start">
                     <router-link to="/about-us" class="text-decoration-none text-dark border-bottom pb-2">
-                        <span>View Complete Profile</span>
+                        <span>Know More</span>
                         <i class="bi bi-arrow-right ms-3"></i>
                     </router-link>
                 </div>

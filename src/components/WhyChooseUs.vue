@@ -1,6 +1,6 @@
 <template>
     <div class=" text-light p-4" style="background-color: var(--bg-primary);">
-        <h2 class="text-center mb-4">WHY CHOOSE US</h2>
+        <h1 class="text-center mb-4 text-capitalize">Exciting Facts</h1>
         <div class="row">
             <div class="col-md-3 col-sm-6 mb-3" v-for="(item, index) in items" :key="index">
                 <div class="d-flex flex-column align-items-center">

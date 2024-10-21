@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <img src="/img/contactUs.svg" style="width: 100%;" alt="">
+                    <img src="/img/contactUs.jpeg" style="width: 100%;" alt="">
                 </div>
             </div>
         </div>

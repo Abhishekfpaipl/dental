@@ -72,6 +72,11 @@ const routes = [
     name: "FaqPage",
     component: () => import('@/pages/FaqPage.vue'),
   },
+  {
+    path: "/doctor/:productId",
+    name: "DoctorDetailPage",
+    component: () => import('@/pages/DoctorDetailPage.vue'),
+  }
 ];
 
 const router = createRouter({

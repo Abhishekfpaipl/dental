@@ -2,7 +2,7 @@
     <div class="container-fluid h-100" style="background-color: var(--bg-secondary); height: 95vh;">
         <div class="row justify-content-center align-items-center pt-5 mt-5 mt-md-0">
             <div class="col-md-5 px-md-5">
-                <div class="bg-white rounded p-3">
+                <div class="bg-white rounded p-3 py-5">
                     <img src="/img/logo.png" alt="Logo" style="height: 70px; object-fit: contain;">
                     <h1 class="mt-4 mt-md-0">Dental Solutions</h1>
                     <AutoTypeDeleteText :texts="services" :typingSpeed="150" :deleteSpeed="50" :delay="500" />
