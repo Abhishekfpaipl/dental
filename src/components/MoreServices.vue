@@ -5,7 +5,7 @@
         <swiper :slidesPerView="1" :spaceBetween="10" :loop="true" :navigation="navigation" :pagination="pagination"
             :breakpoints="breakpoints" :modules="modules" class="mySwiper">
             <swiper-slide v-for="(slide, index) in slides" :key="index">
-                <router-link to="/" class="text-decoration-none text-dark">
+                <router-link :to="'/product-detail/' + slide.sid" class="text-decoration-none text-dark">
                     <img v-if="slide.image" :src="slide.image" alt="products" class="w-100" style="height: 300px; object-fit: cover;"/>
                     <div class="slide-content">
                         <p v-if="slide.title" class="fw-bold mb-1 text-start">{{ slide.title }}</p>

@@ -15,9 +15,19 @@ export default {
         };
     },
     mounted() {
-        let pageName = this.$route.path.split('/').pop();
-        this.pageName = pageName.replace(/-/g, ' ');
+        // Set the page name when the component is first mounted
+        this.updatePageName();
     },
+    watch: {
+        '$route': 'updatePageName',  // Watch for route changes and call the method
+    },
+    methods: {
+        updatePageName() {
+            // Extract page name from route path
+            let pageName = this.$route.path.split('/').pop();
+            this.pageName = pageName.replace(/-/g, ' ');  // Replace hyphens with spaces
+        }
+    }
 };
 </script>
 
