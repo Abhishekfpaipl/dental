@@ -42,9 +42,9 @@ const routes = [
     component: () => import('@/pages/ServicePage.vue'),
   },
   {
-    path: "/testimonial",
-    name: "TestimonialPage",
-    component: () => import('@/pages/TestimonialPage.vue'),
+    path: "/shorts",
+    name: "ShortsVideosPage",
+    component: () => import('@/pages/ShortsVideosPage.vue'),
   },
   // {
   //   path: "/gallery",

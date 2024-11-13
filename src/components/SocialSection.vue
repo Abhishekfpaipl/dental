@@ -1,7 +1,10 @@
 <template>
     <div class="py-4" style="background-color: var(--bg-secondary);">
         <div class="container my-5" v-observe>
-            <h1 class="text-capitalize my-5 text-center">Follow us on</h1>
+            <div class="text-start mb-5">
+                <p class="text-muted mb-1 text-uppercase">Dental Solutions</p>
+                <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Follow us on</h2>
+            </div>
             <div class="row row-cols-4">
                 <div v-for="(contact, index) in folows" :key="index" class="col py-2">
                     <div class="d-flex justify-content-center align-items-center">

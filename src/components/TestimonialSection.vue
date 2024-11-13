@@ -1,10 +1,14 @@
 <template>
-    <div class="my-5 text-dark">
-        <div class="d-flex justify-content-center align-items-center position-relative">
-            <h1 class="text-center mb-0">Testimonial</h1>
-            <router-link to="/testimonial" class="position-absolute end-0 text-decoration-none pe-md-5 pe-1" style="color: var(--bg-primary);">
-                See All <i class="bi bi-arrow-right"></i>
-            </router-link>
+    <div class="container my-5 text-dark">
+        <div class="text-start mb-5">
+            <p class="text-muted mb-1 text-uppercase">Dental Solutions</p>
+            <div class="d-flex justify-content-start align-items-center position-relative">
+                <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Testimonial</h2> 
+                <router-link to="/testimonial" class="position-absolute end-0 text-decoration-none pe-md-5 pe-1"
+                    style="color: var(--bg-primary);">
+                    See All <i class="bi bi-arrow-right"></i>
+                </router-link>
+            </div>
         </div>
 
 

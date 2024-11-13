@@ -81,11 +81,7 @@ Dental Solutions is proudly recognized as the Best Dental Clinic in Delhi, maint
         </div>
         <div class="my-5">
             <NewGallerySection :images="awards" title="Certificates" route="/certificates" />
-        </div>
-        <div class="my-5">
-            <MoreServices :slides="awards" title="Achievements"
-                subtitle="India’s leading and most trusted Dental Clinic" />
-        </div>
+        </div> 
         <div class="my-5">
             <BadgeSection />
         </div>
@@ -101,6 +97,9 @@ Dental Solutions is proudly recognized as the Best Dental Clinic in Delhi, maint
         <div class="my-5">
             <WhyChooseUs />
         </div>
+        <!-- <div class="my-5">
+            <TestComp />
+        </div> -->
     </div>
 </template>
 
@@ -113,16 +112,16 @@ import DentalCard from '@/components/DentalCard.vue';
 import DentalImplant from '@/components/DentalImplant.vue';
 // import AboutSection from '@/components/AboutSection.vue';
 // import CarouselBanner from '@/components/CarouselBanner.vue';
-import TestimonialSection from '@/components/TestimonialSection.vue';
+// import TestimonialSection from '@/components/TestimonialSection.vue';
 import WhyChooseUs from '@/components/WhyChooseUs.vue';
 // import BadgeSection from '@/components/BadgeSection.vue'; 
 import NewGallerySection from '@/components/NewGallerySection.vue';
 import FaqSection from '@/components/FaqSection.vue';
-import DentalCareFeatures from '@/components/DentalCareFeatures.vue';
-import MoreServices from '@/components/MoreServices.vue';
+import DentalCareFeatures from '@/components/DentalCareFeatures.vue'; 
 import SocialSection from '@/components/SocialSection.vue';
 import DentalTeamSection from '@/components/DentalTeamSection.vue';
 import ShortsVideoSection from '@/components/ShortsVideoSection.vue';
+// import TestComp from '@/components/TestComp.vue';
 
 export default {
     name: "HomePage",
@@ -137,14 +136,14 @@ export default {
         WhyChooseUs,
         // BadgeSection,
         // CarouselBanner,
-        TestimonialSection,
+        // TestimonialSection,
         FaqSection,
         NewGallerySection,
-        DentalCareFeatures,
-        MoreServices,
+        DentalCareFeatures, 
         SocialSection,
         DentalTeamSection,
         ShortsVideoSection,
+        // TestComp,
     },
     data() {
         return {

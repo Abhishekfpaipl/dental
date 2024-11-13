@@ -1,6 +1,9 @@
 <template>
     <div class="container pb-5">
-        <h1 class="text-center my-4">Questions To Ask Your Doctor</h1>
+        <div class="text-start mb-5">
+            <p class="text-muted mb-1 text-uppercase">Dental Solutions</p>
+            <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">Questions To Ask Your Doctor</h2>
+        </div> 
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item" v-for="(question, index) in questions" :key="index">
                 <h2 class="accordion-header">

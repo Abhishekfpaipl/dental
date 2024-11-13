@@ -2,7 +2,7 @@
     <!-- desktop view -->
     <!-- <div class="containerr d-flex justify-content-between align-items-center gap-5" ref="topnav"
         :style="`background: rgba(255,255,255, ${backgroundOpacity});`"> -->
-    <div class="containerr d-flex justify-content-between align-items-center gap-5 bg-white" ref="topnav" >
+    <div class="containerr d-flex justify-content-between align-items-center gap-5 bg-white" ref="topnav">
         <div class="d-flex align-items-center gap-3">
             <router-link to="/" :class="{ 'hide-on-scroll': hideOnScroll }"
                 class="text-decoration-none text-dark d-flex align-items-center gap-2">
@@ -64,8 +64,23 @@ export default {
             meus: [
                 {
                     id: 2,
-                    title: 'Services',
-                    path: '/services',
+                    title: 'Home',
+                    path: '/',
+                },
+                {
+                    id: 2,
+                    title: 'Cosmetic',
+                    path: '/services/cosmetic',
+                },
+                {
+                    id: 2,
+                    title: 'General',
+                    path: '/services/general',
+                },
+                {
+                    id: 2,
+                    title: 'Surgical',
+                    path: '/services/surgical',
                 },
                 {
                     id: 2,
@@ -76,11 +91,6 @@ export default {
                     id: 2,
                     title: 'Contact Us',
                     path: '/contact-us',
-                },
-                {
-                    id: 2,
-                    title: 'Privacy Policy',
-                    path: '/privacy-policy',
                 },
                 {
                     id: 2,
@@ -164,6 +174,6 @@ export default {
 }
 
 .border-bottom {
-    border-bottom: 2px solid var(--bg-primary) !important; 
+    border-bottom: 2px solid var(--bg-primary) !important;
 }
 </style>

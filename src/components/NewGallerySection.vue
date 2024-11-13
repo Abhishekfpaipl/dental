@@ -78,7 +78,7 @@ export default {
 
 <style scoped>
 .card-img-top {
-    height: 100px;
+    height: 150px;
     min-width: 100px;
     object-fit: cover;
     object-position: top center;

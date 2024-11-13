@@ -21,12 +21,16 @@
                 </div>
             </div>
         </div> -->
+
         <div class="row ">
             <div class="col-12 my-5" v-for="(service, index) in services" :key="index">
-                <div class="d-flex justify-content-between justify-content-md-center align-items-center">
-                    <h1 class="text-center text-uppercase mb-0">{{ service.title }}</h1>
-                    <router-link :to="'/services/' + service.category" class="d-md-none d-block text-dark"><i
-                            class="bi bi-arrow-right fs-2"></i></router-link>
+                <div class="text-start">
+                    <p class="text-muted mb-1 text-uppercase">Dental Solutions</p>
+                    <div class="d-flex justify-content-between  justify-content-md-start align-items-center">
+                        <h2 class="display-5 text-uppercase" style="color: var(--bg-primary);">{{ service.title }}</h2>
+                        <router-link :to="'/services/' + service.category" class="d-md-none d-block text-dark"><i
+                                class="bi bi-arrow-right fs-2"></i></router-link>
+                    </div>
                 </div>
                 <div
                     class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-1 my-4 d-flex justify-content-center align-items-center">
@@ -48,7 +52,8 @@
                                     style="background-color:var(--bg-primary); border:1px solid var(--bg-primary) !important;">
                                     starts from ₹ 10,000{{ service.price }}</span>
                             </div> -->
-                            <button class="btn btn-sm text-white rounded-0" style="background-color: var(--bg-primary)">Know More</button>
+                            <button class="btn btn-sm text-white rounded-0"
+                                style="background-color: var(--bg-primary)">Know More</button>
                         </router-link>
                     </div>
                     <div class="col-md-2 d-none d-md-block my-0">
@@ -74,9 +79,9 @@ export default {
         return {
             services: [
                 {
-                    "title": "General ",
+                    "title": "General",
                     "image": "/img/general.jpg",
-                    "category": "General ",
+                    "category": "general",
                     "items": [
                         {
                             "sid": "painless-root-canal-treatment",
@@ -106,9 +111,9 @@ export default {
                     ]
                 },
                 {
-                    "title": "Cosmetic ",
+                    "title": "Cosmetic",
                     "image": "/img/cosmetic.jpg",
-                    "category": "Cosmetic ",
+                    "category": "cosmetic",
                     "items": [
                         {
                             "sid": "invisalign",
@@ -143,9 +148,9 @@ export default {
                     ]
                 },
                 {
-                    "title": "Surgical ",
+                    "title": "Surgical",
                     "image": "/img/surgical.jpg",
-                    "category": "Surgical ",
+                    "category": "surgical",
                     "items": [
                         {
                             "sid": "painless-wisdom-tooth-extraction",
@@ -154,12 +159,12 @@ export default {
                         },
                         {
                             "sid": "implants",
-                            image: '/img/products/implants.jpg',
+                            image: '/img/products/implant1.jpg',
                             "title": "Implants"
                         },
                         {
                             "sid": "implants-all-on-6",
-                            image: "/img/products/implants.jpg",
+                            image: "/img/products/implants6.jpg",
                             "title": "Implants All On 6"
                         },
                         {
