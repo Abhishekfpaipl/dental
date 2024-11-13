@@ -23,9 +23,6 @@
                                 </div>
                                 <div class="card-body bg-white py-2 px-1" style="max-width: 250px;">
                                     <p class="name smaller mb-0 mt-0 text-ellipsis1">{{ card.name }}</p>
-                                    <!-- <p class="mb-0 smaller mx-2 pb-2"
-                                        style="border-bottom: 2px solid black !important;">Fameset <i
-                                            class="bi bi-star-fill text-warning"></i> 8.5</p> -->
                                     <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
                                         ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto iste
                                         voluptatibus error tempore qui dolores possimus, nam fugit repudiandae?</p>

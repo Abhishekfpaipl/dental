@@ -1213,7 +1213,7 @@ export default createStore({
         name: 'Dr. Shweta Gupta',
         sid: 'dr-shweta-gupta',
         qualifications: 'BDS, MDS,',
-        image: 'https://static.vecteezy.com/system/resources/previews/001/840/612/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg',
+        image: '/img/owner2.jpeg',
         button: 'Know more about her',
         points: [
           "	Dr. Shweta Gupta is a Dentist, Orthodontist and implantologist Dentist in Ashok Vihar, Delhi.",
@@ -1230,7 +1230,7 @@ export default createStore({
         name: 'Dr. Atul Gupta',
         sid: 'dr-atul-gupta',
         qualifications: 'BDS, MDS ',
-        image: 'https://static.vecteezy.com/system/resources/previews/001/840/612/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg',
+        image: '/img/owner.jpeg',
         button: 'Know more about him',
         points: [
           "	Dr. Atul Gupta is a Dentist, Orthodontist and implantologist Dentist in Ashok Vihar, Delhi.",

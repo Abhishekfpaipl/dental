@@ -13,10 +13,11 @@
         </div> -->
         <div class="my-5">
             <h1 class="text-center mb-1">Providing Award Wining Dental Care Services</h1>
-            <p class="text-center mb-5 container">Known for Delhi's most advanced and trusted dental treatments for a healthier,
+            <p class="text-center mb-5 container">Known for Delhi's most advanced and trusted dental treatments for a
+                healthier,
                 brighter smile</p>
-            <ImageTextSection image-src="/img/firstSection.png " heading=""
-                subHeading="" :button="true" image-alt="Dr. Shweta Gupta"
+            <ImageTextSection image-src="/img/firstSection.png " heading="" subHeading="" :button="true"
+                image-alt="Dr. Shweta Gupta"
                 text="At Dental Solutions, your smile is our top priority. We are dedicated to ensuring your oral health is in the best hands, providing exceptional dental care that empowers you to live a healthy life. <br> <br>
 Our team of highly skilled dentists, equipped with state-of-the-art technology, is here to transform discomfort into beautiful smiles. From routine check-ups to advanced treatments, we offer a comprehensive range of services tailored to meet your needs. <br> <br>
 Dental Solutions is proudly recognized as the Best Dental Clinic in Delhi, maintaining its esteemed reputation for many years. Dental Solutions also received the prestigious Best Dental Clinic honor from the various renowned associations.
@@ -64,16 +65,22 @@ Dental Solutions is proudly recognized as the Best Dental Clinic in Delhi, maint
                 subtitle="Get porcelain Veneers treatment at Dental Solutions and enhance your smile"
                 description="A beautiful smile is a powerful asset, and dissatisfaction with yours can impact every facet of your life. If you often find yourself hiding your smile or feeling self-conscious about your teeth, it could affect your confidence, job opportunities, personal relationships, and overall happiness. But you don’t have to feel this way anymore. With porcelain veneers from Dental Solutions, you can achieve a radiant smile that reflects your confidence and enhances your appearance."
                 link="/product-detail/veneers" :imageFirst="false" />
-        </div> 
+        </div>
         <div class="my-5">
             <DentalTeamSection :imagePosition="'right'" :dentists="dentist" />
+        </div>
+        <div class="my-5">
+            <ShortsVideoSection />
         </div>
         <!-- <AboutSection />  -->
         <div class="my-5">
             <DentalCareFeatures />
         </div>
         <div class="my-5">
-            <GallerySection :images="gallery" />
+            <NewGallerySection :images="gallery" title="Gallery" route="/gallery" />
+        </div>
+        <div class="my-5">
+            <NewGallerySection :images="awards" title="Certificates" route="/certificates" />
         </div>
         <div class="my-5">
             <MoreServices :slides="awards" title="Achievements"
@@ -106,15 +113,16 @@ import DentalCard from '@/components/DentalCard.vue';
 import DentalImplant from '@/components/DentalImplant.vue';
 // import AboutSection from '@/components/AboutSection.vue';
 // import CarouselBanner from '@/components/CarouselBanner.vue';
-// import TestimonialSection from '@/components/TestimonialSection.vue';
+import TestimonialSection from '@/components/TestimonialSection.vue';
 import WhyChooseUs from '@/components/WhyChooseUs.vue';
 // import BadgeSection from '@/components/BadgeSection.vue'; 
-import GallerySection from '@/components/GallerySection.vue';
+import NewGallerySection from '@/components/NewGallerySection.vue';
 import FaqSection from '@/components/FaqSection.vue';
 import DentalCareFeatures from '@/components/DentalCareFeatures.vue';
 import MoreServices from '@/components/MoreServices.vue';
 import SocialSection from '@/components/SocialSection.vue';
 import DentalTeamSection from '@/components/DentalTeamSection.vue';
+import ShortsVideoSection from '@/components/ShortsVideoSection.vue';
 
 export default {
     name: "HomePage",
@@ -129,38 +137,36 @@ export default {
         WhyChooseUs,
         // BadgeSection,
         // CarouselBanner,
-        // TestimonialSection, 
+        TestimonialSection,
         FaqSection,
-        GallerySection,
+        NewGallerySection,
         DentalCareFeatures,
         MoreServices,
         SocialSection,
         DentalTeamSection,
+        ShortsVideoSection,
     },
     data() {
         return {
-            gallery: [
-                '/img/gallery/1.jpeg',
-                '/img/gallery/2.jpeg',
-                '/img/gallery/3.jpeg',
-                '/img/gallery/4.jpeg',
-                '/img/gallery/5.jpeg',
-                '/img/gallery/6.jpeg',
-            ],
+            
             awards: [
-                { image: "/img/certificates/1.jpeg", },
-                { image: "/img/certificates/2.jpeg", },
-                { image: "/img/certificates/3.jpeg", },
-                { image: "/img/certificates/4.jpeg", },
-                { image: "/img/certificates/5.jpeg", },
-                { image: "/img/certificates/6.jpeg", },
+                "/img/certificates/1.jpeg",
+                "/img/certificates/2.jpeg",
+                "/img/certificates/3.jpeg",
+                "/img/certificates/4.jpeg",
+                "/img/certificates/5.jpeg",
+                "/img/certificates/6.jpeg",
             ]
         }
     },
     computed: {
         dentist() {
             return this.$store.getters.getDentists
-        }
+        },
+        gallery() {
+            return this.$store.getters['gallery/getGallery']
+        },
+
     }
 };
 </script>

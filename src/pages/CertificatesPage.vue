@@ -1,8 +1,8 @@
 <template>
-    <SectionTopBanner/>
-    <div class="container my-5"> 
+    <SectionTopBanner />
+    <div class="container my-5">
         <div class="row g-2" ref="lightGallery" id="scroll">
-            <a :href="image" class="col-md-3" v-for="(image, index) in gallery" :key="index">
+            <a :href="image" class="col-md-3" v-for="(image, index) in awards" :key="index">
                 <img :alt="'img' + (index + 1)" :src="image" class="card-img-top" />
             </a>
         </div>
@@ -28,11 +28,17 @@ export default {
     mounted() {
         this.initGallery();
     },
-    computed: {
-        gallery() {
-            return this.$store.getters['gallery/getGallery']
-        },
-
+    data() {
+        return {
+            awards: [
+                "/img/certificates/1.jpeg",
+                "/img/certificates/2.jpeg",
+                "/img/certificates/3.jpeg",
+                "/img/certificates/4.jpeg",
+                "/img/certificates/5.jpeg",
+                "/img/certificates/6.jpeg",
+            ]
+        }
     },
     beforeUnmount() {
         if (this.lightGalleryInstance) {

@@ -46,26 +46,36 @@ const routes = [
     name: "TestimonialPage",
     component: () => import('@/pages/TestimonialPage.vue'),
   },
+  // {
+  //   path: "/gallery",
+  //   // name: "GalleryPage",
+  //   children: [
+  //     {
+  //       path: 'office',
+  //       name: 'Gallery-Office',
+  //       component: () => import('@/pages/GalleryPageOld.vue'),
+  //     },
+  //     {
+  //       path: 'customers',
+  //       name: 'Gallery-Customer',
+  //       component: () => import('@/pages/GalleryCustomer.vue')
+  //     },
+  //     {
+  //       path: 'doctors',
+  //       name: 'Gallery-Doctors',
+  //       component: () => import('@/pages/GalleryDoctors.vue')
+  //     },
+  //   ]
+  // },
   {
     path: "/gallery",
-    // name: "GalleryPage",
-    children: [
-      {
-        path: 'office',
-        name: 'Gallery-Office',
-        component: () => import('@/pages/GalleryPage.vue'),
-      },
-      {
-        path: 'customers',
-        name: 'Gallery-Customer',
-        component: () => import('@/pages/GalleryCustomer.vue')
-      },
-      {
-        path: 'doctors',
-        name: 'Gallery-Doctors',
-        component: () => import('@/pages/GalleryDoctors.vue')
-      },
-    ]
+    name: "GalleryPage",
+    component: () => import('@/pages/GalleryPage.vue'),
+  },
+  {
+    path: "/certificates",
+    name: "CertificatesPage",
+    component: () => import('@/pages/CertificatesPage.vue'),
   },
   {
     path: "/faq",
