@@ -20,8 +20,12 @@
                     <span>{{ link.title }}</span>
                 </button>
             </router-link>
+            <img src="/img/query.svg"  data-bs-toggle="modal"
+            data-bs-target="#welcomeModal" style="width: 25px; height: 25px;" class="rounded-circle border" alt="">
         </div>
-        <div class="d-flex d-lg-none gap-1 align-items-center">
+        <div class="d-flex d-lg-none gap-2 align-items-center">
+            <img src="/img/query.svg" style="width: 30px; height: 30px;"  data-bs-toggle="modal"
+            data-bs-target="#welcomeModal" class="rounded-circle border" alt="">
             <i class="bi bi-list btn text-white p-0 fs-4 px-1" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
                 :class="{ 'hide-on-scroll': hideOnScroll }" style="background-color: var(--bg-primary);"></i>
@@ -29,19 +33,18 @@
     </div>
 
     <!-- mobile view -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel" >
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header" style="border-bottom: 1px solid white;">
-            <img src="/img/logo.png" style="height:40px" alt="Dental Solutions"> 
+            <img src="/img/logo.png" style="height:40px" alt="Dental Solutions">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body" style="background-color: var(--bg-primary);">
             <ul class="nav nav-pills flex-column mb-auto">
                 <router-link :to="link.path" v-for="(link, index) in meus" :key="index"
-                    class="nav-item my-1 text-decoration-none border-bottom" >
+                    class="nav-item my-1 text-decoration-none border-bottom">
                     <p @click="selectMenu(index)" data-bs-dismiss="offcanvas"
                         class="d-flex justify-content-start text-white mb-2">
-                        {{link.title}}
+                        {{ link.title }}
                     </p>
                 </router-link>
             </ul>
@@ -89,7 +92,7 @@ export default {
                     id: 2,
                     title: 'Contact Us',
                     path: '/contact-us',
-                }, 
+                },
             ],
             backgroundOpacity: 0,
             hideOnScroll: true,
@@ -104,7 +107,7 @@ export default {
     methods: {
         selectMenu(index) {
             this.selectedMenu = index;
-        }, 
+        },
     },
 }
 </script>
