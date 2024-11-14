@@ -14,7 +14,7 @@
         <div class="flex-fill d-none d-lg-flex justify-content-end gap-5 align-items-center"
             :class="{ 'hide-on-scroll': hideOnScroll }">
             <router-link :to="link.path" v-for="(link, index) in meus" :key="index" class="my-1 text-decoration-none"
-                :class="{ 'border-bottom': $route.path === link.path }" style="color:var(--bg-primary) !important;">
+                :class="{ 'borderClass': $route.path === link.path }" style="color:var(--bg-primary) !important;">
                 <button @click="selectMenu(index)"
                     class="btn rounded border-0 w-100 d-flex align-items-center p-0 py-1">
                     <span>{{ link.title }}</span>
@@ -29,27 +29,20 @@
     </div>
 
     <!-- mobile view -->
-    <div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel" style="">
-        <div class="offcanvas-header border-bottom">
-            <img src="/img/logo.png" style="height:40px" alt="Dental Solutions">
-            <h5 class="offcanvas-title ms-2" id="offcanvasExampleLabel">Covisor</h5>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel" >
+        <div class="offcanvas-header" style="border-bottom: 1px solid white;">
+            <img src="/img/logo.png" style="height:40px" alt="Dental Solutions"> 
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body" style="background-color: var(--bg-primary);">
             <ul class="nav nav-pills flex-column mb-auto">
                 <router-link :to="link.path" v-for="(link, index) in meus" :key="index"
-                    class="nav-item my-1 text-decoration-none" :class="{ 'border-bottom': $route.path === link.path }"
-                    style="color:var(--bg-primary) !important;">
-                    <button @click="selectMenu(index)" data-bs-dismiss="offcanvas"
-                        class="btn rounded border-0 w-100 d-flex align-items-center p-0 py-1">
-                        <div class="btn-toggle collapsed" data-bs-toggle="collapse"
-                            :data-bs-target="'#home-collapse' + index" aria-expanded="false" :disabled="index === 1">
-                            <div class="d-flex align-items-center">
-                                <span>{{ link.title }}</span>
-                            </div>
-                        </div>
-                    </button>
+                    class="nav-item my-1 text-decoration-none border-bottom" >
+                    <p @click="selectMenu(index)" data-bs-dismiss="offcanvas"
+                        class="d-flex justify-content-start text-white mb-2">
+                        {{link.title}}
+                    </p>
                 </router-link>
             </ul>
         </div>
@@ -69,18 +62,23 @@ export default {
                 },
                 {
                     id: 2,
-                    title: 'Cosmetic',
-                    path: '/services/cosmetic',
-                },
-                {
-                    id: 2,
                     title: 'General',
                     path: '/services/general',
                 },
                 {
                     id: 2,
+                    title: 'Cosmetic',
+                    path: '/services/cosmetic',
+                },
+                {
+                    id: 2,
                     title: 'Surgical',
                     path: '/services/surgical',
+                },
+                {
+                    id: 2,
+                    title: 'Gallery',
+                    path: '/gallery',
                 },
                 {
                     id: 2,
@@ -91,37 +89,7 @@ export default {
                     id: 2,
                     title: 'Contact Us',
                     path: '/contact-us',
-                },
-                {
-                    id: 2,
-                    title: 'Gallery',
-                    path: '/gallery',
-                },
-                // {
-                //     id: 1,
-                //     title: 'Implants',
-                //     path: '/product-detail',
-                // },
-                // {
-                //     id: 3,
-                //     title: 'Invisalign',
-                //     path: '/product-detail',
-                // },
-                // {
-                //     id: 4,
-                //     title: 'Veneers',
-                //     path: '/product-detail',
-                // },
-                // {
-                //     id: 4,
-                //     title: 'Smile Makeovers',
-                //     path: '/product-detail',
-                // },
-                // {
-                //     id: 4,
-                //     title: "Kid's Dentistry",
-                //     path: '/product-detail',
-                // },
+                }, 
             ],
             backgroundOpacity: 0,
             hideOnScroll: true,
@@ -136,23 +104,7 @@ export default {
     methods: {
         selectMenu(index) {
             this.selectedMenu = index;
-        },
-        // handleScroll() {
-        //     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        //     const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-        //     const scrollPercentage = (scrollTop / scrollHeight) * 100;
-
-        //     if (scrollPercentage >= 5) {
-        //         this.backgroundOpacity = 1;
-        //         this.hideOnScroll = false;
-        //     } else if (scrollPercentage >= 3) {
-        //         this.backgroundOpacity = 0.5;
-        //         this.hideOnScroll = false;
-        //     } else {
-        //         this.backgroundOpacity = 0;
-        //         this.hideOnScroll = true;
-        //     }
-        // },
+        }, 
     },
 }
 </script>
@@ -173,7 +125,7 @@ export default {
     transition: background-color 0.3s ease-in-out;
 }
 
-.border-bottom {
+.borderClass {
     border-bottom: 2px solid var(--bg-primary) !important;
 }
 </style>

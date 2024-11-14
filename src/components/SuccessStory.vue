@@ -8,7 +8,7 @@
                         <img href="#" :src="dentist.image" class="rounded-3" alt="Card image">
                     </div>
                     <div class="content">
-                        <h3 class="mt-4 pt-2">{{ dentist.name }}</h3>
+                        <h5 class="mt-4 pt-2">{{ dentist.name }}</h5>
                         <p v-if="post" class="text-ellipsis2">{{ dentist.qualifications }}</p>
                     </div>
                 </div>

@@ -69,13 +69,13 @@
         <!-- <FaqSection /> -->
     </div>
     <div class="position-fixed bottom-0 w-100 btn-group d-flex d-md-none" style="z-index:10">
-        <a href="/img/demo.pdf" download="file.pdf" class="btn btn-dark w-25 rounded-0"><i
-                class="bi bi-download fs-2"></i></a>
+        <button class="btn btn-dark w-25 rounded-0" @click="share">
+            <i class="bi bi-share"></i>
+        </button>
         <button class="btn btn-warning w-75 rounded-0 d-flex align-items-center justify-content-center"
             data-bs-toggle="modal" data-bs-target="#enquirymodal">
-            <span class="text-dark fs-5">₹ 9999</span>
-            <span class="ms-2 fs-5">Enquiry</span>
-            <i class="bi bi-arrow-right ms-2 fs-1"></i>
+            <span class="mb-1 fs-5">Enquiry</span>
+            <i class="bi bi-arrow-right ms-2 fs-5"></i>
         </button>
     </div>
     <div class="modal fade" id="enquirymodal" tabindex="-1" aria-labelledby="enquirymodalLabel" aria-hidden="true">
@@ -145,7 +145,7 @@ export default {
     },
     methods: {
         submitForm() {
-            const phoneNumber = '918860012001';
+            const phoneNumber = '919899570734';
             const message = `Name: ${this.fullName}%0A 
             number: ${this.number}%0A
             Email: ${this.email}%0A
@@ -154,6 +154,18 @@ export default {
             const url = `https://wa.me/${phoneNumber}?text=${message}`;
             window.open(url, '_blank');
         },
+        share() {
+            if (navigator.share) {
+                navigator
+                    .share({
+                        title: document.title,
+                        text: 'Check out this content!',
+                        url: window.location.href,
+                    })
+                    .then(() => console.log("Content shared successfully"))
+                    .catch(error => console.error("Error sharing:", error));
+            }
+        }
     }
 }
 </script>

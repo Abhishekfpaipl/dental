@@ -1,13 +1,12 @@
 <template>
     <div>
         <SectionTopBanner />
-        <div class="container text-start py-5 " style="margin-top:-40px;">
-            <h1 class="text-center mb-4">Terms and Conditions</h1>
+        <div class="container text-start py-5 " style="margin-top:-40px;"> 
 
-            <section class="mb-5">
+            <section class="my-5">
                 <h2 class="h4">Introduction</h2>
                 <p>
-                    Welcome to [Dental Clinic Name]. By accessing our website or booking any dental services, you agree
+                    Welcome to Dental Solutions. By accessing our website or booking any dental services, you agree
                     to abide by the following terms and conditions. These terms apply to all patients, visitors, and
                     users of our website or dental services. Please read these terms carefully before availing any
                     service. If you disagree with any part of these terms, please do not proceed with using our
@@ -71,7 +70,7 @@
             <section class="mb-5">
                 <h2 class="h4">Liability</h2>
                 <p>
-                    While we take utmost care in providing high-quality dental services, [Dental Clinic Name] is not
+                    While we take utmost care in providing high-quality dental services, Dental Solutions is not
                     liable for any adverse effects or complications arising from the treatment, unless caused by proven
                     negligence. You are responsible for following all pre and post-treatment instructions provided by
                     our team.
@@ -101,13 +100,14 @@
                 <p>
                     These terms and conditions are governed by and construed in accordance with the laws of India. Any
                     disputes arising from these terms or your use of our services will be subject to the jurisdiction of
-                    the courts in [City, State], India.
+                    the courts in Delhi, India.
                 </p>
             </section>
 
             <section class="text-center">
                 <p class="font-italic">
-                    If you have any questions about these terms, please contact us at [Contact Information].
+                    If you have any questions about these terms, please contact us at 
+                    enquiry@dentalsolutions.com.
                 </p>
             </section>
         </div>

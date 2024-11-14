@@ -8,7 +8,7 @@
                     class="text-decoration-none card position-relative rounded-0 overflow-hidden h-100"
                     style="background-color:var(--bg-secondary) !important; border:1px solid var(--bg-primary) !important;">
                     <div class="card-img-container">
-                        <img :src="service.image" class="card-img-top rounded-0" alt="..."
+                        <img :src="service.image" class="card-img-top rounded-0" :alt="service.title"
                             style="object-fit: cover;height: 170px;">
                     </div>
                     <div class="card-body p-2" style=" color:var(--bg-primary) !important;">
@@ -16,11 +16,7 @@
                             style="min-height: 50px">{{ service.title }}</div>
                         <p class="small my-0 text-ellipsis2">{{ service.description }}</p>
                     </div>
-                    <div class="position-absolute text-center start-0 ms-0" style="top: 0px;">
-                        <span class="text-white smaller p-1 pt-0 rounded-end-3"
-                            style="background-color:var(--bg-primary); border:1px solid var(--bg-primary) !important;">
-                            starts from ₹ 10,000 {{ service.price }}</span>
-                    </div>
+                    
                 </router-link>
             </div>
             <div v-if="!filteredServices.length > 0">

@@ -119,32 +119,32 @@ export default createStore({
           }
         ],
         typeTitle: "Types of Root Canal Treatments",
-        types: [
-          {
-            "image": "https://www.thedentalroots.com/assets/images/Invisalign/Overbite.jpg",
-            "title": "Infected Tooth Before Treatment"
-          },
-          {
-            "image": "https://www.thedentalroots.com/assets/images/Invisalign/Underbite.jpg",
-            "title": "Access Opening Made in the Tooth"
-          },
-          {
-            "image": "https://www.thedentalroots.com/assets/images/Invisalign/Crossbite.jpg",
-            "title": "Infected Tissue Removed and Canals Cleaned"
-          },
-          {
-            "image": "https://www.thedentalroots.com/assets/images/Invisalign/Gap-Teeth.jpg",
-            "title": "Canals Filled with Permanent Material"
-          },
-          {
-            "image": "https://www.thedentalroots.com/assets/images/Invisalign/Open-Bite.jpg",
-            "title": "Tooth Sealed with Filling; Post Added for Extra Support if Needed"
-          },
-          {
-            "image": "https://www.thedentalroots.com/assets/images/Invisalign/Crowded-teeth.jpg",
-            "title": "New Crown Cemented onto the Rebuilt Tooth"
-          }
-        ],
+        // types: [
+        //   {
+        //     "image": "https://www.thedentalroots.com/assets/images/Invisalign/Overbite.jpg",
+        //     "title": "Infected Tooth Before Treatment"
+        //   },
+        //   {
+        //     "image": "https://www.thedentalroots.com/assets/images/Invisalign/Underbite.jpg",
+        //     "title": "Access Opening Made in the Tooth"
+        //   },
+        //   {
+        //     "image": "https://www.thedentalroots.com/assets/images/Invisalign/Crossbite.jpg",
+        //     "title": "Infected Tissue Removed and Canals Cleaned"
+        //   },
+        //   {
+        //     "image": "https://www.thedentalroots.com/assets/images/Invisalign/Gap-Teeth.jpg",
+        //     "title": "Canals Filled with Permanent Material"
+        //   },
+        //   {
+        //     "image": "https://www.thedentalroots.com/assets/images/Invisalign/Open-Bite.jpg",
+        //     "title": "Tooth Sealed with Filling; Post Added for Extra Support if Needed"
+        //   },
+        //   {
+        //     "image": "https://www.thedentalroots.com/assets/images/Invisalign/Crowded-teeth.jpg",
+        //     "title": "New Crown Cemented onto the Rebuilt Tooth"
+        //   }
+        // ],
         extraInfo: {
           title: "Save your Teeth, Take Back your Life",
           description: "We offer an inclusive, non-judgemental environment where you can seek treatment for dental concerns like advanced decay. At Dental Solutions New Delhi and Gurgaon, our team is focused on delivering an enjoyable experience and successful outcomes. It all starts with our years of experience and commitment to advanced technology and the latest techniques. We’ll help you feel at home here.",
@@ -302,27 +302,27 @@ export default createStore({
         benefitTitle: "Benefits of Implants",
         benefits: [
           {
-            "image": "/img/implants/standardImplant.svg",
+            // "image": "/img/implants/standardImplant.svg",
             "title": "Standard Dental Implants",
             "description": "Standard dental implants are the most common type, providing a reliable and durable solution for replacing missing teeth. Made from titanium, they offer excellent integration with the jawbone and support for long-term restoration."
           },
           {
-            "image": "/img/implants/miniImplant.svg",
+            // "image": "/img/implants/miniImplant.svg",
             "title": "Mini Dental Implants",
             "description": "Mini dental implants are smaller in diameter than standard implants, making them ideal for areas with limited bone structure. They offer a less invasive option with quicker recovery times and are often used for stabilizing dentures."
           },
           {
-            "image": "/img/implants/allOn4.svg",
+            // "image": "/img/implants/allOn4.svg",
             "title": "All-on-4 Implants",
             "description": "All-on-4 implants involve placing four strategically positioned implants to support a full arch of teeth. This method minimizes the need for bone grafting and provides a stable, functional, and aesthetically pleasing solution for full-mouth restoration."
           },
           {
-            "image": "/img/implants/subperiostealImplant.svg",
+            // "image": "/img/implants/subperiostealImplant.svg",
             "title": "Subperiosteal Implants",
             "description": "Subperiosteal implants are placed under the gum but above the jawbone. They are suitable for patients with insufficient bone height who cannot undergo bone grafting. This type provides a stable foundation for prosthetics with minimal discomfort."
           },
           {
-            "image": "/img/implants/zirconiaImplant.svg",
+            // "image": "/img/implants/zirconiaImplant.svg",
             "title": "Zirconia Implants",
             "description": "Zirconia implants are made from a biocompatible ceramic material, offering a metal-free alternative to traditional titanium implants. They are known for their natural appearance and strength, making them ideal for those with metal sensitivities."
           }
@@ -1206,6 +1206,44 @@ export default createStore({
             "answer": "If you chip or break a tooth, rinse your mouth with warm water, apply a cold compress to reduce swelling, and contact our office immediately for guidance and treatment."
           }
         ]
+      },
+      {
+        "id": 7,
+        "name": "RCT",
+        "plans": [
+          {
+            "question": "What is a root canal treatment and why do I need it?",
+            "answer": "Root Canal Treatment is a procedure to repair and save a badly damaged or infected tooth instead of removing it. The term 'Root Canal' refers to the cleaning of the canal inside the tooth's root to relieve severe pain. The procedure involves removing the damaged or infected area of the tooth, known as the pulp, which contains nerves and blood vessels, cleaning and disinfecting it, then filling and sealing it with an artificial inert material."
+          },
+          {
+            "question": "What will happen during the RCT procedure?",
+            "answer": "The first step in the procedure is to take an X-ray to assess the shape of the root canals and check for any signs of infection in the surrounding bone. Local anaesthesia is then administered to numb the area near the tooth, ensuring you are relaxed and comfortable. An access hole is drilled into the tooth, and the pulp, along with bacteria, decayed nerve tissue, and debris, is removed using root canal files. Various irrigating solutions are used to flush out the debris. Once the tooth is thoroughly cleaned, it is sealed by filling the cleaned root canals with a rubber-like material and using adhesive cement to seal the canals completely. After the root canal is completed, the tooth will likely need a crown to protect it from future fractures."
+          },
+          {
+            "question": "Is root canal treatment painful?",
+            "answer": "When people hear they need a Root Canal Treatment (RCT), they often think of pain. However, the pain experienced is usually due to an infection in the tooth and not the RCT itself. RCT is performed to eliminate pain, and the procedure itself is generally painless. Our specialized Endodontists use local anaesthesia and modern techniques to ensure a comfortable, pain-free experience. We prioritize reducing patient anxiety and using the latest equipment to provide a smooth treatment."
+          },
+          {
+            "question": "Would extraction (pulling the tooth) be a better alternative?",
+            "answer": "Retaining your natural teeth through Root Canal Treatment is usually preferable to extraction. Replacing natural teeth with artificial ones can lead to additional issues. Root Canal Treatment, while initially more expensive, often proves cost-effective in the long run. After an extraction, the gap left by the lost tooth typically requires replacement with a dental bridge, implant, or partial denture, all of which can be more expensive than RCT. Additionally, gaps from missing teeth can cause difficulties in chewing and biting. RCT is generally less painful than extraction and has a high success rate, preserving the natural tooth with minimal time and discomfort."
+          },
+          {
+            "question": "How long does a root canal treatment take?",
+            "answer": "The duration of a root canal treatment varies depending on the complexity of the case and the tooth involved. On average, the procedure can take between 60 to 90 minutes per visit. In some cases, multiple visits may be required, especially if the infection is severe or if a crown is needed to complete the restoration."
+          },
+          {
+            "question": "What should I expect after a root canal treatment?",
+            "answer": "After a root canal treatment, you may experience some discomfort or mild pain in the treated tooth and surrounding area. This is usually temporary and can be managed with over-the-counter pain medications. It's important to follow your dentist’s post-treatment care instructions, which may include avoiding hard or sticky foods for a few days. The tooth will eventually be restored with a crown to protect it and restore its full function."
+          },
+          {
+            "question": "Can a root canal fail, and what should I do if it does?",
+            "answer": "While root canal treatments have a high success rate, there is a possibility of failure. Factors such as complex canal anatomy, missed canals, or new infections can contribute to treatment failure. If you experience persistent pain or symptoms after a root canal, it's important to contact your dentist. They can evaluate the situation and determine if additional treatment, such as retreatment or an apicoectomy, is needed to address the issue."
+          },
+          {
+            "question": "How much does root canal treatment cost?",
+            "answer": "The cost of root canal treatment varies depending on factors such as the tooth's location, the complexity of the procedure, and the dentist's fees. Generally, the cost is higher for molars compared to front teeth due to the complexity of the root system. Most dental insurance plans cover a portion of the cost, so it's a good idea to check with your insurance provider and discuss payment options with your dentist."
+          }
+        ]
       }
     ],
     dentists: [
@@ -1216,15 +1254,16 @@ export default createStore({
         image: '/img/owner2.jpeg',
         button: 'Know more about her',
         points: [
-          "	Dr. Shweta Gupta is a Dentist, Orthodontist and implantologist Dentist in Ashok Vihar, Delhi.",
-          "	He was the Finest orthodontist in India to be certified in aligner therapy(Invisalign).",
-          "He has been nominated for Many Awards for his work in dentistry.",
-          "	He is also attached to many Hospitals and clinics as a specialist consultant and holds the post of executive orthodontist for a few corporate dental chains.",
-          "	He maintains his private practice at Paschim Vihar, Delhi at DENTAL WORKS.",
+          "	Dr. Shweta Gupta is a dentist and implantologist in Ashok Vihar, Delhi.",
+          "	She is the finest dental surgeon and implantologist having over 15+ years of experience.",
+          " She has done her implantologist specialization from UCLA (USA).",
+          " She has been nominated for Many Awards for his work in dentistry.",
+          "	She is also attached to many Hospitals and clinics as a specialist consultant and holds the post of executive implantology for a few corporate dental chains.",
+          "	She maintains her private practice at Ashok Vihar, Delhi at Dental Solutions.",
           "	Dr.Shweta Gupta is known for specialty services in orthodontics, lingual orthodontics and invisible orthodontics.",
-          "	For his quest to achieve excellence – he has also done his fellowship in implantology and works with the best in business implant brands in his setup.",
-          "	Patients from all across the globe have got their treatment done by him and can vouch for his work par excellence.",
+          "	Patients from all across the globe have got their treatment done by her and can vouch for her work par excellence.",
         ],
+        videoUrl: "https://www.youtube.com/embed/2TLi3zyjczI"
       },
       {
         name: 'Dr. Atul Gupta',
@@ -1233,18 +1272,72 @@ export default createStore({
         image: '/img/owner.jpeg',
         button: 'Know more about him',
         points: [
-          "	Dr. Atul Gupta is a Dentist, Orthodontist and implantologist Dentist in Ashok Vihar, Delhi.",
-          "	He was the Finest orthodontist in India to be certified in aligner therapy(Invisalign).",
+          "Dr. Atul Gupta: Dentist with 17+ years of experience.",
+          "Expertise: Root canal treatment and smile designing.",
+          "Achievements: Among the first orthodontists in India certified in root canal treatment and smile designing.",
+          "Recognition: Known as one of India's finest in root canal treatment and smile design.",
+          "Patient Approach: Dedicated to providing personalized care and comfortable treatment experiences.",
+          "Advanced Techniques: Uses the latest dental technologies for effective, minimally invasive treatments.",
           "He has been nominated for Many Awards for his work in dentistry.",
-          "	He is also attached to many Hospitals and clinics as a specialist consultant and holds the post of executive orthodontist for a few corporate dental chains.",
-          "	He maintains his private practice at Paschim Vihar, Delhi at DENTAL WORKS.",
-          "	Dr.Atul Gupta is known for specialty services in orthodontics, lingual orthodontics and invisible orthodontics.",
-          "	For his quest to achieve excellence – he has also done his fellowship in implantology and works with the best in business implant brands in his setup.",
-          "	Patients from all across the globe have got their treatment done by him and can vouch for his work par excellence.",
+          "He maintains his private practice at Ashok Vihar, Delhi at Dental Solutions.",
+          "Patients from all across the globe have got their treatment done by him and can vouch for his work par excellence.",
         ],
-        // "Dr. Atul Gupta is a Dentist, Orthodontist and implantologist Dentist in Ashok Vihar, Delhi. He was the Finest orthodontist in India to be certified in aligner therapy (Invisalign).	He has been nominated for Many Awards for his work in dentistry.He is also attached to many Hospitals and clinics as a specialist consultant and holds the post of executive orthodontist for a few corporate dental chains.He maintains his private practice at Paschim Vihar, Delhi at DENTAL WORKS.Dr. Atul Gupta is known for specialty services in orthodontics, lingual orthodontics and invisible orthodontics.For his quest to achieve excellence – he has also done his fellowship in implantology and works with the best in business implant brands in his setup.Patients from all across the globe have got their treatment done by him and can vouch for his work par excellence."
+        videoUrl: "https://www.youtube.com/embed/0VrSlt5Q7Io"
+        // "Dr. Atul Gupta is a Dentist, Orthodontist and implantologist Dentist in Ashok Vihar, Delhi. He was the Finest orthodontist in India to be certified in aligner therapy (Invisalign).	He has been nominated for Many Awards for his work in dentistry.He is also attached to many Hospitals and clinics as a specialist consultant and holds the post of executive orthodontist for a few corporate dental chains.He maintains his private practice at Paschim Vihar, Delhi at Dental Solutions.Dr. Atul Gupta is known for specialty services in orthodontics, lingual orthodontics and invisible orthodontics.For his quest to achieve excellence – he has also done his fellowship in implantology and works with the best in business implant brands in his setup.Patients from all across the globe have got their treatment done by him and can vouch for his work par excellence."
         // route:"/doctor/",
       }
+    ],
+    videos: [
+      {
+        videoId: "53BJGx5rCCQ",
+        title: "Dental implants used to create beautiful smiles",
+        viewCount: '2,234',
+      },
+      {
+        videoId: "pbiPmod2vzI",
+        title: "using DENTAL IMPLANTS to replace missing teeth",
+        viewCount: '37',
+      },
+      {
+        videoId: "dQbj8nV0rNE",
+        title: "A satisfied patient !! @dental solutions 9899570734",
+        viewCount: '26',
+      },
+      {
+        videoId: "frFKchp5UqQ",
+        title: "Satisfied patient, using her teeth, full mouth replacement done 7 years back using Dental Implants",
+        viewCount: '39',
+      },
+      {
+        videoId: "vJqSBZzTN0w",
+        title: "Dental solutions @9899570734.. solutions to all your dental issues",
+        viewCount: '33',
+      },
+      {
+        videoId: "P5EvGuTViy4",
+        title: "Painless Removal of Wisdom Teeth",
+        viewCount: '52',
+      },
+      {
+        videoId: "pn_DJCtVNzA",
+        title: "full mouth rehabilitation",
+        viewCount: '28',
+      },
+      {
+        videoId: "Lz48Aqo-hVs",
+        title: "Testimonial: Mr. Malhotra, Chairman, Hitkari Group",
+        viewCount: '46',
+      },
+      {
+        videoId: "L2tfnFzIplo",
+        title: "Testimonial : Ms Anushka Jain",
+        viewCount: '56',
+      },
+      {
+        videoId: "bM2ADTwCzCI",
+        title: "3 February 2023",
+        viewCount: '23',
+      },
     ]
   },
   getters: {
@@ -1259,6 +1352,7 @@ export default createStore({
       let index = state.dentists.findIndex(product => product.sid == productId);
       return state.dentists[index];
     },
+    getVideos: state => state.videos,
   },
   mutations: {},
   actions: {},

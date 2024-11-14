@@ -25,6 +25,9 @@ Dental Solutions is proudly recognized as the Best Dental Clinic in Delhi, maint
                 :imageFirst="false" />
         </div>
         <div class="my-5">
+            <DentalTeamSection :imagePosition="'right'" :dentists="dentist" />
+        </div>
+        <div class="my-5">
             <DentalCard />
         </div>
         <div class="my-5">
@@ -48,14 +51,14 @@ Dental Solutions is proudly recognized as the Best Dental Clinic in Delhi, maint
 
         <div class="my-5">
             <DentalImplant image="/img/products/rootcanal.jpg" title="Painles Root Canal"
-                subtitle="A painless cosmetic solution for a smile you\'ll love"
+                subtitle="A painless cosmetic solution for a smile you'll love"
                 description=" Many people assume that getting a root canal is stressful or painful—but that’s a misconception! In reality, our patients are often surprised by how comfortable and seamless the procedure is. Root canal treatment is one of the most effective solutions for stopping painful decay, treating infection, and saving a tooth from extraction."
                 link="/product-detail/painless-root-canal-treatment" :imageFirst="true" />
         </div>
 
         <div class="my-5">
             <DentalImplant image="/img/products/teethcolor.jpg" title="Tooth Coloured Restoration"
-                subtitle="A painless cosmetic solution for a smile you\'ll love"
+                subtitle="A painless cosmetic solution for a smile you'll love"
                 description="In today's advanced world of dentistry, achieving the perfect smile goes beyond just maintaining excellent oral hygiene—it also involves the art of restorative techniques. Tooth-colored fillings and composite restorations represent a modern, innovative solution that surpasses conventional methods. These state-of-the-art procedures provide a flawless fusion of aesthetics and functionality, ensuring a natural, beautiful smile while restoring the strength and integrity of your teeth."
                 link="/product-detail/tooth-coloured-restoration" :imageFirst="false" />
         </div>
@@ -64,10 +67,7 @@ Dental Solutions is proudly recognized as the Best Dental Clinic in Delhi, maint
             <DentalImplant image="/img/products/veneers.jpg" title="Veneers"
                 subtitle="Get porcelain Veneers treatment at Dental Solutions and enhance your smile"
                 description="A beautiful smile is a powerful asset, and dissatisfaction with yours can impact every facet of your life. If you often find yourself hiding your smile or feeling self-conscious about your teeth, it could affect your confidence, job opportunities, personal relationships, and overall happiness. But you don’t have to feel this way anymore. With porcelain veneers from Dental Solutions, you can achieve a radiant smile that reflects your confidence and enhances your appearance."
-                link="/product-detail/veneers" :imageFirst="false" />
-        </div>
-        <div class="my-5">
-            <DentalTeamSection :imagePosition="'right'" :dentists="dentist" />
+                link="/product-detail/veneers" :imageFirst="true" />
         </div>
         <div class="my-5">
             <ShortsVideoSection />
@@ -80,8 +80,11 @@ Dental Solutions is proudly recognized as the Best Dental Clinic in Delhi, maint
             <NewGallerySection :images="gallery" title="Gallery" route="/gallery" />
         </div>
         <div class="my-5">
+            <WhyChooseUs />
+        </div>
+        <div class="my-5">
             <NewGallerySection :images="awards" title="Certificates" route="/certificates" />
-        </div> 
+        </div>
         <div class="my-5">
             <BadgeSection />
         </div>
@@ -92,14 +95,9 @@ Dental Solutions is proudly recognized as the Best Dental Clinic in Delhi, maint
             <SocialSection />
         </div>
         <div class="my-5">
-            <FaqSection />
+            <!-- <TestComp /> -->
         </div>
-        <div class="my-5">
-            <WhyChooseUs />
-        </div>
-        <!-- <div class="my-5">
-            <TestComp />
-        </div> -->
+        <WelcomeModal />
     </div>
 </template>
 
@@ -116,11 +114,11 @@ import DentalImplant from '@/components/DentalImplant.vue';
 import WhyChooseUs from '@/components/WhyChooseUs.vue';
 // import BadgeSection from '@/components/BadgeSection.vue'; 
 import NewGallerySection from '@/components/NewGallerySection.vue';
-import FaqSection from '@/components/FaqSection.vue';
-import DentalCareFeatures from '@/components/DentalCareFeatures.vue'; 
+import DentalCareFeatures from '@/components/DentalCareFeatures.vue';
 import SocialSection from '@/components/SocialSection.vue';
 import DentalTeamSection from '@/components/DentalTeamSection.vue';
 import ShortsVideoSection from '@/components/ShortsVideoSection.vue';
+import WelcomeModal from '@/components/WelcomeModal.vue';
 // import TestComp from '@/components/TestComp.vue';
 
 export default {
@@ -136,18 +134,18 @@ export default {
         WhyChooseUs,
         // BadgeSection,
         // CarouselBanner,
-        // TestimonialSection,
-        FaqSection,
+        // TestimonialSection, 
         NewGallerySection,
-        DentalCareFeatures, 
+        DentalCareFeatures,
         SocialSection,
         DentalTeamSection,
         ShortsVideoSection,
+        WelcomeModal,
         // TestComp,
     },
     data() {
         return {
-            
+
             awards: [
                 "/img/certificates/1.jpeg",
                 "/img/certificates/2.jpeg",

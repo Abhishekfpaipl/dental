@@ -14,14 +14,14 @@
             </div>
         </div>
         <CareerSection />
-        <div class="py-5" style="background-color: var(--bg-forth)">
+        <div class="py-5" style="background-color: var(--bg-primary)">
             <div class="container">
-                <h3 class="text-capitalize mb-4">Employee Benefits</h3>
-                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
+                <h3 class="text-capitalize mb-4 text-white">Employee Benefits</h3>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-2">
                     <div v-for="(data, index) in works" :key="index" class="col">
-                        <div class="d-flex align-items-center border my-1 ps-5 ps-md-2">
+                        <div class="d-flex align-items-center border my-1 ps-5 ps-md-2" style="background-color: var(--bg-secondary)">
                             <i :class="data.icon" class="fs-4 p-1"></i>
-                            <small class="text-start fw-bold text-capitalize ms-3">{{ data.heading }}</small>
+                            <p class="small mb-0 text-start fw-bold text-capitalize ms-3">{{ data.heading }}</p>
                         </div>
                     </div>
                 </div>
@@ -40,9 +40,9 @@
             </p>
             <div class="p-2 row">
                 <div v-for="(data, index) in datas" :key="index" class="col-12 col-md-6 g-3">
-                    <div class="d-flex align-items-center border p-2">
+                    <div class="d-flex align-items-start border p-2" style="background-color: var(--bg-secondary)">
                         <i :class="data.icon" class="fs-2 px-2"></i>
-                        <div class=" ms-2">
+                        <div class="text-start ms-2">
                             <span class="fw-bold">{{ data.heading }}</span>
                             <p class="" style="min-height: 48px;">{{ data.text }}</p>
                         </div>

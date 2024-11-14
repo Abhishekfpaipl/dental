@@ -12,7 +12,7 @@
 
                 <!-- Quick Links -->
                 <div class="col-md-9 mt-4 mt-md-0">
-                    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-1 justify-content-center ">
+                    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-1 justify-content-center ">
 
                         <div class="col text-center" v-for="(section, index) in sections" :key="index">
                             <h5 class="mb-3">{{ section.title }}</h5>
@@ -46,18 +46,16 @@ export default {
                 title: "Dental Solutions",
                 address: 'Dental Solutions I -98 , phase1 , Ashok vihar ,New Delhi - 110052',
                 phoneLabel: "Call us",
-                phone: "+91-9818149152",
+                phone: "+91-9899570734",
                 email: "enquiry@dentalsolutions.com"
             },
             sections: [
                 {
                     title: "Quick Links",
                     links: [
-                        { path: "/about-us", text: "About us" },
-                        { path: "/career", text: "Careers" },
                         { path: "/gallery", text: "Gallery" },
+                        { path: "/certificates", text: "Certificates" },
                         { path: "/faq", text: "FAQ's" },
-                        { path: "/contact-us", text: "Contact Us" },
 
                     ]
                 },
@@ -65,21 +63,24 @@ export default {
                     title: "Patient Guide",
                     links: [
                         { path: "/testimonial", text: "Testimonials" },
-                        { path: "/product-detail", text: "Dental Tourism" },
-                        { path: "/product-detail", text: "International Patients" },
                         { path: "/privacy", text: "Privacy Policy" },
-                        { path: "/terms", text: "Terms & Conditions" },
+                        { path: "/terms-and-conditions", text: "Terms & Conditions" },
                     ]
                 },
                 {
                     title: "Treatments",
                     links: [
-                        { path: "/product-detail", text: "Painless Root Canal Treatment" },
-                        { path: "/product-detail", text: "Implants" },
-                        { path: "/product-detail", text: "Kid's Dentistry" },
-                        { path: "/product-detail", text: "Painless Extractions (Tooth Removal)" },
-                        { path: "/product-detail", text: "Painless Wisdom Tooth Extraction" },
-                        { path: "/product-detail", text: "Braces" },
+                        { path: "/services/general", text: "General" },
+                        { path: "/services/cosmetic", text: "Cosmetic" },
+                        { path: "/services/surgical", text: "Surgical" },
+                    ]
+                },
+                {
+                    title: "Connect",
+                    links: [
+                        { path: "/about-us", text: "About us" },
+                        { path: "/contact-us", text: "Contact Us" },
+                        { path: "/career", text: "Career" },
                     ]
                 },
             ]

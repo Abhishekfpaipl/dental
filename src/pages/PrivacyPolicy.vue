@@ -1,15 +1,14 @@
 <template>
     <div>
         <SectionTopBanner />
-        <div class="text-start container mt-5">
-            <h2 class="text-center mb-4">Privacy Policy</h2>
+        <div class="text-start container my-5"> 
 
             <p>
                 We understand that information about your health, particularly your dental care, is personal and
                 confidential. This
                 "Protected Health Information" ("PHI") includes any details that can identify your past, present, or
                 future health status,
-                the treatment you receive, or payment for the care provided. At <strong>[Dental Clinic Name]</strong>,
+                the treatment you receive, or payment for the care provided. At <strong>Dental Solutions</strong>,
                 we are committed to
                 safeguarding your PHI and ensuring its proper use in accordance with applicable Indian laws and
                 regulations.
@@ -106,8 +105,7 @@
                     methods if needed to protect your privacy.</li>
             </ul>
 
-            <p class="mt-4">For any questions or concerns about this policy, feel free to contact us at <strong>[Contact
-                    Information]</strong>.</p>
+            <p class="mt-4">For any questions or concerns about this policy, feel free to contact us at <strong>enquiry@dentalsolutions.com</strong>.</p>
         </div>
     </div>
 </template>

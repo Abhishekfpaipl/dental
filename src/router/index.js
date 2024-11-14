@@ -12,7 +12,7 @@ const routes = [
     component: () => import('@/pages/PrivacyPolicy.vue'),
   },
   {
-    path: "/terms",
+    path: "/terms-and-conditions",
     name: "TermsConditions",
     component: () => import('@/pages/TermsConditions.vue'),
   },
@@ -42,7 +42,7 @@ const routes = [
     component: () => import('@/pages/ServicePage.vue'),
   },
   {
-    path: "/shorts",
+    path: "/testimonial",
     name: "ShortsVideosPage",
     component: () => import('@/pages/ShortsVideosPage.vue'),
   },

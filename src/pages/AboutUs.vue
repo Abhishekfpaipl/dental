@@ -35,21 +35,20 @@
                 smile. Visit us today and discover why Dental Solutions continues to set the standard in modern dental
                 care.
             </p>
-            <ImageTextSection image-src="/img/demo.jpeg" heading="Dr. Atul Gupta" subHeading="B.D.S, M.D.S, endodontist"
-                :button="true" image-alt="Dr. Atul Gupta"
+            <ImageTextSection image-src="/img/owner.jpeg" heading="Dr. Atul Gupta"
+                subHeading="B.D.S, M.D.S, endodontist" :button="true" image-alt="Dr. Atul Gupta"
                 text="Dr. Atual Gupta is a principal dentist at THE DENTAL Solutions, providing patients with treatment involving all aspects of dentistry including painless root canal treatments, cosmetic dentistry, dental implants, rehabilitative and general dental care.\n\nHis vision is to fulfill the need for specialized dental care and treatment resulted in the establishment of The Dental Solutions, New Delhi and Gurgaon. He completed his graduation from Pune University, 1999 and did his masters in Conservative and endodontic in 2002 from Rajiv Gandhi University, Karnataka and has been providing dental care to his patients since then."
-                mobile="9818149152" :imageFirst="true" />
-            <ImageTextSection image-src="/img/demo.jpeg" heading="Dr. Shweta Gupta"
+                mobile="9899570734" buttonRoute="/doctor/dr-atul-gupta" :imageFirst="true" />
+            <ImageTextSection image-src="/img/owner2.jpeg" heading="Dr. Shweta Gupta"
                 subHeading="B.D.S, M.S, implantology, pgdhhm" :button="true" image-alt="Dr. Shweta Gupta"
                 text="Dr. Shweta Gupta is a principal dentist at THE DENTAL Solutions, providing patients with treatment involving all aspects of dentistry including painless root canal treatments, cosmetic dentistry, dental implants, rehabilitative and general dental care.\n\nHis vision is to fulfill the need for specialized dental care and treatment resulted in the establishment of The Dental Solutions, New Delhi and Gurgaon. He completed his graduation from Pune University, 1999 and did his masters in Conservative and endodontic in 2002 from Rajiv Gandhi University, Karnataka and has been providing dental care to his patients since then."
-                mobile="9899570734" :imageFirst="false" />
+                mobile="9899570734" buttonRoute="/doctor/dr-shweta-gupta" :imageFirst="false" />
             <!-- <TeamSection />  -->
-            <MoreServices :slides="teams" title="The Dental Roots team"
-                subtitle="Our award-winning dental team are committed to providing exceptional dental care for all patients" />
-            <MoreServices :slides="slides" title="International Business Award 2018"
-                subtitle="Best Dental Hospital for Dental Implants, Root Canal Treatment and Cosmetic Dentistry in India" />
-            <WhyChooseUs />
+            <div class="my-5">
+                <NewGallerySection :images="certificates" title="International Business Award 2018" />
+            </div>
         </div>
+        <WhyChooseUs />
     </div>
 </template>
 
@@ -57,9 +56,9 @@
 import SectionTopBanner from '@/components/SectionTopBanner.vue';
 import CounterSection from '@/components/CounterSection.vue';
 import ImageTextSection from '@/components/ImageTextSection.vue';
-// import TeamSection from '@/components/TeamSection.vue';
-import MoreServices from '@/components/MoreServices.vue';
+// import TeamSection from '@/components/TeamSection.vue'; 
 import WhyChooseUs from '@/components/WhyChooseUs.vue';
+import NewGallerySection from '@/components/NewGallerySection.vue';
 
 export default {
     name: 'AboutUs',
@@ -67,18 +66,19 @@ export default {
         SectionTopBanner,
         CounterSection,
         ImageTextSection,
-        // TeamSection,
-        MoreServices,
-        WhyChooseUs
+        // TeamSection, 
+        WhyChooseUs,
+        NewGallerySection,
     },
     data() {
         return {
-            slides: [
-                { image: "https://www.thedentalroots.com/assets/images/about/cer8.jpg", },
-                { image: "https://www.thedentalroots.com/assets/images/about/cer9.jpg", },
-                { image: "https://www.thedentalroots.com/assets/images/about/cer10.jpg", },
-                { image: "https://www.thedentalroots.com/assets/images/about/cer11.jpg", },
-                { image: "https://www.thedentalroots.com/assets/images/about/cer12.jpg", },
+            certificates: [
+                "/img/certificates/1.jpeg",
+                "/img/certificates/2.jpeg",
+                "/img/certificates/3.jpeg",
+                "/img/certificates/4.jpeg",
+                "/img/certificates/5.jpeg",
+                "/img/certificates/6.jpeg",
             ],
             teams: [
                 {

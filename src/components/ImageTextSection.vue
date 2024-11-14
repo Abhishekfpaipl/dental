@@ -15,18 +15,24 @@
                     <li v-for="(point, index) in points" :key="index" class="mb-2">{{ point }}</li>
                 </ul>
                 <div v-if="button" class="d-flex justify-content-start">
-                    <router-link to="/about-us" class="text-decoration-none text-dark border-bottom pb-2">
+                    <router-link :to="buttonRoute"
+                        style="color: var(--bg-primary); border-color: var(--bg-primary) !important;"
+                        class="text-decoration-none border-bottom pb-2">
                         <span>Know More</span>
                         <i class="bi bi-arrow-right ms-3"></i>
                     </router-link>
                 </div>
+                <div v-if="mobile" class="mt-5">
+                    <button class="btn text-white me-3 rounded-pill" style="background-color: var(--bg-primary);" @click="bookAppointment">Book An
+                        Appointment</button>
+                </div>
             </div>
         </div>
-        <div v-if="mobile" class="d-flex justify-content-center align-items-center gap-4 mt-5">
+        <!-- <div v-if="mobile" class="d-flex justify-content-center align-items-center gap-4 mt-5">
             <button class="btn btn-outline-dark me-3 rounded-pill" @click="bookAppointment">Book An
                 Appointment</button>
             <a :href="`tel:${mobile}`" class="btn btn-outline-dark rounded-pill">Call us: +91 {{ mobile }}</a>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -65,7 +71,10 @@ export default {
         },
         button: {
             type: Boolean,
-        }
+        },
+        buttonRoute: {
+            type: String,
+        },
     }
 }
 </script>

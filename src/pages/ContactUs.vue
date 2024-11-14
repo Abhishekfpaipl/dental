@@ -5,29 +5,7 @@
         <div class="container bg-white rounded-top-5" v-observe>
             <div class="row p-3">
                 <div class="col-12 pt-4 text-center">
-                    <form @submit.prevent="submitQuery()" class="mt-4 row g-3 needs-validation" novalidate>
-                        <div class="w-100 form-floating mt-0">
-                            <input type="text" class="form-control" placeholder="" v-model="name" required>
-                            <label for="floatingInput" class="text-muted ms-2">Name</label>
-                        </div>
-                        <div class="w-100 form-floating mt-2">
-                            <input type="number" class="form-control" placeholder="Mobile" v-model="number" required>
-                            <label class="ms-2 text-muted">Mobile No</label>
-                        </div>
-                        <div class="w-100 form-floating mt-2">
-                            <input type="email" class="form-control" placeholder="Email" v-model="email" required>
-                            <label class="ms-2 text-muted">Email Id</label>
-                        </div>
-                        <div class="w-100 form-floating mt-2">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
-                                v-model="note"></textarea>
-                            <label for="floatingTextarea" class="ms-2 text-muted">Describe your requirements</label>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-warning py-2 fs-5 w-100 rounded-0 text-white"
-                                type="submit">Submit</button>
-                        </div>
-                    </form>
+                    <ContactForm />
                 </div>
             </div>
         </div>
@@ -40,7 +18,7 @@
                             @click="handleIconClick(icon.action)">
                             <div class="d-flex justify-content-start align-items-center border p-2 ps-3">
                                 <a class="text-white" :href="icon.url" target="_blank">
-                                    <i :class="icon.icon" style="color: var(--bg-secondary);"></i>
+                                    <i :class="icon.icon" class="text-dark"></i>
                                 </a>
                                 <p class="text-start ms-2 fw-bold mb-0">{{ icon.name }}</p>
                             </div>
@@ -57,19 +35,21 @@
 
 <script>
 import SectionTopBanner from "@/components/SectionTopBanner.vue";
+import ContactForm from "@/components/ContactForm.vue";
 export default {
     name: "ContactPage",
     components: {
         SectionTopBanner,
+        ContactForm,
     },
     data() {
         return {
             contact: [
                 { name: ' enquiry@dentalsolutions.com', icon: 'bi-envelope fs-3', color: 'red', action: 'openEmail' },
-                { name: '+919818149152', icon: 'bi-telephone-fill fs-3', color: 'black', action: 'openDialer' },
-                { name: '+919818149152', icon: 'bi-whatsapp fs-3', color: 'green', action: 'openWhatsapp' },
+                { name: '+919899570734', icon: 'bi-telephone-fill fs-3', color: 'black', action: 'openDialer' },
+                { name: '+919899570734', icon: 'bi-whatsapp fs-3', color: 'green', action: 'openWhatsapp' },
                 { name: 'Dental Solutions I -98 , phase1 , Ashok vihar ,New Delhi - 110052', icon: 'bi-geo-fill fs-3', color: 'black', action: 'openMaps' },
-            ], 
+            ],
             name: '',
             number: '',
             email: '',
@@ -78,7 +58,7 @@ export default {
     },
     methods: {
         handleIconClick(action) {
-            const phoneNumber = '+919818149152';
+            const phoneNumber = '+919899570734';
             const emailAddress = 'enquiry@dentalsolutions.com';
             const location = 'Dental Solutions I -98 , phase1 , Ashok vihar, New Delhi - 110052';
 
@@ -101,7 +81,7 @@ export default {
         },
         submitQuery() {
             if (this.name != "" && this.number != "" && this.email != "" && this.note != "") {
-                const phoneNumber = '919818149152'; // Replace with your WhatsApp number
+                const phoneNumber = '919899570734'; // Replace with your WhatsApp number
                 const message = `Hello, my name is ${this.name}.My No.${this.number}. My Email Id :${this.email}. Here is addtional note: ${this.note}`;
                 const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');

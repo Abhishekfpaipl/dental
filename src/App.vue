@@ -90,4 +90,7 @@ export default {
   opacity: 1;
   transform: translateY(0);
 }
+.form-control{
+  box-shadow: none !important;
+}
 </style>
