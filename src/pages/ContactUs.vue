@@ -9,9 +9,12 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-5 py-5" style="background-color: var(--bg-secondary);" v-observe>
+        <div class="container my-5 py-5" v-observe>
             <div class="row justify-content-center align-items-center">
                 <h1 class="text-uppercase mb-4 text-center">Need to get in touch with us?</h1>
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="/img/contactUs.jpeg" style="width: 100%;" alt="">
+                </div>
                 <div class="col-12 col-md-6 mt-5 mt-md-0 ">
                     <div class="row row-cols-1">
                         <div v-for="(icon, index) in contact" :key="index" class="col py-2"
@@ -24,9 +27,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <img src="/img/contactUs.jpeg" style="width: 100%;" alt="">
                 </div>
             </div>
         </div>

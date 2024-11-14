@@ -9,7 +9,7 @@
             </a>
         </div>
     </div> -->
-    <div class="container mt-5">
+    <div class="container my-5">
         <div class="text-start">
             <p class="text-muted mb-1 text-uppercase">Dental Solutions</p>
             <div class="d-flex justify-content-between align-items-center">

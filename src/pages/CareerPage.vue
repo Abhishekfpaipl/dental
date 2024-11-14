@@ -2,9 +2,9 @@
     <div>
         <SectionTopBanner />
         <div class="container py-5 rounded-top-5 bg-white" style="margin-top: -40px;" v-observe>
-            <div class="row">
+            <div class="row my-4">
                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                    <img src="/img/career-benefit.svg" style="width: 500px; max-width: 80%" alt="">
+                    <img src="/img/career.jpg" style="width: 300px; max-width: 80%" alt="">
                 </div>
                 <div class="col-12 col-md-6 text-center mt-4 mt-md-0">
                     <h1>" We encourage new ideas and professionalism mixed with teamwork to achieve your

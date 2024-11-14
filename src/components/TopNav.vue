@@ -20,12 +20,18 @@
                     <span>{{ link.title }}</span>
                 </button>
             </router-link>
-            <img src="/img/query.svg"  data-bs-toggle="modal"
-            data-bs-target="#welcomeModal" style="width: 25px; height: 25px;" class="rounded-circle border" alt="">
+            <div class="rounded-circle border d-flex justify-content-center align-items-center"
+                style="background-color: var(--bg-primary);width: 35px; height: 35px;">
+                <img src="/img/query.svg" style="width: 30px; height: 30px; filter: invert(1);" data-bs-toggle="modal"
+                    data-bs-target="#welcomeModal" alt="">
+            </div>
         </div>
-        <div class="d-flex d-lg-none gap-2 align-items-center">
-            <img src="/img/query.svg" style="width: 30px; height: 30px;"  data-bs-toggle="modal"
-            data-bs-target="#welcomeModal" class="rounded-circle border" alt="">
+        <div class="d-flex d-lg-none gap-3 align-items-center">
+            <div class="rounded border d-flex justify-content-center align-items-center"
+                style="background-color: var(--bg-primary);width: 35px; height: 35px;">
+                <img src="/img/query.svg" style="width: 20px; height: 20px; filter: invert(1);" data-bs-toggle="modal"
+                    data-bs-target="#welcomeModal" alt="">
+            </div>
             <i class="bi bi-list btn text-white p-0 fs-4 px-1" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
                 :class="{ 'hide-on-scroll': hideOnScroll }" style="background-color: var(--bg-primary);"></i>
@@ -50,10 +56,16 @@
             </ul>
         </div>
     </div>
+    <WelcomeModal />
 </template>
 
 <script>
+import WelcomeModal from './WelcomeModal.vue';
+
 export default {
+    components: {
+        WelcomeModal,
+    },
     data() {
         return {
             selectedMenu: null,

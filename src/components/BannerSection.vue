@@ -8,7 +8,7 @@
                         <AutoTypeDeleteText :texts="services" :typingSpeed="150" :deleteSpeed="50" :delay="500" />
                     </div>
                     <div class="d-flex flex-wrap gap-2 justify-content-center align-items-center ">
-                        <div class="my-2" v-for="(product, index) in products" :key="index">
+                        <div class="my-1" v-for="(product, index) in products" :key="index">
                             <div class="d-flex p-2 rounded-pill"
                                 style="background-color: var(--bg-secondary); color: var(--bg-primary);">
                                 <i class="bi bi-check2-square me-2 small"></i>

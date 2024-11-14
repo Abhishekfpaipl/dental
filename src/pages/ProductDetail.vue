@@ -1,19 +1,13 @@
 <template>
-    <div>
+    <div class="mb-5 pb-5">
         <SectionTopBanner />
         <div class="container my-5">
             <div class="row">
                 <div class="col-12 mb-5 ">
                     <div class="d-none d-md-flex justify-content-center align-items-center gap-3">
-                        <!-- <a href="/img/demo.pdf" download="file.pdf" class="btn w-25"
-                            style="border:1px solid rgba(255, 162, 0, 1) !important;">
-                            <i class="bi bi-download me-2"></i>
-                            <span>Download</span>
-                        </a> -->
-                        <button class="btn d-flex justify-content-center align-items-center w-25"
-                            style="background-color:rgba(255, 206, 86, 1); border:1px solid rgba(255, 162, 0, 1) !important;"
-                            data-bs-toggle="modal" data-bs-target="#enquirymodal"><span> Enquiry </span><i
-                                class="bi bi-arrow-right ms-2"></i>
+                        <button class="btn w-25 text-white"
+                            style="background-color: var(--bg-primary)" data-bs-toggle="modal"
+                            data-bs-target="#enquirymodal"><span> Enquiry </span><i class="bi bi-arrow-right ms-2"></i>
                         </button>
                     </div>
                 </div>
@@ -27,29 +21,6 @@
                     <ProductBenefitSection :title="product.benefitTitle" :benefits="product.benefits" />
                     <ProductBenefitSection :title="product.typeTitle" :benefits="product.types" />
                 </div>
-                <!-- <div class="col-md-4">
-                    <div class="bg-light sticky-sidebar p-3 pb-4">
-                        <p class="text-start py-3 fs-4">Book An Appointment</p>
-                        <form @submit.prevent="submitForm" class="">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Your Full Name" v-model="fullName">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Your Email Address"
-                                    v-model="email">
-                            </div>
-                            <div class="mb-3">
-                                <input type="number" class="form-control" placeholder="Your phone Number"
-                                    v-model="number">
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" rows="4" placeholder="Write Message"
-                                    v-model="message"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-warning px-4 py-2">Book Now</button>
-                        </form>
-                    </div>
-                </div> -->
             </div>
         </div>
         <div v-if="product.extraInfo" class="">
@@ -61,19 +32,15 @@
             <ImageTextSection image-src="/img/banner.jpg" image-alt="Sample Image" :heading="product.extraInfo2.title"
                 :text="product.extraInfo2.description" :points="product.features2" :imageFirst="false" />
         </div>
-
-        <!-- <ImageOverlay imageSrc="/img/banner.jpg" title="Laser Root Canal Treatment" :points="points"
-            bookBtnText="Book an appointment" callBtnText="Call us: +91-8860012001" phoneNumber="+918860012001" /> -->
         <MoreServices :slides="services" title="More services"
             subtitle="India’s leading and most trusted Dental Clinic" />
-        <!-- <FaqSection /> -->
     </div>
     <div class="position-fixed bottom-0 w-100 btn-group d-flex d-md-none" style="z-index:10">
         <button class="btn btn-dark w-25 rounded-0" @click="share">
             <i class="bi bi-share"></i>
         </button>
-        <button class="btn btn-warning w-75 rounded-0 d-flex align-items-center justify-content-center"
-            data-bs-toggle="modal" data-bs-target="#enquirymodal">
+        <button class="btn w-75 rounded-0 d-flex align-items-center justify-content-center text-white"
+            data-bs-toggle="modal" data-bs-target="#enquirymodal" style="background-color: var(--bg-primary)">
             <span class="mb-1 fs-5">Enquiry</span>
             <i class="bi bi-arrow-right ms-2 fs-5"></i>
         </button>
@@ -103,7 +70,8 @@
                             <textarea class="form-control" rows="4" placeholder="Write Message"
                                 v-model="message"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-warning px-4 py-2">Book Now</button>
+                        <button type="submit" class="btn px-4 py-2 text-white"
+                            style="background-color: var(--bg-primary)">Book Now</button>
                     </form>
                 </div>
             </div>
@@ -114,16 +82,12 @@
 import SectionTopBanner from '@/components/SectionTopBanner.vue';
 import ProductBenefitSection from '@/components/ProductBenefitSection.vue';
 import ImageTextSection from '@/components/ImageTextSection.vue';
-// import ImageOverlay from '@/components/ImageOverlay.vue';
-// import FaqSection from '@/components/FaqSection.vue';
 import MoreServices from '@/components/MoreServices.vue';
 export default {
     components: {
         ProductBenefitSection,
         SectionTopBanner,
         ImageTextSection,
-        // ImageOverlay,
-        // FaqSection,
         MoreServices,
     },
     data() {
@@ -149,7 +113,8 @@ export default {
             const message = `Name: ${this.fullName}%0A 
             number: ${this.number}%0A
             Email: ${this.email}%0A
-            Note: ${this.message}%0A `;
+            Note: ${this.message}%0A 
+            Service: ${this.product.title}%0A`;
 
             const url = `https://wa.me/${phoneNumber}?text=${message}`;
             window.open(url, '_blank');

@@ -1,8 +1,7 @@
 <template>
     <div>
         <SectionTopBanner />
-        <div class="text-start container mt-5">
-            <CounterSection />
+        <div class="text-start container mt-5"> 
             <h2 class="text-center mb-4 text-capitalize">About The dental solutions</h2>
             <p class="text-center px-4">
                 Don’t wait any longer to give your teeth the expert care they deserve at Dental Solutions – a leading
@@ -44,17 +43,16 @@
                 text="Dr. Shweta Gupta is a principal dentist at THE DENTAL Solutions, providing patients with treatment involving all aspects of dentistry including painless root canal treatments, cosmetic dentistry, dental implants, rehabilitative and general dental care.\n\nHis vision is to fulfill the need for specialized dental care and treatment resulted in the establishment of The Dental Solutions, New Delhi and Gurgaon. He completed his graduation from Pune University, 1999 and did his masters in Conservative and endodontic in 2002 from Rajiv Gandhi University, Karnataka and has been providing dental care to his patients since then."
                 mobile="9899570734" buttonRoute="/doctor/dr-shweta-gupta" :imageFirst="false" />
             <!-- <TeamSection />  -->
-            <div class="my-5">
-                <NewGallerySection :images="certificates" title="International Business Award 2018" />
-            </div>
         </div>
         <WhyChooseUs />
+        <div class="container my-5 py-5">
+            <NewGallerySection :images="gallery" title="gallery" route="/gallery" />
+        </div>
     </div>
 </template>
 
 <script>
-import SectionTopBanner from '@/components/SectionTopBanner.vue';
-import CounterSection from '@/components/CounterSection.vue';
+import SectionTopBanner from '@/components/SectionTopBanner.vue'; 
 import ImageTextSection from '@/components/ImageTextSection.vue';
 // import TeamSection from '@/components/TeamSection.vue'; 
 import WhyChooseUs from '@/components/WhyChooseUs.vue';
@@ -63,8 +61,7 @@ import NewGallerySection from '@/components/NewGallerySection.vue';
 export default {
     name: 'AboutUs',
     components: {
-        SectionTopBanner,
-        CounterSection,
+        SectionTopBanner, 
         ImageTextSection,
         // TeamSection, 
         WhyChooseUs,
@@ -72,14 +69,14 @@ export default {
     },
     data() {
         return {
-            certificates: [
-                "/img/certificates/1.jpeg",
-                "/img/certificates/2.jpeg",
-                "/img/certificates/3.jpeg",
-                "/img/certificates/4.jpeg",
-                "/img/certificates/5.jpeg",
-                "/img/certificates/6.jpeg",
-            ],
+            // certificates: [
+            //     "/img/certificates/1.jpeg",
+            //     "/img/certificates/2.jpeg",
+            //     "/img/certificates/3.jpeg",
+            //     "/img/certificates/4.jpeg",
+            //     "/img/certificates/5.jpeg",
+            //     "/img/certificates/6.jpeg",
+            // ],
             teams: [
                 {
                     title: "Dr. Prerna Jeloka",
@@ -107,6 +104,11 @@ export default {
                     image: "https://www.thedentalroots.com/assets/images/about/Anchal.jpg",
                 },
             ],
+        }
+    },
+    computed:{
+        gallery(){
+            return this.$store.getters['gallery/getGallery']
         }
     }
 }

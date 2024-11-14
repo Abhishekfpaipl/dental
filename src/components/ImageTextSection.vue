@@ -22,8 +22,8 @@
                         <i class="bi bi-arrow-right ms-3"></i>
                     </router-link>
                 </div>
-                <div v-if="mobile" class="mt-5">
-                    <button class="btn text-white me-3 rounded-pill" data-bs-toggle="modal"
+                <div v-if="mobile" class="mt-3">
+                    <button class="btn text-white me-3 rounded" data-bs-toggle="modal"
                         data-bs-target="#welcomeModal" style="background-color: var(--bg-primary);"
                         @click="bookAppointment">Book An
                         Appointment</button>

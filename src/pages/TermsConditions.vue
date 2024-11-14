@@ -1,7 +1,7 @@
 <template>
     <div>
         <SectionTopBanner />
-        <div class="container text-start py-5 " style="margin-top:-40px;"> 
+        <div class="container text-start py-5 " style="margin-top:-40px;">
 
             <section class="my-5">
                 <h2 class="h4">Introduction</h2>
@@ -81,8 +81,8 @@
                 <h2 class="h4">Website Usage</h2>
                 <ul class="list-group">
                     <li class="list-group-item">
-                        All content on our website, including images, text, and videos, is the property of [Dental
-                        Clinic Name] and is protected by copyright laws.
+                        All content on our website, including images, text, and videos, is the property of Dental
+                        Solutions and is protected by copyright laws.
                     </li>
                     <li class="list-group-item">
                         You may not use any content from our website for commercial purposes without prior written
@@ -106,7 +106,7 @@
 
             <section class="text-center">
                 <p class="font-italic">
-                    If you have any questions about these terms, please contact us at 
+                    If you have any questions about these terms, please contact us at
                     enquiry@dentalsolutions.com.
                 </p>
             </section>
