@@ -23,7 +23,9 @@
                     </router-link>
                 </div>
                 <div v-if="mobile" class="mt-5">
-                    <button class="btn text-white me-3 rounded-pill" style="background-color: var(--bg-primary);" @click="bookAppointment">Book An
+                    <button class="btn text-white me-3 rounded-pill" data-bs-toggle="modal"
+                        data-bs-target="#welcomeModal" style="background-color: var(--bg-primary);"
+                        @click="bookAppointment">Book An
                         Appointment</button>
                 </div>
             </div>
@@ -34,10 +36,16 @@
             <a :href="`tel:${mobile}`" class="btn btn-outline-dark rounded-pill">Call us: +91 {{ mobile }}</a>
         </div> -->
     </div>
+    <WelcomeModal />
 </template>
 
 <script>
+import WelcomeModal from './WelcomeModal.vue';
+
 export default {
+    components: {
+        WelcomeModal,
+    },
     props: {
         mobile: {
             type: Number,

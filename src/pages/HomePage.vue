@@ -90,10 +90,7 @@ Dental Solutions is proudly recognized as the Best Dental Clinic in Delhi, maint
         </div>
         <div class="my-5">
             <TestimonialSection />
-        </div>
-        <div class="my-5">
-            <SocialSection />
-        </div>
+        </div> 
         <div class="my-5">
             <!-- <TestComp /> -->
         </div>
@@ -114,8 +111,7 @@ import DentalImplant from '@/components/DentalImplant.vue';
 import WhyChooseUs from '@/components/WhyChooseUs.vue';
 // import BadgeSection from '@/components/BadgeSection.vue'; 
 import NewGallerySection from '@/components/NewGallerySection.vue';
-import DentalCareFeatures from '@/components/DentalCareFeatures.vue';
-import SocialSection from '@/components/SocialSection.vue';
+import DentalCareFeatures from '@/components/DentalCareFeatures.vue'; 
 import DentalTeamSection from '@/components/DentalTeamSection.vue';
 import ShortsVideoSection from '@/components/ShortsVideoSection.vue';
 import WelcomeModal from '@/components/WelcomeModal.vue';
@@ -136,8 +132,7 @@ export default {
         // CarouselBanner,
         // TestimonialSection, 
         NewGallerySection,
-        DentalCareFeatures,
-        SocialSection,
+        DentalCareFeatures, 
         DentalTeamSection,
         ShortsVideoSection,
         WelcomeModal,

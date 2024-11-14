@@ -2,22 +2,33 @@
     <div class="container-fluid h-100" style="background-color: var(--bg-secondary); height: 95vh;">
         <div class="row justify-content-center align-items-center pt-5 mt-5 mt-md-0">
             <div class="col-md-5 px-md-5">
-                <div class="bg-white rounded p-3 py-5">
+                <div class="d-flex flex-column bg-white rounded p-3 py-5">
                     <img src="/img/logo.png" alt="Logo" style="height: 70px; object-fit: contain;">
-                    <h1 class="mt-4 mt-md-0">Dental Solutions</h1>
-                    <AutoTypeDeleteText :texts="services" :typingSpeed="150" :deleteSpeed="50" :delay="500" />
-                    <div class="mt-3 text-center">
-                        <p class="my-1" v-for="(product, index) in products" :key="index"><i class="bi bi-check2-square me-2"></i>&nbsp;{{product}}</p> 
+                    <div class="my-2">
+                        <AutoTypeDeleteText :texts="services" :typingSpeed="150" :deleteSpeed="50" :delay="500" />
                     </div>
-                    <router-link to="" class="btn mt-4" data-bs-toggle="modal" data-bs-target="#welcomeModal"
-                        style="color: var(--bg-primary); border: 1px solid var(--bg-primary);">Book Appointment</router-link>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center align-items-center ">
+                        <div class="my-2" v-for="(product, index) in products" :key="index">
+                            <div class="d-flex p-2 rounded-pill"
+                                style="background-color: var(--bg-secondary); color: var(--bg-primary);">
+                                <i class="bi bi-check2-square me-2 small"></i>
+                                <small class="">{{ product }}</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+
+                        <router-link to="" class="btn mt-4" data-bs-toggle="modal" data-bs-target="#welcomeModal"
+                            style="color: var(--bg-primary); border: 1px solid var(--bg-primary);">Book
+                            Appointment</router-link>
+                    </div>
                 </div>
             </div>
             <div class="col-md-7 mt-5 mt-md-0">
                 <img src="/img/contactUs.svg" alt="Banner" style="width: 100%;">
             </div>
         </div>
-    </div> 
+    </div>
 </template>
 <script>
 import AutoTypeDeleteText from "@/components/AutoTypeDeleteText.vue"
@@ -32,7 +43,7 @@ export default {
                 'Cosmetic Dentistry',
                 'Surgical Dentistry',
             ],
-            products:[
+            products: [
                 'Veneers',
                 'Invisalign',
                 'Dental Implants',
